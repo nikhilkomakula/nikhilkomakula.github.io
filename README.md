@@ -9,7 +9,7 @@ setting technical direction for complex Machine Learning (ML) projects that alig
 training, tuning, deployment, and monitoring using tools like MLflow, OpenScale, Docker and cloud-native services.
 - Strong technical leadership with a talent for translating complex ML concepts into actionable insights for both
 teams and stakeholders, fostering collaboration and driving data-driven decision making across the organization.
-* * *
+---
 ### SKILLS
 - **Core Expertise:** Artificial Intelligence (AI), Machine Learning, Deep Learning, NLP, Generative AI, LLM, Statistics,
 Probability, Model Development, Feature Engineering, Predictive Modeling, Model Training, Hyperparameter Tuning,
@@ -23,4 +23,4 @@ Gensim, LangChain, Llamalndex, OpenCV, OpenAI, GPT, Gemini, Claude, Mistral, Lla
 - **Industry/Role-Based Skills:** Regression, Classification, Clustering, Dimensionality Reduction, Prompt Engineering,
 Parameter Efficient Fine-Tuning (PEFT), LIME, NLG, RNN, LSTM, GRU, ETL, VAE, GAN, Computer Vision, CNN, Encoder-
 Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Retrieval Augmented Generation (RAG).
-* * *
+---
