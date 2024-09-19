@@ -1,3 +1,9 @@
+# Nikhil Komakula
+## Global Solutions Architect (AI/ML)
+**Location:** Hyderabad, Telangana, India | **Email:** nikhil.komakula@outlook.com | **Phone:** +91 9535372727 | **LinkedIn:** [linkedin.com/in/nikhilkomakula](http://linkedin.com/in/nikhilkomakula) | **GitHub:** [github.com/nikhilkomakula](https://github.com/nikhilkomakula)
+
+---
+
 ### PROFESSIONAL SUMMARY
 - Distinguished **solutions architect** with over 14 years of experience in the software industry, specializing in **Natural Language Processing (NLP)** and **Large Language Models (LLM)**, with expertise in advanced fine-tuning techniques.
 - **Certified Machine Learning Specialist** across major cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), proficient in designing and implementing scalable, production-grade systems using frameworks like TensorFlow and PyTorch.
@@ -7,8 +13,6 @@ setting technical direction for complex Machine Learning (ML) projects that alig
 training, tuning, deployment, and monitoring using tools like MLflow, OpenScale, Docker and cloud-native services.
 - Strong **technical leadership** with a talent for translating complex ML concepts into actionable insights for both
 teams and stakeholders, fostering collaboration and driving data-driven decision making across the organization.
-
-* * *
 
 ---
 
@@ -25,4 +29,7 @@ Gensim, LangChain, Llamalndex, OpenCV, OpenAI, GPT, Gemini, Claude, Mistral, Lla
 - **Industry/Role-Based Skills:** Regression, Classification, Clustering, Dimensionality Reduction, Prompt Engineering,
 Parameter Efficient Fine-Tuning (PEFT), LIME, NLG, RNN, LSTM, GRU, ETL, VAE, GAN, Computer Vision, CNN, Encoder-
 Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Retrieval Augmented Generation (RAG).
+
 ---
+
+
