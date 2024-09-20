@@ -81,7 +81,7 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 -	Implemented AI Factsheets for capturing model metrics, utilizing Azure DevOps, MLflow, and Databricks for CI/CD, experiment tracking and pipeline execution, while using OpenScale for model monitoring, explainability and fairness.
 -	Enhanced model governance and lifecycle management by 25%, improving transparency, compliance, and accountability in AI operations, significantly increasing the effectiveness of AI activities across the organization.
 
-**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot)**
+**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot){:target="_blank"}**
 -	Designed and developed an advanced AI chatbot integrating Watson Assistant with Watsonx Gen AI platform, leveraging LLMs (such as Granite, LLaMA, FLAN) to deliver context-driven responses for OpenPages business users.
 -	Implemented the chatbot using LangChain, Sentence Transformers, Milvus vector database, and IBM Watson OpenScale to enhance query understanding and evaluate LLM responses for Faithfulness and Answer relevancy. 
 -	Achieved a significant business impact with 30% increase in user satisfaction, 25% reduction in support tickets, and 20% improvement in operational efficiency, delivering substantial business value.
