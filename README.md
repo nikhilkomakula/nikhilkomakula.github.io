@@ -58,13 +58,13 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior Solutions Architect</span><span>May’20 – Sep’21</span></div>
-</br>
+<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Solutions Architect</span><span>Apr’12 – Apr’20</span></div>
-</br>
+<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM CORPORATION</span><span>Littleton, MA, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Lead Consulting Engineer</span><span>Apr’10 – Apr’12</span></div>
-</br>
+<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>HALLER, HARLAN & TAYLOR</span><span>Plano, TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
 
@@ -104,9 +104,9 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT AUSTIN</span><span>TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span><span>2022 – 2023</span></div>
-<br>
+<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT DALLAS</span><span>TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Master of Science in Computer Engineering</span><span>2006 – 2008</span></div>
-<br>
+<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>VASAVI COLLEGE OF ENGINEERING</span><span>TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span><span>2002 – 2006</span></div>
