@@ -101,9 +101,7 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT AUSTIN</span><span>TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span><span>2022 – 2023</span></div>
-<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT DALLAS</span><span>TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Master of Science in Computer Engineering</span><span>2006 – 2008</span></div>
-<br />
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>VASAVI COLLEGE OF ENGINEERING</span><span>TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span><span>2002 – 2006</span></div>
