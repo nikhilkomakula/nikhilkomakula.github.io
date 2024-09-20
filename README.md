@@ -33,8 +33,8 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 ---
 
 ### AWARDS
-- IBM Outstanding Innovation Award (OIA) - 2019
-- IBM Outstanding Technical Achievement Award (OTAA) - 2018 & 2019
+- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Innovation Award (OIA)</span><span>2019</span></div>
+- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Technical Achievement Award (OTAA)</span><span>2018 & 2019</span></div>
 
 ---
 
