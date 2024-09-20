@@ -1,7 +1,7 @@
 <!-- # Nikhil Komakula -->
 <!-- ## Global Solutions Architect (AI/ML) -->
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> nikhil.komakula@outlook.com</span><span><b>Phone:</b> +91 9535372727</span></div>
-<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> [linkedin.com/in/nikhilkomakula](http://linkedin.com/in/nikhilkomakula)</span><span><b>GitHub:</b> [github.com/nikhilkomakula](https://github.com/nikhilkomakula)</span></div>
+<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
 
 ---
 
