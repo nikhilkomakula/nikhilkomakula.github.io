@@ -1,5 +1,5 @@
-# Nikhil Komakula
-## Global Solutions Architect (AI/ML)
+<!-- # Nikhil Komakula -->
+<!-- ## Global Solutions Architect (AI/ML) -->
 **Location:** Hyderabad, Telangana, India | **Email:** nikhil.komakula@outlook.com | **Phone:** +91 9535372727 | **LinkedIn:** [linkedin.com/in/nikhilkomakula](http://linkedin.com/in/nikhilkomakula) | **GitHub:** [github.com/nikhilkomakula](https://github.com/nikhilkomakula)
 
 ---
