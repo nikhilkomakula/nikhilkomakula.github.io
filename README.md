@@ -32,4 +32,21 @@ Decoder, Transformers, Explainability, NLU, SHAP, A/B Testing, Microservices, Re
 
 ---
 
+### AWARDS
+- IBM Outstanding Innovation Award (OIA) - 2019
+- IBM Outstanding Technical Achievement Award (OTAA) - 2018 & 2019
+
+---
+
+### CERTIFICATIONS
+- GCP Certified Professional Machine Learning Engineer
+- GCP Certified Professional Data Engineer
+- AWS Certified Machine Learning Specialty
+- Microsoft Certified: Azure Data Scientist Associate
+- IBM Certified Data Scientist – Machine Learning Specialist
+
+---
+
+### WORK EXPERIENCE
+
 
