@@ -6,22 +6,27 @@
 ---
 
 ### PROFESSIONAL SUMMARY
-- Distinguished **solutions architect** with over 14 years of experience in the software industry, specializing in **Natural Language Processing (NLP)** and **Large Language Models (LLM)**, with expertise in advanced fine-tuning techniques.
-- **Certified Machine Learning Specialist** across major cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), proficient in designing and implementing scalable, production-grade systems using frameworks like TensorFlow and PyTorch.
-- Proven track record in leading and mentoring cross-functional teams, driving innovation in model development, and
-setting technical direction for complex Machine Learning (ML) projects that align with **business objectives**.
-- Expert in **MLOps** practices, with hands-on experience in building end-to-end ML pipelines, automating model
-training, tuning, deployment, and monitoring using tools like MLflow, OpenScale, Docker and cloud-native services.
-- Strong **technical leadership** with a talent for translating complex ML concepts into actionable insights for both
-teams and stakeholders, fostering collaboration and driving data-driven decision making across the organization.
+-	Distinguished solutions architect with over 14 years of experience in the software industry, with a strong focus on **Natural Language Processing (NLP)** and **Generative AI (LLMs)**, and expertise in advanced fine-tuning techniques.
+-	**Certified Machine Learning Specialist** across major cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), proficient in designing and developing scalable, production-grade systems using deep learning frameworks like **TensorFlow** and **PyTorch**.
+-	Experienced professional delivering cutting-edge AI/ML solutions for **risk management** and **regulatory compliance** across Finance, Banking, Insurance, Retail, and Investment; driving innovation and optimizing compliance strategies.
+-	Expert in **MLOps** practices, with hands-on experience in building end-to-end **ML pipelines**, automating model training, tuning, deployment, and monitoring using tools like **MLflow**, **DVC**, **Docker** and cloud-native services.
+-	Strong **technical leadership** with a proven track record in leading and mentoring cross-functional teams, fostering collaboration, promoting continuous learning, and driving **data-driven decision making** across the organization.
 
 ---
 
 ### SKILLS
-- **Core Expertise:** Artificial Intelligence (AI), Machine Learning, Deep Learning, NLP, Generative AI, LLM, Statistics, Probability, Model Development, Feature Engineering, Predictive Modeling, Model Training, Hyperparameter Tuning, Model Deployment, Model Optimization, MLOps, Data Science, OOPS, Data Structures, Algorithms, Data Processing, Agile, Distributed Systems, Data Visualization, Hypothesis Testing, CI/CD Pipelines, IBM Cloud Pak for Data (CP4D).
--	**Tools:** GitHub Actions, Jira, Jenkins, Docker, Kubernetes, MLflow, DVC, IBM Watson (Studio, Discovery, Assistant, ML), Azure (Databricks, DevOps, ML), IBM (Factsheets, OpenScale, OpenPages, Cognos), Amazon (SageMaker, Bedrock).
--	**Technology Stack:** Python, Java, SQL, NoSQL, JavaScript, React, REST API, Flask, FastAPI, Streamlit, Gradio, NumPy, Pandas, Scikit-Learn, Seaborn, Matplotlib, DeepEval, Ragas, TruLens, Keras, TensorFlow, PyTorch, Git, spaCy, CoreNLP, Gensim, LangChain, Llamalndex, OpenCV, OpenAI, GPT, Gemini, Claude, Mistral, Llama, NLTK, fastText, HuggingFace.
--	**Industry/Role-Based Skills:** Regression, Classification, Clustering, Dimensionality Reduction, Prompt Engineering, Parameter Efficient Fine-Tuning (PEFT), NLG, RNN, LSTM, GRU, VAE, GAN, Explainability, Interpretability, LIME, SHAP, ETL, Encoder-Decoder, Transformers, NLU, CNN, A/B Testing, Microservices, Retrieval Augmented Generation (RAG).
+- **Core Expertise:** Artificial Intelligence (AI), Machine Learning, Deep Learning, NLP, Generative AI, Large Language
+Models (LLMs), Statistics, Probability, Data Science, ETL, EDA, Feature Engineering, Predictive Modeling, Model
+Training, Hyperparameter Tuning, Experiment Tracking, Model Evaluation, Model Versioning, Model Deployment,
+MLOps, Agile, OOPS, Data Structures, Algorithms, Distributed Systems, Hypothesis Testing, CI/CD Pipelines.
+-	**Tools:** GitHub Actions, Jira, Jenkins, Docker, Kubernetes, MLflow, DVC, IBM Watson (Studio, Discovery, Assistant),
+Azure (Databricks, DevOps), IBM (Factsheets, OpenScale, OpenPages, Cognos, CP4D), Amazon (SageMaker, Bedrock).
+-	**Technology Stack:** Python, Java, SQL, NoSQL, JavaScript, React, REST API, Flask, FastAPI, Streamlit, Gradio, NumPy,
+Pandas, Scikit-Learn, Seaborn, Matplotlib, DeepEval, Ragas, TruLens, Keras, TensorFlow, PyTorch, Git, spaCy, CoreNLP,
+Gensim, LangChain, Llamalndex, OpenCV, OpenAI, GPT, Gemini, Claude, Mistral, Llama, NLTK, fastText, HuggingFace.
+-	**Industry/Role-Based Skills:** Regression, Classification, Clustering, Dimensionality Reduction, Prompt Engineering,
+Parameter Efficient Fine-Tuning (PEFT), NLG, RNN, LSTM, GRU, VAE, GAN, Explainability, Interpretability, LIME, SHAP,
+Encoder-Decoder, Transformers, NLU, CNN, A/B Testing, Microservices, Retrieval Augmented Generation (RAG).
 
 ---
 
@@ -63,10 +68,15 @@ teams and stakeholders, fostering collaboration and driving data-driven decision
 ### PROJECTS
 
 **COMPLIANCE ASSISTANT**
--	Architected and implemented an intelligent document repository using IBM Watson Discovery and integrated LLMs for regulatory information classification, resulting in streamlined processes and a 30% reduction in manual effort.
--	Developed and fine-tuned LLMs with IBM Watsonx Gen AI’s Tuning Studio for automated regulation summarization and requirement generation, enhancing compliance workflows by reducing manual interpretation efforts by 40%.
--	Integrated a conversational AI interface using IBM Watsonx Assistant and advanced NLP techniques, significantly improving document comprehension and retrieval efficiency by 50%, and enhancing user interactions.
--	Designed an interactive OpenPages dashboard for comprehensive compliance management, integrating IBM Watsonx Governance for model lifecycle tracking and real-time analytics, achieving a 35% increase in compliance accuracy in financial services and delivering actionable insights.
+- Architected and implemented an intelligent document repository using IBM Watson Discovery and integrated LLMs
+for regulatory information classification, resulting in streamlined processes and a 30% reduction in manual effort.
+- Developed and fine-tuned LLMs with IBM Watsonx Gen AI’s Tuning Studio for automated regulation summarization
+and requirement generation, enhancing compliance workflows by reducing manual interpretation efforts by 40%.
+- Integrated a conversational AI interface using IBM Watsonx Assistant and NLP techniques, achieving a marked
+reduction in document processing time and increasing query resolution rates, while enhancing user interactions.
+- Designed an interactive OpenPages dashboard for comprehensive compliance management, integrating IBM
+Watsonx Governance for model lifecycle tracking and real-time analytics, achieving a 35% increase in compliance
+accuracy in financial services and delivering actionable insights.
 
 **AI GOVERNANCE**
 -	Developed a MLOps script to streamline the onboarding of traditional machine learning models from Azure and GCP into IBM Watsonx AI Governance, facilitating seamless cross-platform model oversight and governance.
@@ -74,9 +84,12 @@ teams and stakeholders, fostering collaboration and driving data-driven decision
 -	Enhanced model governance and lifecycle management by 25%, improving transparency, compliance, and accountability in AI operations, significantly increasing the effectiveness of AI activities across the organization.
 
 **[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot){:target="_blank"}**
--	Designed and developed an advanced AI chatbot integrating Watson Assistant with Watsonx Gen AI platform, leveraging LLMs (such as Granite, LLaMA, FLAN) to deliver context-driven responses for OpenPages business users.
--	Implemented the chatbot using LangChain, Sentence Transformers, Milvus vector database, and IBM Watson OpenScale to enhance query understanding and evaluate LLM responses for Faithfulness and Answer relevancy. 
--	Achieved a significant business impact with 30% increase in user satisfaction, 25% reduction in support tickets, and 20% improvement in operational efficiency, delivering substantial business value.
+- Designed and developed an advanced AI chatbot integrating Watson Assistant with Watsonx Gen AI platform,
+leveraging LLMs (such as Granite, LLaMA, FLAN) to deliver context-driven responses for OpenPages business users.
+- Implemented the RAG pipeline with LangChain, HuggingFace Embeddings, Milvus vector database, and IBM Watson
+OpenScale to enhance query understanding and evaluate LLM responses for Faithfulness and Answer relevancy.
+- Utilized advanced retrievers and rerankers to optimize information retrieval and improve the accuracy of responses,
+achieving a 30% increase in user satisfaction and a 25% reduction in support tickets, delivering substantial value.
 
 **PII DETECTOR**
 -	Developed an advanced PII detection system leveraging BERT, significantly enhancing the identification of sensitive data across diverse text sources through sophisticated natural language processing techniques.
