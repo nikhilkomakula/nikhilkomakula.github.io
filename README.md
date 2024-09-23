@@ -101,6 +101,12 @@ achieving a 30% increase in user satisfaction and a 25% reduction in support tic
 -	Designed a scalable data pipeline utilizing AWS services and implemented version control with DVC, ensuring data integrity and reproducibility across extensive historical datasets.
 -	Enhanced ensemble models (XGBoost, LightGBM) with MLflow for comprehensive experiment tracking and model versioning, leading to significant improvements in both the accuracy and interpretability of risk assessments.
 
+**SEMANTIC SEARCH**
+- Designed and deployed a novel semantic search engine for IBM OpenPages, revolutionizing the traditional keyword-based search paradigm with context-aware query understanding and intent-driven retrieval.
+- Utilized the Universal Sentence Encoder (USE) to generate dense vector representations of search queries and documents, boosting search precision and recall by 30% and 25%, respectively.
+- Implemented a similarity-based duplicate detection algorithm, leveraging USE embeddings to identify and eliminate redundant records, resulting in a 40% reduction in false positives and a 25% increase in operational efficiency.
+- Streamlined search operations for clients, yielding significant time and resource savings through optimized query processing, indexing, and retrieval, and improving overall system responsiveness by 30%.
+
 ---
 
 ### EDUCATION
