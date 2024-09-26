@@ -15,18 +15,14 @@
 ---
 
 ### SKILLS
-- **Core Expertise:** Artificial Intelligence (AI), Machine Learning, Deep Learning, NLP, Generative AI, Large Language
-Models (LLMs), Statistics, Probability, Data Science, ETL, EDA, Feature Engineering, Predictive Modeling, Model
-Training, Hyperparameter Tuning, Experiment Tracking, Model Evaluation, Model Versioning, Model Deployment,
-MLOps, Agile, OOPS, Data Structures, Algorithms, Distributed Systems, Hypothesis Testing, CI/CD Pipelines.
--	**Tools:** GitHub Actions, Jira, Jenkins, Docker, Kubernetes, MLflow, DVC, IBM Watson (Studio, Discovery, Assistant),
-Azure (Databricks, DevOps), IBM (Factsheets, OpenScale, OpenPages, Cognos, CP4D), Amazon (SageMaker, Bedrock).
--	**Technology Stack:** Python, Java, SQL, NoSQL, JavaScript, React, REST API, Flask, FastAPI, Streamlit, Gradio, NumPy,
-Pandas, Scikit-Learn, Seaborn, Matplotlib, DeepEval, Ragas, TruLens, Keras, TensorFlow, PyTorch, Git, spaCy, CoreNLP,
-Gensim, LangChain, Llamalndex, OpenCV, OpenAI, GPT, Gemini, Claude, Mistral, Llama, NLTK, fastText, HuggingFace.
--	**Industry/Role-Based Skills:** Regression, Classification, Clustering, Dimensionality Reduction, Prompt Engineering,
-Parameter Efficient Fine-Tuning (PEFT), NLG, RNN, LSTM, GRU, VAE, GAN, Explainability, Interpretability, LIME, SHAP,
-Encoder-Decoder, Transformers, NLU, CNN, A/B Testing, Microservices, Retrieval Augmented Generation (RAG).
+- **Tools & Technologies:** Python, Java, SQL, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, Git, Docker, Kubernetes,
+Keras, TensorFlow, PyTorch, spaCy, CoreNLP, Gensim, NLTK, fastText, NoSQL, GitHub Actions, Jenkins, REST API, Flask,
+FastAPI, Streamlit, Gradio, Jira, MLflow, DVC, Agile, CI/CD Pipelines, Hugging Face, Distributed Systems, Microservices.
+- **AI/ML Expertise:** Machine Learning, Deep Learning, NLP, Generative AI, Large Language Models (LLMs), RAG, PEFT,
+LoRA, Llama, MLOps, A/B Testing, Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA,
+Topic Modeling, Encoder-Decoder, Transformers, RNN, LSTM, GRU, BERT, VAE, GAN, Hypothesis Testing, OpenAI, GPT.
+- **Professional Competencies:** Communication Skills, Presentation Skills, Innovation, Continuous Learning, Mentoring,
+Collaboration, Teamwork, Leadership, Problem Solving, Adaptability, Critical Thinking, Strategic Thinking, Creativity.
 
 ---
 
@@ -48,35 +44,43 @@ Encoder-Decoder, Transformers, NLU, CNN, A/B Testing, Microservices, Retrieval A
 ### WORK EXPERIENCE
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Global Solutions Architect</span><span>Sep’21 – Present</span></div>   	
--	Architected and deployed cutting-edge AI/ML solutions leveraging advanced ML techniques, driving customer-focused innovation and delivering tangible business value, resulting in a 30% increase in solution adoption rates.
--	Led the development of state-of-the-art AI applications, seamlessly integrating advanced NLP technologies and LLMs with IBM Watsonx AI services, yielding a remarkable 40% improvement in domain-specific task performance.
--	Developed robust, scalable ML pipelines with MLflow integration, optimizing data preprocessing, model training, tuning, and evaluation processes, reducing model deployment time by 50% and improving system overall reliability.
--	Implemented agile methodologies and MLOps best practices, including CI/CD and DevOps principles, accelerating project delivery by 35% and boosting client satisfaction by 45% through rapid iteration and continuous improvement.
--	Collaborated with cross-functional teams, data scientists, and business stakeholders to align AI/ML initiatives with strategic goals, delivering impactful pre-sales presentations, and proofs of concept (PoCs), while mentoring the team on emerging AI/ML trends, which resulted in a 20% increase in client acquisition and a 15% boost in productivity. 
+- Architected and deployed cutting-edge AI/ML solutions in finance using IBM Watsonx, driving customer-focused
+innovation, optimizing risk assessment, and increasing adoption rates by 30% while reducing operational costs.
+- Developed and optimized BERT-based NLP models using IBM Watson Studio, improving domain-specific text
+classification accuracy by 25% and reducing model convergence time by 35% through efficient training pipelines.
+- Built robust, scalable ML pipelines with MLflow and Docker integration, optimizing data preprocessing, model
+training, hyperparameter tuning and evaluation, reducing deployment time by 50% and enhancing system reliability.
+- Collaborated with cross-functional teams to design and deploy scalable AI/ML solutions; mentored data science team
+on emerging trends like model governance, driving 20% client acquisition growth and 15% productivity boost.
+- Python, SQL, BERT, RAG, GitHub, Docker, Kubernetes, TensorFlow, PyTorch, MLflow, IBM Watsonx, IBM Cloud, AWS 
 
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Senior Solutions Architect</span><span>May’20 – Sep’21</span></div>
+
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada </span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior Solutions Architect</span><span>May’20 – Sep’21</span></div>   	
+- Led the end-to-end implementation of OpenPages GRC platform for a major financial institution, streamlining risk
+management processes and reducing compliance reporting time by 35%, resulting in annual savings of over $500K.
+- Implemented OpenPages workflows to integrate with existing systems, enhancing real-time risk monitoring and
+boosting operational efficiency by 40% across multiple departments, significantly improving decision-making speed.
+- Java, J2EE, ReactJS, SQL, REST, Docker, Jenkins, AWS CodeCommit, Oracle, DB2, XML, Agile, OpenPages, Cognos 
+
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Solutions Architect</span><span>Apr’12 – Apr’20</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM CORPORATION</span><span>Littleton, MA, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Lead Consulting Engineer</span><span>Apr’10 – Apr’12</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>HALLER, HARLAN & TAYLOR</span><span>Plano, TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>ACCOLITE</span><span>Richardson, TX, USA</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer</span><span>Mar’09 – Sep’09</span></div>
 
 ---
 
 ### PROJECTS
 
 **COMPLIANCE ASSISTANT**
-- Architected and implemented an intelligent document repository using IBM Watson Discovery and integrated LLMs
-for regulatory information classification, resulting in streamlined processes and a 30% reduction in manual effort.
-- Developed and fine-tuned LLMs with IBM Watsonx Gen AI’s Tuning Studio for automated regulation summarization
-and requirement generation, enhancing compliance workflows by reducing manual interpretation efforts by 40%.
-- Integrated a conversational AI interface using IBM Watsonx Assistant and NLP techniques, achieving a marked
-reduction in document processing time and increasing query resolution rates, while enhancing user interactions.
-- Designed an interactive OpenPages dashboard for comprehensive compliance management, integrating IBM
-Watsonx Governance for model lifecycle tracking and real-time analytics, achieving a 35% increase in compliance
-accuracy in financial services and delivering actionable insights.
+-	Developed an intelligent document repository using IBM Watson Discovery and IBM Watsonx.ai, automating the collection and classification of country-specific regulations, which reduced manual data processing efforts by 50%.
+-	Implemented a conversational AI assistant with IBM Watson Assistant to summarize regulations and address user inquiries, significantly enhancing compliance efficiency and reducing interpretation time by 40%.
+-	Built machine learning models using IBM Watsonx.ai to categorize regulatory requirements by asset, liability, and product type, improving classification accuracy by 35% and streamlining compliance workflows.
+-	Designed and deployed a compliance dashboard using IBM OpenPages and Cognos, providing real-time insights into regulatory compliance, which enhanced decision-making and increased compliance tracking efficiency by 30%.
 
 **AI GOVERNANCE**
 -	Developed a MLOps script to streamline the onboarding of traditional machine learning models from Azure and GCP into IBM Watsonx AI Governance, facilitating seamless cross-platform model oversight and governance.
