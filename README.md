@@ -68,7 +68,7 @@ boosting operational efficiency by 40% across multiple departments, significantl
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM CORPORATION</span><span>Littleton, MA, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Lead Consulting Engineer</span><span>Apr’10 – Apr’12</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>HALLER, HARLAN & TAYLOR</span><span>Plano, TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>ACCOLITE</span><span>Richardson, TX, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer</span><span>Mar’09 – Sep’09</span></div>
 
