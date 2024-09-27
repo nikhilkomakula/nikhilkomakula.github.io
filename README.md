@@ -19,11 +19,11 @@
 - **Tools & Technologies:** Python, Java, SQL, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, Git, Docker, Kubernetes,
 Keras, TensorFlow, PyTorch, spaCy, CoreNLP, Gensim, NLTK, fastText, NoSQL, GitHub Actions, Jenkins, REST API, Flask,
 FastAPI, Streamlit, Gradio, Jira, MLflow, DVC, Agile, CI/CD Pipelines, Hugging Face, Distributed Systems, Microservices.
-- **AI/ML Expertise:** Machine Learning, Deep Learning, NLP, Generative AI, Large Language Models (LLMs), RAG, PEFT,
-LoRA, Llama, MLOps, A/B Testing, Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA,
-Topic Modeling, Encoder-Decoder, Transformers, RNN, LSTM, GRU, BERT, VAE, GAN, Hypothesis Testing, OpenAI, GPT.
+- **AI/ML Expertise:** Machine Learning, Regression, Classification, Clustering, Dimensionality Reduction, PCA, Topic
+Modeling, Deep Learning, NLP, RNN, LSTM, GRU, Transformers, BERT, Generative AI, Large Language Models (LLMs),
+PEFT, LoRA, RAG, VAE, GAN, MLOps, Statistics, Hypothesis Testing, A/B Testing, Explainable AI, Model Governance.
 - **Professional Competencies:** Communication Skills, Presentation Skills, Innovation, Continuous Learning, Mentoring,
-Collaboration, Teamwork, Leadership, Problem Solving, Adaptability, Critical Thinking, Strategic Thinking, Creativity.
+Stakeholder Management, Team Collaboration, Leadership, Problem Solving, Critical Thinking, Project Management.
 
 ---
 
