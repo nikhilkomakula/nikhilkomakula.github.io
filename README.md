@@ -2,6 +2,7 @@
 <!-- ## Global Solutions Architect (AI/ML) -->
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+919535372727">+91 9535372727</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
+<div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Website:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
 
 ---
 
