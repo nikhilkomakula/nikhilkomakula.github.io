@@ -45,24 +45,15 @@ Stakeholder Management, Team Collaboration, Leadership, Problem Solving, Critica
 ### WORK EXPERIENCE
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Global Solutions Architect</span><span>Sep’21 – Present</span></div>   	
-- Architected and deployed cutting-edge AI/ML solutions in finance using IBM Watsonx, driving customer-focused
-innovation, optimizing risk assessment, and increasing adoption rates by 30% while reducing operational costs.
-- Developed and optimized BERT-based NLP models using IBM Watson Studio, improving domain-specific text
-classification accuracy by 25% and reducing model convergence time by 35% through efficient training pipelines.
-- Built robust, scalable ML pipelines with MLflow and Docker integration, optimizing data preprocessing, model
-training, hyperparameter tuning and evaluation, reducing deployment time by 50% and enhancing system reliability.
-- Collaborated with cross-functional teams to design and deploy scalable AI/ML solutions; mentored data science team
-on emerging trends like model governance, driving 20% client acquisition growth and 15% productivity boost.
-- Python, SQL, BERT, RAG, GitHub, Docker, Kubernetes, TensorFlow, PyTorch, MLflow, IBM Watsonx, IBM Cloud, AWS 
-
+- Architected and deployed cutting-edge AI/ML solutions in finance using IBM Watsonx, driving customer-focused innovation, optimizing risk assessment, and increasing adoption rates by 30% while reducing operational costs.
+- Developed and optimized BERT-based NLP models using IBM Watson Studio, improving domain-specific text classification accuracy by 25% and enhancing model performance by 20% through efficient training pipelines.
+- Engineered robust, scalable ML pipelines with MLflow and Docker integration, optimizing data preprocessing, model training, hyperparameter tuning and evaluation, reducing deployment time by 50% and enhancing system reliability.
+- Collaborated with cross-functional teams to design and deploy scalable AI/ML solutions; mentored data science team on emerging trends like model governance, driving 20% client acquisition growth and 15% productivity boost.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada </span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior Solutions Architect</span><span>May’20 – Sep’21</span></div>   	
-- Led the end-to-end implementation of OpenPages GRC platform for a major financial institution, streamlining risk
-management processes and reducing compliance reporting time by 35%, resulting in annual savings of over $500K.
-- Implemented OpenPages workflows to integrate with existing systems, enhancing real-time risk monitoring and
-boosting operational efficiency by 40% across multiple departments, significantly improving decision-making speed.
-- Java, J2EE, ReactJS, SQL, REST, Docker, Jenkins, AWS CodeCommit, Oracle, DB2, XML, Agile, OpenPages, Cognos 
+-	Led the end-to-end implementation of OpenPages GRC platform for a major financial institution, streamlining risk management processes and reducing compliance reporting time by 35%, resulting in annual savings of over $500K.
+-	Implemented OpenPages workflows to integrate with existing systems, enhancing real-time risk monitoring and boosting operational efficiency by 40% across multiple departments, significantly improving decision-making speed. 
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Solutions Architect</span><span>Apr’12 – Apr’20</span></div>
