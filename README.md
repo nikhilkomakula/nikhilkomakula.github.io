@@ -16,14 +16,13 @@
 ---
 
 ### SKILLS
-- **Tools & Technologies:** Python, Java, SQL, NumPy, Pandas, Scikit-Learn, Matplotlib, Seaborn, Git, Docker, Kubernetes,
-Keras, TensorFlow, PyTorch, spaCy, CoreNLP, Gensim, NLTK, fastText, NoSQL, GitHub Actions, Jenkins, REST API, Flask,
-FastAPI, Streamlit, Gradio, Jira, MLflow, DVC, Agile, CI/CD Pipelines, Hugging Face, Distributed Systems, Microservices.
-- **AI/ML Expertise:** Machine Learning, Regression, Classification, Clustering, Dimensionality Reduction, PCA, Topic
-Modeling, Deep Learning, NLP, RNN, LSTM, GRU, Transformers, BERT, Generative AI, Large Language Models (LLMs),
-PEFT, LoRA, RAG, VAE, GAN, MLOps, Statistics, Hypothesis Testing, A/B Testing, Explainable AI, Model Governance.
-- **Professional Competencies:** Communication Skills, Presentation Skills, Innovation, Continuous Learning, Mentoring,
-Stakeholder Management, Team Collaboration, Leadership, Problem Solving, Critical Thinking, Project Management.
+-	**Programming Languages:** Python, Java, SQL
+-	**Tools & Frameworks:** Scikit-learn, Keras, TensorFlow, PyTorch, REST API, MLflow, DVC, Hugging Face, Git, GitHub.
+-	**Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, IBM Cognos
+-	**Databases:** Oracle, DB2, MySQL, PostgreSQL, MongoDB, NoSQL & Vector Databases
+-	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, NLTK, spaCy, RNN, LSTM, GRU, Transformers, BERT, Generative AI, Large Language Models (LLMs), PEFT, LoRA, RAG.
+-	**Cloud Platforms:** IBM (Watson Studio, Assistant, Discovery), AWS (EC2, S3, SageMaker, Lambda), Azure ML
+-	**MLOps, CI/CD & Web Frameworks:** Docker, Jenkins, Kubernetes, GitHub Actions, Flask, FastAPI, Streamlit, Gradio
 
 ---
 
@@ -45,10 +44,10 @@ Stakeholder Management, Team Collaboration, Leadership, Problem Solving, Critica
 ### WORK EXPERIENCE
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Global Solutions Architect</span><span>Sep’21 – Present</span></div>   	
-- Architected and deployed cutting-edge AI/ML solutions in finance using IBM Watsonx, driving customer-focused innovation, optimizing risk assessment, and increasing adoption rates by 30% while reducing operational costs.
-- Developed and optimized BERT-based NLP models using IBM Watson Studio, improving domain-specific text classification accuracy by 25% and enhancing model performance by 20% through efficient training pipelines.
-- Engineered robust, scalable ML pipelines with MLflow and Docker integration, optimizing data preprocessing, model training, hyperparameter tuning and evaluation, reducing deployment time by 50% and enhancing system reliability.
-- Collaborated with cross-functional teams to design and deploy scalable AI/ML solutions; mentored data science team on emerging trends like model governance, driving 20% client acquisition growth and 15% productivity boost.
+-	Architected and deployed cutting-edge AI/ML solutions in finance using IBM Watsonx, driving customer-focused innovation, optimizing risk assessment, and increasing adoption rates by 30%, reducing operational costs by 25%.
+-	Fine-tuned diverse BERT architectures and large language models (LLMs) for advanced text-classification tasks, enhancing domain-specific text classification accuracy by 35% and improving overall model performance by 20%.
+-	Engineered robust, scalable ML pipelines with MLflow and Docker integration, optimizing data preprocessing, model training, hyperparameter tuning and evaluation, reducing deployment time by 50% and enhancing system reliability.
+-	Collaborated with cross-functional (risk) teams to design and deploy scalable AI/ML solutions; mentored data science team on emerging trends like model governance, driving 20% client acquisition growth and 15% productivity boost.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada </span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior Solutions Architect</span><span>May’20 – Sep’21</span></div>   	
