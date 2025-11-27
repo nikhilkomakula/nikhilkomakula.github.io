@@ -85,24 +85,13 @@
 
 **PII DETECTOR**
 - Devised a scalable PII detection pipeline with transformer-based BERT models and advanced token classification, enabling granular extraction of sensitive entities from unstructured text across diverse enterprise domains.
-- Boosted detection precision via Bayesian hyperparameter optimization, stratified k-fold cross-validation, and rigorous model evaluation using PyTorch and Hugging Face Transformers on extensive, annotated datasets.
+- Enhanced detection precision through hyperparameter optimization and stratified k-fold cross-validation, using PyTorch and Hugging Face Transformers on large annotated datasets for robust model performance.
 - Integrated the PII solution as Dockerized REST microservices on AWS ECS, automating deployment with CI/CD and ensuring strict adherence to GDPR, HIPAA, and SOC 2 privacy compliance standards.
 
 **OPERATIONAL RISK LOSS ESTIMATOR**
-- Developed an operational risk loss estimator leveraging advanced NLP and supervised learning algorithms, enhancing incident-driven financial loss predictions and increasing estimation accuracy by 20% for banking sector.
+- Developed an operational risk loss estimator leveraging advanced NLP and supervised learning algorithms,enhancing incident-driven financial loss predictions and increasing estimation accuracy by 20% for banking sector.
 - Formulated a scalable ETL pipeline using Amazon S3 for storage, AWS Lambda for serverless data processing, and DVC for end-to-end data versioning, ensuring reproducibility and auditability of risk modeling workflows.
 - Optimized ensemble models (XGBoost, LightGBM) and leveraged MLflow for experiment tracking, model versioning, and artifact management, enhancing performance, reproducibility, and interpretability in operational risk analytics.
-
-**SEMANTIC SEARCH**
-- Designed and deployed a novel semantic search engine for IBM OpenPages, revolutionizing the traditional keyword-based search paradigm with context-aware query understanding and intent-driven retrieval.
-- Utilized the Universal Sentence Encoder (USE) to generate dense vector representations of search queries and documents, boosting search precision and recall by 30% and 25%, respectively.
-- Implemented a similarity-based duplicate detection algorithm, leveraging USE embeddings to identify and eliminate redundant records, resulting in a 40% reduction in false positives and a 25% increase in operational efficiency.
-- Streamlined search operations for clients, yielding significant time and resource savings through optimized query processing, indexing, and retrieval, and improving overall system responsiveness by 30%.
-
-**[ETL PIPELINE USING APACHE AIRFLOW]([https://github.com/nikhilkomakula/llm-rag-op-chatbot](https://github.com/nikhilkomakula/etl-pipeline-airflow-weather)){:target="_blank"}**
-- Automated the ETL process using Apache Airflow to efficiently extract, transform, and load weather data into PostgreSQL, minimizing manual intervention and reducing errors through seamless data processing.
-- Leveraged Docker and Astro to offer a scalable, modular architecture, ensuring robust deployment locally or on cloud platforms, with easy scaling and maintenance of Airflow components.
-- Provided detailed setup instructions and comprehensive documentation to enable developers to quickly implement the ETL pipeline, facilitating adaptation for personal or enterprise applications with minimal setup complexity.
 
 ---
 
