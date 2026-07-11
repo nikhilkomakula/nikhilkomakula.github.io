@@ -17,7 +17,7 @@
 ---
 
 ### SKILLS
--	**Programming Languages:** Python, Java, SQL
+-	**Programming Languages:** Python, Java, SQL, ReactJS
 -	**Tools & Frameworks:** Scikit-learn, Keras, TensorFlow, PyTorch, REST API, MLflow, DVC, Airflow, Hugging Face, Git, GitHub.
 -	**Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, IBM Cognos
 -	**Databases:** Oracle, DB2, MySQL, PostgreSQL, MongoDB, NoSQL & Vector Databases

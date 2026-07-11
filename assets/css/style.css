@@ -3,6 +3,15 @@
    Dark, modern, AI-inspired design system
    ============================================================ */
 
+/* ------------------------------------------------------------
+   Design tokens
+   NOTE: A "digital twin" chat widget is planned for a future
+   iteration. Conventions reserved for it:
+   - Fixed bottom-right viewport corner stays free of UI.
+   - z-index scale: nav 100, scroll-progress 200 → twin widget 150.
+   - The widget should consume these tokens (--gradient, --surface,
+     --border, --radius, fonts) so it feels native to the site.
+   ------------------------------------------------------------ */
 :root {
   --bg: #070b14;
   --bg-alt: #0b1020;
