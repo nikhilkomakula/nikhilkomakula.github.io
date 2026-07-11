@@ -8,7 +8,10 @@
    NOTE: A "digital twin" chat widget is planned for a future
    iteration. Conventions reserved for it:
    - Fixed bottom-right viewport corner stays free of UI.
-   - z-index scale: nav 100, scroll-progress 200 → twin widget 150.
+   - z-index scale: nav/mobile-menu 100, scroll-progress 200.
+     Twin launcher: 90 (below nav). Expanded twin panel: 300,
+     rendered as a modal with focus trap; hide/minimize the
+     launcher while the mobile menu is open.
    - The widget should consume these tokens (--gradient, --surface,
      --border, --radius, fonts) so it feels native to the site.
    ------------------------------------------------------------ */
@@ -50,6 +53,24 @@ body {
 
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 .accent { color: var(--accent-1); }
+
+/* Accessible keyboard focus */
+:where(a, button):focus-visible {
+  outline: 3px solid var(--accent-1);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Skip link */
+.skip-link {
+  position: fixed; top: -60px; left: 16px; z-index: 300;
+  padding: 12px 20px; border-radius: 10px;
+  background: var(--gradient); color: #060913;
+  font-family: var(--font-display); font-weight: 600; font-size: 0.9rem;
+  text-decoration: none;
+  transition: top 0.25s ease;
+}
+.skip-link:focus { top: 14px; }
 
 .gradient-text {
   background: var(--gradient);
@@ -130,11 +151,14 @@ body {
   border-color: var(--border); color: var(--text); background: var(--surface);
 }
 .btn--ghost:hover { border-color: var(--accent-2); transform: translateY(-2px); }
-.btn--lg { padding: 16px 34px; font-size: 1.05rem; }
+.btn--lg {
+  padding: 16px 34px; font-size: 1.05rem;
+  max-width: 100%; overflow-wrap: anywhere;
+}
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative; min-height: 100svh;
+  position: relative; min-height: 100vh; min-height: 100svh;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; text-align: center;
   padding: calc(var(--nav-h) + 40px) 24px 80px;
@@ -347,6 +371,11 @@ body {
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
 }
 .project__link-overlay { position: absolute; inset: 0; z-index: 1; border-radius: var(--radius); }
+.project__link-overlay:focus-visible {
+  outline: 3px solid var(--accent-1);
+  outline-offset: -3px;
+  border-radius: var(--radius);
+}
 .project__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
 .project__icon { font-size: 1.7rem; }
 .project__domain {
@@ -444,17 +473,25 @@ body {
 }
 .footer__top:hover { border-color: var(--accent-1); transform: translateY(-3px); }
 
-/* ---------- Reveal animation ---------- */
-.reveal {
+/* ---------- Reveal animation (JS-gated: content visible without JS) ---------- */
+.js .reveal {
   opacity: 0; transform: translateY(28px);
   transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.reveal.is-visible { opacity: 1; transform: none; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
-  .pulse-dot, .typed-caret, .hero__scroll-mouse span { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+  .btn--primary:hover, .btn--ghost:hover, .glass-card:hover, .project:hover,
+  .timeline__card:hover, .chips span:hover, .hero__socials a:hover, .footer__top:hover {
+    transform: none;
+  }
 }
 
 /* ---------- Responsive ---------- */
@@ -480,9 +517,14 @@ body {
     border-bottom: 1px solid var(--border);
     padding: 12px 24px 22px;
     transform: translateY(-130%);
-    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    visibility: hidden;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0.35s;
   }
-  .nav__links.is-open { transform: translateY(0); }
+  .nav__links.is-open {
+    transform: translateY(0);
+    visibility: visible;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0s;
+  }
   .nav__links a { padding: 13px 4px; font-size: 1.02rem; }
   .nav__cta { text-align: center; margin-top: 10px; }
   .nav__burger { display: flex; }

@@ -22,18 +22,23 @@
   onScrollNav();
 
   if (burger && navLinks) {
+    const closeMenu = (refocus = false) => {
+      navLinks.classList.remove("is-open");
+      burger.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+      if (refocus) burger.focus();
+    };
     burger.addEventListener("click", () => {
       const open = navLinks.classList.toggle("is-open");
       burger.classList.toggle("is-open", open);
       burger.setAttribute("aria-expanded", String(open));
     });
     navLinks.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => {
-        navLinks.classList.remove("is-open");
-        burger.classList.remove("is-open");
-        burger.setAttribute("aria-expanded", "false");
-      })
+      a.addEventListener("click", () => closeMenu())
     );
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navLinks.classList.contains("is-open")) closeMenu(true);
+    });
   }
 
   /* ---------- Scroll progress bar ---------- */
@@ -159,8 +164,11 @@
       initNodes();
     }
 
+    const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+
     function initNodes() {
-      const count = Math.min(Math.floor((width * height) / 16000), 90);
+      const maxNodes = coarsePointer ? 45 : 90;
+      const count = Math.min(Math.floor((width * height) / 16000), maxNodes);
       nodes = Array.from({ length: count }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -235,24 +243,39 @@
       mouse.y = null;
     });
 
-    // Pause when hero is off-screen
+    // Pause when hero is off-screen or tab is hidden
+    let heroVisible = true;
+    const setRunning = () => {
+      const shouldRun = heroVisible && document.visibilityState === "visible";
+      if (shouldRun && !raf) {
+        raf = requestAnimationFrame(draw);
+      } else if (!shouldRun && raf) {
+        cancelAnimationFrame(raf);
+        raf = null;
+      }
+    };
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              if (!raf) raf = requestAnimationFrame(draw);
-            } else {
-              cancelAnimationFrame(raf);
-              raf = null;
-            }
+            heroVisible = entry.isIntersecting;
+            setRunning();
           });
         },
         { threshold: 0 }
       ).observe(canvas);
     }
+    document.addEventListener("visibilitychange", setRunning);
 
-    window.addEventListener("resize", resize, { passive: true });
+    let resizeTimer;
+    window.addEventListener(
+      "resize",
+      () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resize, 150);
+      },
+      { passive: true }
+    );
     resize();
     raf = requestAnimationFrame(draw);
   }

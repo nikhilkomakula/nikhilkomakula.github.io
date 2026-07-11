@@ -10,7 +10,7 @@
 ### PROFESSIONAL SUMMARY
 - **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 15 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
 - Current focus: **Generative AI**, **agentic systems**, **Retrieval-Augmented Generation (RAG)**, **AI/BI Genie**, **MLflow**, **Vector Search**, **Model Serving**, evaluation frameworks, **AI governance**, **MLOps** and **LLMOps**.
-- Certified **Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using **TensorFlow**, **PyTorch**, and other deep learning frameworks.
+- Certified **Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using deep learning frameworks.
 - Proven expertise delivering innovative AI/ML solutions for **risk management** and **regulatory compliance** in Finance, Banking, Insurance, Retail, and Investment, driving operational efficiency and compliance optimization.
 - Results-driven **technical leader** focused on the engineering challenges that determine production success — accuracy, groundedness, latency, scalability, observability, and maintainability — while mentoring practitioners and building reusable accelerators.
 
@@ -18,12 +18,12 @@
 
 ### SKILLS
 -	**Programming Languages:** Python, Java, SQL, ReactJS
--	**Tools & Frameworks:** Scikit-learn, Keras, TensorFlow, PyTorch, REST API, MLflow, DVC, Airflow, Hugging Face, Git, GitHub.
+-	**Tools & Frameworks:** Scikit-learn, GitHub, PyTorch, REST API, MLflow, DVC, Hugging Face
 -	**Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, IBM Cognos
 -	**Databases:** Oracle, DB2, MySQL, PostgreSQL, MongoDB, NoSQL & Vector Databases
--	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, NLTK, spaCy, RNN, LSTM, GRU, Transformers, BERT, Generative AI, Large Language Models (LLMs), PEFT, LoRA, RAG, AI Agents.
--	**Cloud Platforms:** IBM (Watson Studio, Assistant, Discovery), AWS (EC2, S3, SageMaker, Lambda), Azure (ML, Databricks)
--	**MLOps, CI/CD & Web Frameworks:** Docker, Jenkins, Kubernetes, GitHub Actions, Flask, FastAPI, Streamlit, Gradio
+-	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, RNN, LSTM, GRU, Transformers, BERT, Large Language Models (LLMs), Prompt Engineering, PEFT, LoRA, RAG, AI Agents
+-	**Cloud Platforms:** IBM (Watson Studio, Assistant, Discovery), AWS (SageMaker, Lambda, S3), Azure (ML, Databricks)
+-	**MLOps, CI/CD & Web Frameworks:** Docker, GitHub Actions, Flask, FastAPI, Jenkins, Kubernetes, Streamlit, Gradio
 
 ---
 
