@@ -47,9 +47,10 @@
 ### WORK EXPERIENCE
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>DATABRICKS</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior AI Engineer (AI Forward Deployed Engineer)</span><span>Dec’25 – Present</span></div>
-- Partner with global customers to understand business requirements, shape technical architectures, and build end-to-end AI and ML applications using Databricks and open-source technologies.
-- Deliver GenAI solutions spanning agentic systems, RAG pipelines, Agent Bricks, Genie Spaces, Multi-Agent Supervisor, MLflow, Vector Search, Model Serving, Lakebase, and evaluation frameworks with a production-readiness focus.
-- Develop reusable accelerators, deployment patterns, and CI/CD approaches; an automation initiative reduced prompt-onboarding effort from ~2–3 days to ~1 day.
+- Serve as a trusted technical advisor to global customers, delivering professional-services engagements that build and productionize first-of-its-kind GenAI applications on Databricks.
+- Build end-to-end GenAI solutions — multi-agent systems, RAG pipelines, Text2SQL, and LLM fine-tuning — leveraging Agent Bricks, Genie Spaces, Multi-Agent Supervisor, MLflow, Vector Search, Model Serving, Lakebase, and evaluation frameworks.
+- Own production rollouts of customer-facing and internal GenAI applications, championing evaluation-driven quality — accuracy, groundedness, latency, scalability, observability, and governance.
+- Collaborate cross-functionally with product and engineering teams to influence priorities and shape the product roadmap, while developing reusable accelerators and CI/CD patterns that compress delivery timelines.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Nov’25</span></div>   	
