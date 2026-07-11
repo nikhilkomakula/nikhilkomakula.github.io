@@ -1,5 +1,6 @@
 <!-- # Nikhil Komakula -->
-<!-- ## Delivery Consultant (AI/ML/GenAI) -->
+<!-- ## Senior AI Engineer @ Databricks | AI Forward Deployed Engineer (FDE) -->
+<!-- Live portfolio: https://nikhilkomakula.github.io (rendered from index.html) -->
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+919535372727">+91 9535372727</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Portfolio:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
@@ -7,11 +8,11 @@
 ---
 
 ### PROFESSIONAL SUMMARY
-- Distinguished software professional with over 15 years of IT experience, specializing in **Natural Language Processing (NLP)**, **Generative AI (LLMs)**, and advanced fine-tuning methodologies to deliver state-of-the-art AI solutions.
+- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 15 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
+- Current focus: **Generative AI**, **agentic systems**, **Retrieval-Augmented Generation (RAG)**, **AI/BI Genie**, **MLflow**, **Vector Search**, **Model Serving**, evaluation frameworks, **AI governance**, **MLOps** and **LLMOps**.
 - Certified **Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using **TensorFlow**, **PyTorch**, and other deep learning frameworks.
 - Proven expertise delivering innovative AI/ML solutions for **risk management** and **regulatory compliance** in Finance, Banking, Insurance, Retail, and Investment, driving operational efficiency and compliance optimization.
-- Experienced **MLOps** expert designing automated end-to-end ML pipelines using **MLflow**, **Docker**, **GitHub Actions**, and cloud-native services, with expertise in model training, tuning, deployment, monitoring, and explainability.
-- Results-driven **technical leader** with exceptional communication skills, fostering cross-functional collaboration, and driving innovation through problem-solving and data-driven decision-making to deliver high-impact solutions.
+- Results-driven **technical leader** focused on the engineering challenges that determine production success — accuracy, groundedness, latency, scalability, observability, and maintainability — while mentoring practitioners and building reusable accelerators.
 
 ---
 
@@ -38,12 +39,20 @@
 - AWS Certified Machine Learning Specialty
 - Microsoft Certified: Azure Data Scientist Associate
 - IBM Certified Data Scientist – Machine Learning Specialist
+- Microsoft Certified: Azure AI Fundamentals
+- IBM Certified Specialist – AI Enterprise Workflow V1
 
 ---
 
 ### WORK EXPERIENCE
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>DATABRICKS</span><span>Hyderabad, TG, India</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior AI Engineer (AI Forward Deployed Engineer)</span><span>Dec’25 – Present</span></div>
+- Partner with global customers to understand business requirements, shape technical architectures, and build end-to-end AI and ML applications using Databricks and open-source technologies.
+- Deliver GenAI solutions spanning agentic systems, RAG pipelines, AI/BI Genie, MLflow, Vector Search, Model Serving, and evaluation frameworks with a production-readiness focus.
+- Develop reusable accelerators, deployment patterns, and CI/CD approaches; an automation initiative reduced prompt-onboarding effort from ~2–3 days to ~1 day.
+
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Present</span></div>   	
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Nov’25</span></div>   	
 - Engineered innovative AI/ML/GenAI and RAG solutions with IBM Watsonx, building conversational assistants that improved customer experience, increased adoption by 30%, and reduced costs by 25% in financial services.
 - Fine-tuned BERT models and LLMs for advanced text classification and RAG-based knowledge retrieval, elevating domain-specific accuracy by 35% and overall model performance by 20%, driving superior business insights.
 - Implemented scalable ML pipelines using MLflow and Docker, streamlining data preprocessing, model training, and hyperparameter tuning, resulting in a 50% reduction in deployment time and improved system reliability.

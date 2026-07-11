@@ -1,12 +1,4 @@
-# supported_themes: https://pages.github.com/themes/
+# NOTE: The site is now a custom static portfolio (index.html + assets/).
+# A .nojekyll file disables the Jekyll build; this config is kept for reference.
 title: Nikhil Komakula
-description: Delivery Consultant (AI/ML/GenAI) | Innovating at the Intersection of Data and Intelligence 🚀📈🧠
-# remote_theme: pages-themes/minimal@v0.2.0
-# plugins:
-# - jekyll-remote-theme # add this line to the plugins list if you already have one
-# remote_theme: pages-themes/cayman@v0.2.0
-# plugins:
-# - jekyll-remote-theme # add this line to the plugins list if you already have one
-remote_theme: pages-themes/leap-day@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+description: Senior AI Engineer @ Databricks | AI Forward Deployed Engineer (FDE) | Innovating at the Intersection of Data and Intelligence 🚀📈🧠

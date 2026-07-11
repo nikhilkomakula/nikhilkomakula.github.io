@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Komakula — Senior AI Engineer @ Databricks</title>
+  <meta name="description" content="Nikhil Komakula — Senior AI Engineer at Databricks (AI Forward Deployed Engineer). 15+ years building enterprise AI, GenAI, agentic systems, RAG, MLOps & AI governance solutions." />
+  <meta name="author" content="Nikhil Komakula" />
+  <meta name="theme-color" content="#070b14" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nikhil Komakula — Senior AI Engineer @ Databricks" />
+  <meta property="og:description" content="Innovating at the Intersection of Data and Intelligence. GenAI · AI Agents · RAG · MLOps · AI Governance." />
+  <meta property="og:url" content="https://nikhilkomakula.github.io" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ==================== NAV ==================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">NK</span>
+        <span class="nav__logo-text">nikhil<span class="accent">.</span>komakula</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact" class="nav__cta">Let's Talk</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal"><span class="pulse-dot"></span>Senior AI Engineer @ Databricks</p>
+        <h1 class="hero__title reveal">
+          Nikhil <span class="gradient-text">Komakula</span>
+        </h1>
+        <p class="hero__role reveal">
+          AI Forward Deployed Engineer building
+          <span class="typed-wrap"><span id="typed"></span><span class="typed-caret">|</span></span>
+        </p>
+        <p class="hero__tagline reveal">
+          Innovating at the intersection of <strong>data</strong> and <strong>intelligence</strong> —
+          turning AI ideas into governed, measurable, production-ready systems for global enterprises.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#projects">Explore My Work</a>
+          <a class="btn btn--ghost" href="#contact">Get In Touch</a>
+        </div>
+        <div class="hero__socials reveal">
+          <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://github.com/nikhilkomakula" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+          </a>
+          <a href="mailto:nikhil.komakula@outlook.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#stats" aria-label="Scroll down">
+        <span class="hero__scroll-mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="15" data-suffix="+">0</span>
+          <span class="stat__label">Years in Enterprise IT</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="7" data-suffix="">0</span>
+          <span class="stat__label">Cloud &amp; AI Certifications</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="4" data-suffix="">0</span>
+          <span class="stat__label">Cloud Platforms Mastered</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="6" data-suffix="+">0</span>
+          <span class="stat__label">Industry Awards</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__kicker reveal">01 · About</p>
+        <h2 class="section__title reveal">From AI idea to <span class="gradient-text">production reality</span></h2>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm a <strong>Senior AI Engineer at Databricks</strong> with over 15 years of experience as a
+              <strong>Forward Deployed Engineer (FDE)</strong> designing and delivering enterprise software,
+              AI, machine learning, and generative AI solutions. I work at the intersection of business
+              problems, solution architecture, and hands-on engineering — helping organizations move from an
+              AI idea to a <em>governed, measurable, production-ready system</em>.
+            </p>
+            <p>
+              At Databricks, I partner with global customers to shape technical architectures and build
+              end-to-end AI applications using Databricks and open-source technologies. My current focus:
+              <strong>Generative AI, agentic systems, RAG, AI/BI Genie, MLflow, Vector Search, Model
+              Serving, evaluation frameworks, AI governance, MLOps and LLMOps</strong>.
+            </p>
+            <p>
+              I'm drawn to the engineering challenges that decide whether AI succeeds in production —
+              accuracy, groundedness, latency, scalability, observability, and governance. Before Databricks,
+              I spent over a decade at IBM across solution architecture, technical consulting, and delivery
+              leadership in regulated industries.
+            </p>
+          </div>
+          <div class="about__cards">
+            <div class="glass-card reveal">
+              <div class="glass-card__icon">🎯</div>
+              <h3>What Drives Me</h3>
+              <p>The gap between an AI demo and an AI system in production — and closing it with rigorous engineering.</p>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon">⚡</div>
+              <h3>Impact Mindset</h3>
+              <p>Built reusable accelerators &amp; CI/CD patterns that cut prompt-onboarding effort from ~3 days to ~1 day.</p>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon">🤝</div>
+              <h3>Beyond Code</h3>
+              <p>Mentoring practitioners, leading technical enablement, and translating emerging AI into business outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="section__kicker reveal">02 · Journey</p>
+        <h2 class="section__title reveal">Professional <span class="gradient-text">Experience</span></h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal" data-current="true">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Senior AI Engineer <span class="timeline__sep">·</span> AI Forward Deployed Engineer</h3>
+                  <p class="timeline__company">Databricks</p>
+                </div>
+                <div class="timeline__meta">
+                  <span class="badge badge--live">Current</span>
+                  <span>Dec 2025 – Present · Hyderabad, India</span>
+                </div>
+              </div>
+              <ul>
+                <li>Partner with global customers to translate business requirements into technical architectures and production-grade AI/ML applications on Databricks and open-source stacks.</li>
+                <li>Build end-to-end GenAI solutions — agentic systems, RAG pipelines, AI/BI Genie, MLflow, Vector Search, Model Serving, and evaluation frameworks.</li>
+                <li>Develop reusable accelerators, deployment patterns, and CI/CD approaches; one automation initiative reduced prompt-onboarding effort from ~2–3 days to ~1 day.</li>
+                <li>Champion production-readiness: accuracy, groundedness, latency, scalability, concurrency, observability, governance, and maintainability.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>GenAI</span><span>AI Agents</span><span>RAG</span><span>MLflow</span><span>Vector Search</span><span>Model Serving</span><span>LLMOps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Delivery Consultant (AI/ML/GenAI)</h3>
+                  <p class="timeline__company">IBM India Private Limited</p>
+                </div>
+                <div class="timeline__meta"><span>Sep 2021 – Nov 2025 · Hyderabad, India</span></div>
+              </div>
+              <ul>
+                <li>Engineered AI/ML/GenAI and RAG solutions with IBM Watsonx — conversational assistants that lifted adoption by 30% and cut costs by 25% in financial services.</li>
+                <li>Fine-tuned BERT models and LLMs for text classification and RAG-based retrieval, elevating domain-specific accuracy by 35%.</li>
+                <li>Implemented scalable ML pipelines with MLflow and Docker — 50% reduction in deployment time.</li>
+                <li>Established AI governance practices with watsonx.governance; mentored teams and drove 20% client-acquisition growth.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>Watsonx</span><span>LLM Fine-tuning</span><span>RAG</span><span>AI Governance</span><span>MLOps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Senior Solutions Architect</h3>
+                  <p class="timeline__company">SureStep Systems Integration</p>
+                </div>
+                <div class="timeline__meta"><span>May 2020 – Sep 2021 · Markham, ON, Canada</span></div>
+              </div>
+              <ul>
+                <li>Led end-to-end OpenPages GRC implementation for a major financial institution — 35% faster compliance reporting, $500K+ annual savings.</li>
+                <li>Integrated OpenPages workflows with existing systems, boosting real-time risk monitoring efficiency by 40% across departments.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>OpenPages</span><span>GRC</span><span>Risk Management</span><span>Solution Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Solutions Architect · Lead &amp; Consulting Engineer</h3>
+                  <p class="timeline__company">IBM &amp; OpenPages (acquired by IBM)</p>
+                </div>
+                <div class="timeline__meta"><span>Apr 2010 – Apr 2020 · USA &amp; India</span></div>
+              </div>
+              <ul>
+                <li>A decade-long journey from Associate Consulting Engineer at OpenPages (Waltham, MA) through Consulting Engineer (Littleton, MA) to Solutions Architect &amp; Practice Area Lead (Hyderabad).</li>
+                <li>Delivered enterprise risk management and regulatory compliance platforms for global financial institutions across banking, insurance, and investment.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>Enterprise Software</span><span>Java</span><span>Regulatory Compliance</span><span>Practice Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card timeline__card--compact">
+              <div class="timeline__head">
+                <div>
+                  <h3>Early Career — Software Engineering</h3>
+                  <p class="timeline__company">Haller Harlan &amp; Taylor · Accolite</p>
+                </div>
+                <div class="timeline__meta"><span>Mar 2009 – Apr 2010 · Texas, USA</span></div>
+              </div>
+              <ul>
+                <li>Software Programmer and Java Developer roles building foundations in enterprise application development.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__kicker reveal">03 · Selected Work</p>
+        <h2 class="section__title reveal">Featured <span class="gradient-text">Projects</span></h2>
+
+        <div class="projects__grid">
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">📋</span>
+              <span class="project__domain">RegTech · GenAI</span>
+            </div>
+            <h3>Compliance Assistant</h3>
+            <p>AI-driven regulatory document repository and conversational assistant using Watson Discovery, Watsonx.ai &amp; fine-tuned LLMs (LLaMA, Granite) with PEFT/LoRA.</p>
+            <ul class="project__wins">
+              <li>30% less manual compliance data processing</li>
+              <li>40% faster user response via conversational search</li>
+              <li>35% accuracy boost in regulatory classification</li>
+            </ul>
+            <div class="project__tags"><span>Watsonx</span><span>LoRA</span><span>PEFT</span><span>Cognos</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">🛡️</span>
+              <span class="project__domain">MLOps · Governance</span>
+            </div>
+            <h3>Cross-Cloud AI Governance</h3>
+            <p>MLOps pipeline automating onboarding of ML models from Azure &amp; GCP into IBM Watsonx AI Governance — unified, cross-cloud model lifecycle management.</p>
+            <ul class="project__wins">
+              <li>25% faster model governance processes</li>
+              <li>Automated CI/CD with AI Factsheets, MLflow &amp; Databricks</li>
+              <li>Real-time monitoring, explainability &amp; bias mitigation</li>
+            </ul>
+            <div class="project__tags"><span>Watsonx.gov</span><span>MLflow</span><span>Azure DevOps</span><span>OpenScale</span></div>
+          </article>
+
+          <article class="project project--linked reveal">
+            <a href="https://github.com/nikhilkomakula/llm-rag-op-chatbot" target="_blank" rel="noopener" class="project__link-overlay" aria-label="OpenPages IntelliBot on GitHub"></a>
+            <div class="project__top">
+              <span class="project__icon">🤖</span>
+              <span class="project__domain">RAG · Chatbot
+                <svg class="project__ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </span>
+            </div>
+            <h3>OpenPages IntelliBot <span class="project__gh">↗ GitHub</span></h3>
+            <p>Enterprise RAG chatbot integrating Watson Assistant with Watsonx GenAI (Granite, LLaMA, Mistral) — LangChain, Milvus vector DB, and automated evaluation via OpenScale.</p>
+            <ul class="project__wins">
+              <li>30% boost in user satisfaction</li>
+              <li>25% reduction in support tickets</li>
+              <li>Automated eval: relevancy, similarity &amp; faithfulness</li>
+            </ul>
+            <div class="project__tags"><span>LangChain</span><span>Milvus</span><span>Hugging Face</span><span>Rerankers</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">🔐</span>
+              <span class="project__domain">NLP · Privacy</span>
+            </div>
+            <h3>PII Detector</h3>
+            <p>Scalable PII detection pipeline with transformer-based BERT token classification, deployed as Dockerized REST microservices on AWS ECS with full CI/CD.</p>
+            <ul class="project__wins">
+              <li>Granular sensitive-entity extraction from unstructured text</li>
+              <li>K-fold CV &amp; hyperparameter optimization for precision</li>
+              <li>GDPR, HIPAA &amp; SOC 2 compliant deployment</li>
+            </ul>
+            <div class="project__tags"><span>BERT</span><span>PyTorch</span><span>AWS ECS</span><span>Docker</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon">📉</span>
+              <span class="project__domain">FinTech · ML</span>
+            </div>
+            <h3>Operational Risk Loss Estimator</h3>
+            <p>NLP-powered loss estimator for banking, with a serverless ETL pipeline (S3 + Lambda + DVC) and optimized ensemble models tracked in MLflow.</p>
+            <ul class="project__wins">
+              <li>20% higher estimation accuracy for incident-driven losses</li>
+              <li>Fully versioned, reproducible risk-modeling workflows</li>
+              <li>Interpretable ensembles: XGBoost &amp; LightGBM</li>
+            </ul>
+            <div class="project__tags"><span>XGBoost</span><span>LightGBM</span><span>AWS Lambda</span><span>DVC</span></div>
+          </article>
+
+          <article class="project project--cta reveal">
+            <h3>More on GitHub</h3>
+            <p>Explore accelerators, experiments, and open-source contributions.</p>
+            <a class="btn btn--ghost" href="https://github.com/nikhilkomakula" target="_blank" rel="noopener">Visit GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__kicker reveal">04 · Toolbox</p>
+        <h2 class="section__title reveal">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">🧠</span> Generative AI &amp; Agents</h3>
+            <div class="chips">
+              <span>LLMs</span><span>AI Agents</span><span>RAG</span><span>PEFT / LoRA</span><span>Fine-Tuning</span><span>Prompt Engineering</span><span>Transformers</span><span>BERT</span><span>LangChain</span><span>Hugging Face</span><span>Vector Databases</span><span>Evaluation Frameworks</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">🧱</span> Databricks Ecosystem</h3>
+            <div class="chips">
+              <span>MLflow</span><span>Vector Search</span><span>Model Serving</span><span>AI/BI Genie</span><span>Unity Catalog</span><span>Mosaic AI</span><span>Spark</span><span>Delta Lake</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">⚙️</span> MLOps · LLMOps · CI/CD</h3>
+            <div class="chips">
+              <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>DVC</span><span>Airflow</span><span>Model Monitoring</span><span>Explainability</span><span>AI Governance</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">☁️</span> Cloud Platforms</h3>
+            <div class="chips">
+              <span>AWS (SageMaker, Lambda, S3, ECS)</span><span>Azure (ML, Databricks)</span><span>GCP (Vertex AI)</span><span>IBM watsonx</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">💻</span> Languages &amp; Frameworks</h3>
+            <div class="chips">
+              <span>Python</span><span>Java</span><span>SQL</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>FastAPI</span><span>Flask</span><span>Streamlit</span><span>Gradio</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon">🗄️</span> Data &amp; Databases</h3>
+            <div class="chips">
+              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Milvus</span><span>Oracle</span><span>DB2</span><span>Pandas</span><span>NumPy</span><span>Plotly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <p class="section__kicker reveal">05 · Proof of Craft</p>
+        <h2 class="section__title reveal">Certifications, Awards &amp; <span class="gradient-text">Education</span></h2>
+
+        <div class="cred__grid">
+          <div class="cred__col reveal">
+            <h3 class="cred__heading">🎓 Certifications</h3>
+            <ul class="cred__list">
+              <li><strong>GCP</strong> Professional Machine Learning Engineer</li>
+              <li><strong>GCP</strong> Professional Data Engineer</li>
+              <li><strong>AWS</strong> Certified Machine Learning — Specialty</li>
+              <li><strong>Azure</strong> Data Scientist Associate</li>
+              <li><strong>Azure</strong> AI Fundamentals</li>
+              <li><strong>IBM</strong> Machine Learning Specialist — Professional</li>
+              <li><strong>IBM</strong> AI Enterprise Workflow V1 Specialist</li>
+            </ul>
+          </div>
+          <div class="cred__col reveal">
+            <h3 class="cred__heading">🏆 Awards</h3>
+            <ul class="cred__list">
+              <li><strong>IBM Outstanding Innovation Award</strong> (OIA) — 2019</li>
+              <li><strong>IBM Outstanding Technical Achievement Award</strong> (OTAA) — 2018 &amp; 2019</li>
+              <li><strong>IBM Lab Services Award</strong> — Restlessly Reinvent</li>
+              <li><strong>MVP</strong> of 1H 2014</li>
+              <li><strong>Manager's Choice Awards</strong> — Put the Client First · Restlessly Reinvent (×2)</li>
+            </ul>
+          </div>
+          <div class="cred__col reveal">
+            <h3 class="cred__heading">📚 Education</h3>
+            <ul class="cred__list cred__list--edu">
+              <li>
+                <strong>The University of Texas at Austin</strong>
+                <span>Post Graduate Program, AI &amp; Machine Learning · 2022–2023</span>
+              </li>
+              <li>
+                <strong>The University of Texas at Dallas</strong>
+                <span>M.S. in Computer Engineering · 2006–2008</span>
+              </li>
+              <li>
+                <strong>Vasavi College of Engineering</strong>
+                <span>B.E. in Electrical &amp; Electronics Engineering · 2002–2006</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact__inner">
+        <p class="section__kicker reveal">06 · Contact</p>
+        <h2 class="section__title reveal">Let's build something <span class="gradient-text">intelligent</span> together</h2>
+        <p class="contact__blurb reveal">
+          Whether it's enterprise GenAI, agentic systems, or getting your AI from prototype to production —
+          I'd love to hear about it.
+        </p>
+        <div class="contact__actions reveal">
+          <a class="btn btn--primary btn--lg" href="mailto:nikhil.komakula@outlook.com">
+            nikhil.komakula@outlook.com
+          </a>
+        </div>
+        <div class="contact__links reveal">
+          <a href="tel:+919535372727">📞 +91 95353 72727</a>
+          <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a href="https://github.com/nikhilkomakula" target="_blank" rel="noopener">🐙 GitHub</a>
+          <span>📍 Hyderabad, India</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Nikhil Komakula · Crafted with <span class="accent">♥</span> and a neural network or two.</p>
+      <a href="#top" class="footer__top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
