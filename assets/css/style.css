@@ -61,6 +61,13 @@ body {
   border-radius: 6px;
 }
 
+/* Visually hidden (screen-reader only) */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
 /* Skip link */
 .skip-link {
   position: fixed; top: -60px; left: 16px; z-index: 300;
@@ -509,7 +516,10 @@ body {
   .timeline { padding-left: 30px; }
   .timeline__marker { left: -30px; }
   .timeline__card:hover { transform: none; }
+}
 
+/* Mobile navigation — wider breakpoint so desktop links never cram */
+@media (max-width: 880px) {
   .nav__links {
     position: fixed; inset: var(--nav-h) 0 auto 0;
     flex-direction: column; align-items: stretch; gap: 0;

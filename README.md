@@ -1,6 +1,7 @@
-<!-- # Nikhil Komakula -->
-<!-- ## Senior AI Engineer @ Databricks | AI Forward Deployed Engineer (FDE) -->
-<!-- Live portfolio: https://nikhilkomakula.github.io (rendered from index.html) -->
+# Nikhil Komakula
+### Senior AI Engineer @ Databricks | AI Forward Deployed Engineer (FDE)
+> 🌐 Live portfolio: **[nikhilkomakula.github.io](https://nikhilkomakula.github.io)** (rendered from `index.html`)
+
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+918985372727">+91 8985372727</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Portfolio:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
@@ -22,7 +23,8 @@
 -	**Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, IBM Cognos
 -	**Databases:** Oracle, DB2, MySQL, PostgreSQL, MongoDB, NoSQL & Vector Databases
 -	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, RNN, LSTM, GRU, Transformers, BERT, Large Language Models (LLMs), Prompt Engineering, PEFT, LoRA, RAG, AI Agents
--	**Cloud Platforms:** IBM (Watson Studio, Assistant, Discovery), AWS (SageMaker, Lambda, S3), Azure (ML, Databricks)
+-	**Databricks:** MLflow, Vector Search, Model Serving, Agent Bricks, Genie Spaces, Multi-Agent Supervisor, Unity AI Gateway, Unity Catalog, Lakebase, Spark, Delta Lake
+-	**Cloud Platforms:** GCP (Vertex AI), AWS (SageMaker, Lambda, S3), Azure (ML, Databricks), IBM (Watson Studio, Assistant, Discovery)
 -	**MLOps, CI/CD & Web Frameworks:** Docker, GitHub Actions, Flask, FastAPI, Jenkins, Kubernetes, Streamlit, Gradio
 
 ---
@@ -30,6 +32,9 @@
 ### AWARDS
 - <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Innovation Award (OIA)</span><span>2019</span></div>
 - <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Technical Achievement Award (OTAA)</span><span>2018 & 2019</span></div>
+- <div style="display: flex; justify-content: space-between;"><span>IBM Lab Services Award – Restlessly Reinvent</span><span>2019</span></div>
+- <div style="display: flex; justify-content: space-between;"><span>MVP of 1H</span><span>2014</span></div>
+- <div style="display: flex; justify-content: space-between;"><span>IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)</span><span></span></div>
 
 ---
 
@@ -88,7 +93,7 @@
 - Integrated AI Factsheets with Azure DevOps, MLflow, and Databricks for automated CI/CD, experiment tracking, and reproducible pipelines, deploying OpenScale for real-time monitoring, explainability, fairness and bias mitigation.
 - Accelerated model governance processes by 25% through advanced automation, enhancing transparency, traceability, and accountable AI practices, ensuring alignment with enterprise-wide ethical and regulatory standards.
 
-**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot){:target="_blank"}**
+**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot)**
 - Designed an enterprise-grade AI chatbot by integrating Watson Assistant with Watsonx Generative AI, utilizing LLMs (Granite, LLaMA, Mistral) to deliver domain-specific, context-aware responses for OpenPages business users.
 - Implemented a robust RAG pipeline leveraging LangChain, Hugging Face, Milvus vector database, and OpenScale for automated evaluation across Answer Relevancy, Context Relevancy, Answer Similarity, and Faithfulness metrics.
 - Optimized information retrieval accuracy with advanced retrievers and rerankers, achieving a 30% boost in user satisfaction and reducing support tickets by 25% through intelligent, real-time business query resolution.

@@ -20,6 +20,31 @@
 
   <script>document.documentElement.classList.add("js");</script>
 
+  <meta property="og:image" content="https://github.com/nikhilkomakula.png" />
+  <meta name="twitter:image" content="https://github.com/nikhilkomakula.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhil Komakula",
+    "jobTitle": "Senior AI Engineer (AI Forward Deployed Engineer)",
+    "worksFor": { "@type": "Organization", "name": "Databricks" },
+    "url": "https://nikhilkomakula.github.io/",
+    "image": "https://github.com/nikhilkomakula.png",
+    "email": "mailto:nikhil.komakula@outlook.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at Dallas" },
+      { "@type": "CollegeOrUniversity", "name": "Vasavi College of Engineering" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/nikhilkomakula",
+      "https://github.com/nikhilkomakula"
+    ]
+  }
+  </script>
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='0.55' stop-color='%23818cf8'/%3E%3Cstop offset='1' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='69' font-family='Arial, Helvetica, sans-serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23060913'%3ENK%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +80,7 @@
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
     <!-- ==================== HERO ==================== -->
     <section class="hero" id="hero">
       <canvas id="neuralCanvas" aria-hidden="true"></canvas>
@@ -68,7 +93,8 @@
         </h1>
         <p class="hero__role reveal">
           AI Forward Deployed Engineer building
-          <span class="typed-wrap"><span id="typed"></span><span class="typed-caret">|</span></span>
+          <span class="sr-only">Generative AI solutions, agentic AI systems, RAG pipelines, MLOps &amp; LLMOps platforms, and production-ready ML.</span>
+          <span class="typed-wrap" aria-hidden="true"><span id="typed">Generative AI Solutions</span><span class="typed-caret">|</span></span>
         </p>
         <p class="hero__tagline reveal">
           Innovating at the intersection of <strong>data</strong> and <strong>intelligence</strong> —
@@ -80,13 +106,13 @@
         </div>
         <div class="hero__socials reveal">
           <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
           </a>
           <a href="https://github.com/nikhilkomakula" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
           </a>
           <a href="mailto:nikhil.komakula@outlook.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
           </a>
         </div>
       </div>
@@ -126,9 +152,9 @@
         <div class="about__grid">
           <div class="about__text reveal">
             <p>
-              I'm a <strong>Senior AI Engineer at Databricks</strong> with over 15 years of experience as a
-              <strong>Forward Deployed Engineer (FDE)</strong> designing and delivering enterprise software,
-              AI, machine learning, and generative AI solutions. I work at the intersection of business
+              I'm a <strong>Senior AI Engineer at Databricks</strong>, working as an
+              <strong>AI Forward Deployed Engineer (FDE)</strong>, with over 15 years of experience
+              designing and delivering enterprise software, AI, machine learning, and generative AI solutions. I work at the intersection of business
               problems, solution architecture, and hands-on engineering — helping organizations move from an
               AI idea to a <em>governed, measurable, production-ready system</em>.
             </p>
@@ -339,7 +365,7 @@
             <div class="project__top">
               <span class="project__icon" aria-hidden="true">🤖</span>
               <span class="project__domain">RAG · Chatbot
-                <svg class="project__ext" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                <svg class="project__ext" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
               </span>
             </div>
             <h3>OpenPages IntelliBot <span class="project__gh">↗ GitHub</span></h3>

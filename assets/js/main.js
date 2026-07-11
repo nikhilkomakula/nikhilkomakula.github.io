@@ -88,6 +88,10 @@
     } else {
       let pi = 0, ci = 0, deleting = false;
       const tick = () => {
+        if (document.hidden) {
+          setTimeout(tick, 500);
+          return;
+        }
         const phrase = phrases[pi];
         ci += deleting ? -1 : 1;
         typedEl.textContent = phrase.slice(0, ci);
