@@ -180,6 +180,16 @@ body {
 
 .hero__content { position: relative; z-index: 2; max-width: 860px; }
 
+.hero__avatar {
+  width: 150px; height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  background: var(--gradient);
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.35);
+  margin-bottom: 26px;
+}
+
 .hero__eyebrow {
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.06em;
