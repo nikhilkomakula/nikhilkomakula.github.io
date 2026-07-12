@@ -9,7 +9,7 @@
 ---
 
 ### PROFESSIONAL SUMMARY
-- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 15 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
+- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 17 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
 - Current focus: **Generative AI**, **agentic systems**, **Retrieval-Augmented Generation (RAG)**, **Agent Bricks**, **Genie Spaces**, **Multi-Agent Supervisor**, **MLflow**, **Vector Search**, **Model Serving**, **Lakebase**, evaluation frameworks, **AI governance**, **MLOps** and **LLMOps**.
 - Certified **Generative AI and Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using deep learning frameworks.
 - Proven expertise delivering innovative AI/ML solutions for **risk management** and **regulatory compliance** in Finance, Banking, Insurance, Retail, and Investment, driving operational efficiency and compliance optimization.
