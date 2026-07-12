@@ -76,7 +76,7 @@
       id: "experience-summary",
       keywords: ["experience", "career", "background", "journey", "history", "worked", "companies", "employers", "how many years", "years of experience", "summary", "overview", "resume", "cv", "walk me through"],
       answer:
-        "Nikhil has **16+ years of full-time experience in enterprise IT** (starting with OpenPages/IBM in 2010), with an arc from GRC solution architecture → enterprise AI:\n\n" +
+        "Nikhil has **over 15 years of full-time experience in enterprise IT** (starting with OpenPages/IBM in 2010), with an arc from GRC solution architecture → enterprise AI:\n\n" +
         "• **Databricks** — Senior AI Engineer, AI FDE (Dec 2025 – present)\n" +
         "• **IBM India** — Delivery Consultant, AI/ML/GenAI (2021–2025)\n" +
         "• **SureStep** — Senior Solutions Architect (2020–2021)\n" +

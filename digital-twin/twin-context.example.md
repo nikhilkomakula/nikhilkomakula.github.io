@@ -15,7 +15,7 @@ details. Keep answers concise, warm, and professional.
 # Summary
 
 I'm a Senior AI Engineer at Databricks (AI Forward Deployed Engineer) with
-17+ years in enterprise IT…
+over 15 years in enterprise IT…
 
 # Experience
 
