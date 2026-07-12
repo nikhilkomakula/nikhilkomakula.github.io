@@ -1,10 +1,11 @@
 /* ============================================================
    Digital Twin — Nikhil Komakula
-   Client-side chat assistant answering questions about Nikhil's
-   professional background. Retrieval-based over a structured
-   knowledge base; no external calls, no data leaves the browser.
-   Pluggable: set window.NK_TWIN_ENDPOINT to route queries to an
-   LLM backend later.
+   Chat assistant answering questions about Nikhil's professional
+   background. Two modes:
+   - Remote (window.NK_TWIN_ENDPOINT set): questions go to a Cloudflare
+     Worker proxy backed by Google Gemini, grounded in twin-context.md.
+   - Local (endpoint empty or unreachable): retrieval over the built-in
+     knowledge base below; nothing leaves the browser.
    ============================================================ */
 (() => {
   "use strict";
@@ -486,9 +487,11 @@
       '<span class="twin-launcher__pulse" aria-hidden="true"></span>';
 
     // Panel
+    // role=dialog without aria-modal: the panel is a non-blocking popover
+    // (the page behind stays interactive), so modal semantics would be
+    // dishonest to assistive tech.
     const panel = el("section", "twin-panel", {
       role: "dialog",
-      "aria-modal": "true",
       "aria-label": "Chat with Nikhil's digital twin",
       hidden: ""
     });
@@ -519,7 +522,7 @@
       </form>
       <p class="twin-panel__note">${
         ENDPOINT
-          ? "Powered by Gemini Flash · answers only from Nikhil's documented background."
+          ? "Powered by Google Gemini — messages are processed via a secure proxy and answered only from Nikhil's documented background."
           : "Runs in your browser — questions never leave this page."
       }</p>
     `;

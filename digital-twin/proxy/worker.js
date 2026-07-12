@@ -167,7 +167,20 @@ function sanitizeMessages(raw) {
     }));
   if (!cleaned.length) return null;
   if (cleaned[cleaned.length - 1].role !== "user") return null;
-  return cleaned;
+  // Enforce strict user/model alternation ending in a user turn, walking
+  // backwards — drops forged/duplicated assistant history a direct caller
+  // could inject to bias the model (CORS is not auth).
+  const alternating = [];
+  let expected = "user";
+  for (let i = cleaned.length - 1; i >= 0; i--) {
+    if (cleaned[i].role === expected) {
+      alternating.unshift(cleaned[i]);
+      expected = expected === "user" ? "model" : "user";
+    }
+  }
+  // Gemini requires the history to start with a user turn
+  while (alternating.length && alternating[0].role !== "user") alternating.shift();
+  return alternating.length ? alternating : null;
 }
 
 /* ---------- Worker entry ---------- */
@@ -209,6 +222,13 @@ export default {
         429,
         origin
       );
+    }
+
+    // Reject oversized bodies before parsing (8 turns × 600 chars fits
+    // comfortably in 16KB)
+    const len = parseInt(request.headers.get("Content-Length") || "0", 10);
+    if (len > 16384) {
+      return json({ error: "Request too large" }, 413, origin);
     }
 
     let payload;

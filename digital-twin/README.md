@@ -14,7 +14,7 @@ visitor browser ──► assets/js/twin.js (widget, in the portfolio site)
           · Gemini context caching · rate limiting · CORS lock
                         │
                         ▼
-              Google Gemini Flash (gemini-3.5-flash)
+              Google Gemini Flash-Lite (gemini-3.1-flash-lite)
 ```
 
 **Why Cloudflare Workers (vs Vercel):** 100k free requests/day with no cold
