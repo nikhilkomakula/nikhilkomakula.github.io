@@ -33,7 +33,6 @@
 - IBM Outstanding Innovation Award (OIA)
 - IBM Outstanding Technical Achievement Award (OTAA) ×2
 - IBM Lab Services Award – Restlessly Reinvent
-- MVP of the Half-Year
 - IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)
 
 ---
@@ -41,7 +40,6 @@
 ### CERTIFICATIONS
 - Databricks Certified Generative AI Engineer Associate
 - GCP Certified Professional Machine Learning Engineer
-- GCP Certified Professional Data Engineer
 - AWS Certified Machine Learning Specialty
 - Microsoft Certified: Azure Data Scientist Associate
 - IBM Certified Data Scientist – Machine Learning Specialist
