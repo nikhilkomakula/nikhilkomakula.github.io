@@ -1,40 +1,45 @@
-<!-- # Nikhil Komakula -->
-<!-- ## Delivery Consultant (AI/ML/GenAI) -->
-<div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+919535372727">+91 9535372727</a></span></div>
-<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
+# Nikhil Komakula
+### Senior AI Engineer @ Databricks | AI Forward Deployed Engineer (FDE)
+> 🌐 Live portfolio: **[nikhilkomakula.github.io](https://nikhilkomakula.github.io)** (rendered from `index.html`)
+
+<div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+918985372727">+91 8985372727</a></span></div>
+<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Portfolio:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
 
 ---
 
 ### PROFESSIONAL SUMMARY
-- Distinguished software professional with over 15 years of IT experience, specializing in **Natural Language Processing (NLP)**, **Generative AI (LLMs)**, and advanced fine-tuning methodologies to deliver state-of-the-art AI solutions.
-- Certified **Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using **TensorFlow**, **PyTorch**, and other deep learning frameworks.
+- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 15 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
+- Current focus: **Generative AI**, **agentic systems**, **Retrieval-Augmented Generation (RAG)**, **Agent Bricks**, **Genie Spaces**, **Multi-Agent Supervisor**, **MLflow**, **Vector Search**, **Model Serving**, **Lakebase**, evaluation frameworks, **AI governance**, **MLOps** and **LLMOps**.
+- Certified **Generative AI and Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using deep learning frameworks.
 - Proven expertise delivering innovative AI/ML solutions for **risk management** and **regulatory compliance** in Finance, Banking, Insurance, Retail, and Investment, driving operational efficiency and compliance optimization.
-- Experienced **MLOps** expert designing automated end-to-end ML pipelines using **MLflow**, **Docker**, **GitHub Actions**, and cloud-native services, with expertise in model training, tuning, deployment, monitoring, and explainability.
-- Results-driven **technical leader** with exceptional communication skills, fostering cross-functional collaboration, and driving innovation through problem-solving and data-driven decision-making to deliver high-impact solutions.
+- Results-driven **technical leader** focused on the engineering challenges that determine production success — accuracy, groundedness, latency, scalability, observability, and maintainability — while mentoring practitioners and building reusable accelerators.
 
 ---
 
 ### SKILLS
--	**Programming Languages:** Python, Java, SQL
--	**Tools & Frameworks:** Scikit-learn, Keras, TensorFlow, PyTorch, REST API, MLflow, DVC, Airflow, Hugging Face, Git, GitHub.
+-	**Programming Languages:** Python, Java, SQL, ReactJS
+-	**Tools & Frameworks:** Scikit-learn, GitHub, PyTorch, REST API, MLflow, DVC, Hugging Face
 -	**Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, IBM Cognos
 -	**Databases:** Oracle, DB2, MySQL, PostgreSQL, MongoDB, NoSQL & Vector Databases
--	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, NLTK, spaCy, RNN, LSTM, GRU, Transformers, BERT, Generative AI, Large Language Models (LLMs), PEFT, LoRA, RAG, AI Agents.
--	**Cloud Platforms:** IBM (Watson Studio, Assistant, Discovery), AWS (EC2, S3, SageMaker, Lambda), Azure (ML, Databricks)
--	**MLOps, CI/CD & Web Frameworks:** Docker, Jenkins, Kubernetes, GitHub Actions, Flask, FastAPI, Streamlit, Gradio
+-	**AI/ML Expertise:** Statistics, Regression, Classification, Clustering, Dimensionality Reduction, PCA, NLP, RNN, LSTM, GRU, Transformers, BERT, Large Language Models (LLMs), Prompt Engineering, PEFT, LoRA, RAG, AI Agents
+-	**Databricks:** MLflow, Vector Search, Model Serving, Agent Bricks, Genie Spaces, Multi-Agent Supervisor, Unity AI Gateway, Unity Catalog, Lakebase, Spark, Delta Lake
+-	**Cloud Platforms:** GCP (Vertex AI), AWS (SageMaker, Lambda, S3), Azure (ML, Databricks), IBM (Watson Studio, Assistant, Discovery)
+-	**MLOps, CI/CD & Web Frameworks:** Docker, GitHub Actions, Flask, FastAPI, Jenkins, Kubernetes, Streamlit, Gradio
 
 ---
 
 ### AWARDS
-- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Innovation Award (OIA)</span><span>2019</span></div>
-- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Technical Achievement Award (OTAA)</span><span>2018 & 2019</span></div>
+- IBM Outstanding Innovation Award (OIA)
+- IBM Outstanding Technical Achievement Award (OTAA) ×2
+- IBM Lab Services Award – Restlessly Reinvent
+- IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)
 
 ---
 
 ### CERTIFICATIONS
+- Databricks Certified Generative AI Engineer Associate
 - GCP Certified Professional Machine Learning Engineer
-- GCP Certified Professional Data Engineer
 - AWS Certified Machine Learning Specialty
 - Microsoft Certified: Azure Data Scientist Associate
 - IBM Certified Data Scientist – Machine Learning Specialist
@@ -42,11 +47,19 @@
 ---
 
 ### WORK EXPERIENCE
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>DATABRICKS</span><span>Hyderabad, TG, India</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Senior AI Engineer (AI Forward Deployed Engineer)</span><span>Dec’25 – Present</span></div>
+- Serve as a trusted technical advisor to global customers, delivering professional-services engagements that build and productionize first-of-its-kind GenAI applications on Databricks.
+- Build end-to-end GenAI solutions — multi-agent systems, RAG pipelines, Text2SQL, and LLM fine-tuning — leveraging Agent Bricks, Genie Spaces, Multi-Agent Supervisor, MLflow, Vector Search, Model Serving, Lakebase, and evaluation frameworks.
+- Own production rollouts of customer-facing and internal GenAI applications, championing evaluation-driven quality — accuracy, groundedness, latency, scalability, observability, and governance.
+- Develop reusable accelerators, deployment patterns, and CI/CD approaches that compress delivery timelines across engagements.
+- Collaborate cross-functionally with product and engineering teams to influence priorities and shape the product roadmap.
+
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Present</span></div>   	
+<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Nov’25</span></div>   	
 - Engineered innovative AI/ML/GenAI and RAG solutions with IBM Watsonx, building conversational assistants that improved customer experience, increased adoption by 30%, and reduced costs by 25% in financial services.
-- Fine-tuned BERT models and LLMs for advanced text classification and RAG-based knowledge retrieval, elevating domain-specific accuracy by 35% and overall model performance by 20%, driving superior business insights.
-- Implemented scalable ML pipelines using MLflow and Docker, streamlining data preprocessing, model training, and hyperparameter tuning, resulting in a 50% reduction in deployment time and improved system reliability.
+- Fine-tuned LLMs and BERT models for advanced text classification and RAG-based knowledge retrieval, elevating domain-specific accuracy by 35% and overall model performance by 20%, driving impactful business outcomes.
+- Implemented scalable ML pipelines using Docker and MLflow, streamlining data preprocessing, model training, and hyperparameter tuning, resulting in a 50% reduction in deployment time and improved system reliability.
 - Established robust AI governance practices with IBM watsonx.governance, ensuring responsible, transparent, and compliant AI, while mentoring teams and driving 20% client acquisition growth and 15% productivity gains.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada </span></div>
@@ -78,7 +91,7 @@
 - Integrated AI Factsheets with Azure DevOps, MLflow, and Databricks for automated CI/CD, experiment tracking, and reproducible pipelines, deploying OpenScale for real-time monitoring, explainability, fairness and bias mitigation.
 - Accelerated model governance processes by 25% through advanced automation, enhancing transparency, traceability, and accountable AI practices, ensuring alignment with enterprise-wide ethical and regulatory standards.
 
-**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot){:target="_blank"}**
+**[OPENPAGES INTELLIBOT](https://github.com/nikhilkomakula/llm-rag-op-chatbot)**
 - Designed an enterprise-grade AI chatbot by integrating Watson Assistant with Watsonx Generative AI, utilizing LLMs (Granite, LLaMA, Mistral) to deliver domain-specific, context-aware responses for OpenPages business users.
 - Implemented a robust RAG pipeline leveraging LangChain, Hugging Face, Milvus vector database, and OpenScale for automated evaluation across Answer Relevancy, Context Relevancy, Answer Similarity, and Faithfulness metrics.
 - Optimized information retrieval accuracy with advanced retrievers and rerankers, achieving a 30% boost in user satisfaction and reducing support tickets by 25% through intelligent, real-time business query resolution.
@@ -98,8 +111,8 @@
 ### EDUCATION
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT AUSTIN</span><span>TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span><span>2022 – 2023</span></div>
+<div style="font-weight: bold; margin-bottom: 1em"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT DALLAS</span><span>TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Master of Science in Computer Engineering</span><span>2006 – 2008</span></div>
+<div style="font-weight: bold; margin-bottom: 1em"><span>Master of Science in Computer Engineering</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>VASAVI COLLEGE OF ENGINEERING</span><span>TG, India</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span><span>2002 – 2006</span></div>
+<div style="font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span></div>

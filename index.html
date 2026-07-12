@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Komakula — Senior AI Engineer @ Databricks</title>
+  <meta name="description" content="Nikhil Komakula — Senior AI Engineer at Databricks (AI Forward Deployed Engineer). 15+ years building enterprise AI, GenAI, agentic systems, RAG, MLOps &amp; AI governance solutions." />
+  <meta name="author" content="Nikhil Komakula" />
+  <meta name="theme-color" content="#070b14" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nikhil Komakula — Senior AI Engineer @ Databricks" />
+  <meta property="og:description" content="Innovating at the Intersection of Data and Intelligence. GenAI · AI Agents · RAG · MLOps · AI Governance." />
+  <meta property="og:url" content="https://nikhilkomakula.github.io" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Nikhil Komakula — Senior AI Engineer @ Databricks" />
+  <meta name="twitter:description" content="Innovating at the Intersection of Data and Intelligence. GenAI · AI Agents · RAG · MLOps · AI Governance." />
+  <link rel="canonical" href="https://nikhilkomakula.github.io/" />
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <meta property="og:image" content="https://nikhilkomakula.github.io/assets/img/profile.jpg" />
+  <meta name="twitter:image" content="https://nikhilkomakula.github.io/assets/img/profile.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhil Komakula",
+    "jobTitle": "Senior AI Engineer (AI Forward Deployed Engineer)",
+    "worksFor": { "@type": "Organization", "name": "Databricks" },
+    "url": "https://nikhilkomakula.github.io/",
+    "image": "https://nikhilkomakula.github.io/assets/img/profile.jpg",
+    "email": "nikhil.komakula@outlook.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
+      { "@type": "CollegeOrUniversity", "name": "The University of Texas at Dallas" },
+      { "@type": "CollegeOrUniversity", "name": "Vasavi College of Engineering" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/nikhilkomakula",
+      "https://github.com/nikhilkomakula"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322d3ee'/%3E%3Cstop offset='0.55' stop-color='%23818cf8'/%3E%3Cstop offset='1' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='69' font-family='Arial, Helvetica, sans-serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23060913'%3ENK%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ==================== NAV ==================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">NK</span>
+        <span class="nav__logo-text">nikhil<span class="accent">.</span>komakula</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact" class="nav__cta">Let's Talk</a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" tabindex="-1">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__intro reveal">
+          <img class="hero__avatar" src="assets/img/profile.jpg" alt="Portrait of Nikhil Komakula" width="124" height="124" fetchpriority="high" />
+          <div class="hero__intro-text">
+            <p class="hero__eyebrow"><span class="pulse-dot"></span>Senior AI Engineer @ Databricks</p>
+            <h1 class="hero__title">
+              Nikhil <span class="gradient-text">Komakula</span>
+            </h1>
+          </div>
+        </div>
+        <p class="hero__role reveal">
+          AI Forward Deployed Engineer building
+          <span class="sr-only">Generative AI solutions, agentic AI systems, RAG pipelines, MLOps &amp; LLMOps platforms, and production-ready ML.</span>
+          <span class="typed-wrap" aria-hidden="true"><span id="typed">Generative AI Solutions</span><span class="typed-caret">|</span></span>
+        </p>
+        <p class="hero__tagline reveal">
+          Innovating at the intersection of <strong>data</strong> and <strong>intelligence</strong> —
+          turning AI ideas into governed, measurable, production-ready systems for global enterprises.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#projects">Explore My Work</a>
+          <a class="btn btn--ghost" href="#contact">Get In Touch</a>
+        </div>
+        <div class="hero__socials reveal">
+          <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank" rel="noopener" aria-label="LinkedIn"
+             data-goatcounter-click="linkedin-hero" data-goatcounter-title="LinkedIn (hero)">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://github.com/nikhilkomakula" target="_blank" rel="noopener" aria-label="GitHub"
+             data-goatcounter-click="github-hero" data-goatcounter-title="GitHub (hero)">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+          </a>
+          <a href="mailto:nikhil.komakula@outlook.com" aria-label="Email"
+             data-goatcounter-click="email-hero" data-goatcounter-title="Email (hero)">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+          </a>
+          <a href="https://wa.me/918985372727" target="_blank" rel="noopener" aria-label="WhatsApp"
+             data-goatcounter-click="whatsapp-hero" data-goatcounter-title="WhatsApp (hero)">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.42-.08-.13-.28-.2-.57-.35z"/><path d="M12.05 2C6.55 2 2.08 6.47 2.08 11.97c0 1.76.46 3.48 1.34 4.99L2 22l5.16-1.35a9.96 9.96 0 0 0 4.88 1.24h.01c5.5 0 9.97-4.47 9.97-9.97C22.02 6.47 17.55 2 12.05 2zm0 18.21h-.01a8.27 8.27 0 0 1-4.22-1.16l-.3-.18-3.06.8.82-2.99-.2-.31a8.26 8.26 0 0 1-1.27-4.4c0-4.57 3.72-8.28 8.29-8.28 2.21 0 4.29.86 5.85 2.43a8.22 8.22 0 0 1 2.42 5.86c0 4.57-3.72 8.28-8.28 8.28z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#stats" aria-label="Scroll down">
+        <span class="hero__scroll-mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="17" data-suffix="+">17+</span>
+          <span class="stat__label">Years in Enterprise IT</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="5" data-suffix="">5</span>
+          <span class="stat__label">AI &amp; ML Certifications</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="5" data-suffix="">5</span>
+          <span class="stat__label">Cloud &amp; AI Platforms</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="6" data-suffix="">6</span>
+          <span class="stat__label">Industry Awards</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__kicker reveal">01 · About</p>
+        <h2 class="section__title reveal">From AI idea to <span class="gradient-text">production reality</span></h2>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm a <strong>Senior AI Engineer at Databricks</strong>, working as an
+              <strong>AI Forward Deployed Engineer (FDE)</strong>, with over 15 years of experience
+              designing and delivering enterprise software, AI, machine learning, and generative AI solutions. I work at the intersection of business
+              problems, solution architecture, and hands-on engineering — helping organizations move from an
+              AI idea to a <em>governed, measurable, production-ready system</em>.
+            </p>
+            <p>
+              At Databricks, I partner with global customers to shape technical architectures and build
+              end-to-end AI applications using Databricks and open-source technologies. My current focus:
+              <strong>Generative AI, agentic systems, RAG, Agent Bricks, Genie Spaces, Multi-Agent
+              Supervisor, MLflow, Vector Search, Model Serving, Lakebase, evaluation frameworks,
+              AI governance, MLOps and LLMOps</strong>.
+            </p>
+            <p>
+              I'm drawn to the engineering challenges that decide whether AI succeeds in production —
+              accuracy, groundedness, latency, scalability, observability, and governance. A certified
+              Generative AI and Machine Learning Specialist across <strong>GCP, AWS, Azure, and IBM</strong>, I previously spent
+              over a decade at IBM delivering risk management and regulatory compliance solutions for
+              finance, banking, insurance, and investment clients.
+            </p>
+          </div>
+          <div class="about__cards">
+            <div class="glass-card reveal">
+              <div class="glass-card__icon" aria-hidden="true">🎯</div>
+              <h3>What Drives Me</h3>
+              <p>The gap between an AI demo and an AI system in production — and closing it with rigorous engineering.</p>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon" aria-hidden="true">⚡</div>
+              <h3>Impact Mindset</h3>
+              <p>Reusable accelerators, deployment patterns &amp; CI/CD approaches that compress delivery timelines across customer engagements.</p>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon" aria-hidden="true">🤝</div>
+              <h3>Beyond Code</h3>
+              <p>Mentoring practitioners, leading technical enablement, and translating emerging AI into business outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="section__kicker reveal">02 · Journey</p>
+        <h2 class="section__title reveal">Professional <span class="gradient-text">Experience</span></h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal" data-current="true">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Senior AI Engineer <span class="timeline__sep">·</span> AI Forward Deployed Engineer</h3>
+                  <p class="timeline__company">Databricks</p>
+                </div>
+                <div class="timeline__meta">
+                  <span class="badge badge--live">Current</span>
+                  <span>Dec 2025 – Present · Hyderabad, India</span>
+                </div>
+              </div>
+              <ul>
+                <li>Serve as a trusted technical advisor to global customers, delivering professional-services engagements that build and productionize first-of-its-kind GenAI applications on Databricks.</li>
+                <li>Build end-to-end GenAI solutions — multi-agent systems, RAG pipelines, Text2SQL, and LLM fine-tuning — leveraging Agent Bricks, Genie Spaces, Multi-Agent Supervisor, MLflow, Vector Search, Model Serving, Lakebase, and evaluation frameworks.</li>
+                <li>Own production rollouts of customer-facing and internal GenAI applications, championing evaluation-driven quality: accuracy, groundedness, latency, scalability, observability, and governance.</li>
+                <li>Develop reusable accelerators, deployment patterns, and CI/CD approaches that compress delivery timelines across engagements.</li>
+                <li>Collaborate cross-functionally with product and engineering teams to influence priorities and shape the product roadmap.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>GenAI</span><span>AI Agents</span><span>RAG</span><span>MLflow</span><span>Vector Search</span><span>Model Serving</span><span>LLMOps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Delivery Consultant (AI/ML/GenAI)</h3>
+                  <p class="timeline__company">IBM India Private Limited</p>
+                </div>
+                <div class="timeline__meta"><span>Sep 2021 – Nov 2025 · Hyderabad, India</span></div>
+              </div>
+              <ul>
+                <li>Engineered innovative AI/ML/GenAI and RAG solutions with IBM Watsonx, building conversational assistants that improved customer experience, increased adoption by 30%, and reduced costs by 25% in financial services.</li>
+                <li>Fine-tuned LLM and BERT-based models for text classification and RAG retrieval, improving domain-specific accuracy by 35% and overall model performance by 20%.</li>
+                <li>Implemented scalable ML pipelines with Docker and MLflow, streamlining preprocessing, training, and hyperparameter tuning while reducing deployment time by 50%.</li>
+                <li>Established AI governance practices with IBM watsonx.governance, improving model transparency and compliance workflows while mentoring teams and contributing to 15% productivity gains.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>Watsonx</span><span>LLM Fine-tuning</span><span>RAG</span><span>AI Governance</span><span>MLOps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Senior Solutions Architect</h3>
+                  <p class="timeline__company">SureStep Systems Integration</p>
+                </div>
+                <div class="timeline__meta"><span>May 2020 – Sep 2021 · Markham, ON, Canada</span></div>
+              </div>
+              <ul>
+                <li>Led end-to-end OpenPages GRC implementation for a leading financial institution — 35% faster compliance reporting, $500K+ annual savings.</li>
+                <li>Integrated OpenPages workflows with existing enterprise systems, improving real-time risk-monitoring efficiency by 40% across departments.</li>
+                <li>Advised clients on OpenPages GRC modernization roadmaps across Operational Risk (ORM), Regulatory Compliance (RCM), and Internal Audit Management (IAM), aligning phased adoption plans to risk and compliance priorities.</li>
+                <li>Automated recurring data loads with FastMap templates and built executive Cognos dashboards, reducing data-preparation and reporting effort by roughly 30%.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>OpenPages</span><span>GRC</span><span>Risk Management</span><span>Solution Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Solutions Architect</h3>
+                  <p class="timeline__company">IBM India Private Limited</p>
+                </div>
+                <div class="timeline__meta"><span>Apr 2012 – Apr 2020 · Hyderabad, India</span></div>
+              </div>
+              <ul>
+                <li>Architected 15+ IBM OpenPages implementations across Operational Risk Management (ORM), Regulatory Compliance Management (RCM), Policy and Compliance Management (PCM), Internal Audit Management (IAM), and Financial Controls Management/SOX (FCM) for global banks and insurers.</li>
+                <li>Designed reusable OpenPages solution blueprints for object models, workflows, calculations, and security models, reducing typical implementation timelines by roughly 25%.</li>
+                <li>Led major OpenPages upgrades and migrations from 6.x to 7.x/8.x and integrated enterprise systems through REST APIs, using cutover planning and validation to minimize production disruption.</li>
+                <li>Mentored distributed consulting teams and served as a practice-area lead, strengthening regional OpenPages delivery capability.</li>
+              </ul>
+              <div class="timeline__tags">
+                <span>OpenPages</span><span>Solution Architecture</span><span>ORM · RCM · PCM · IAM · FCM</span><span>Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card timeline__card--compact">
+              <div class="timeline__head">
+                <div>
+                  <h3>Lead Consulting Engineer</h3>
+                  <p class="timeline__company">IBM Corporation</p>
+                </div>
+                <div class="timeline__meta"><span>Apr 2010 – Apr 2012 · Littleton, MA, USA</span></div>
+              </div>
+              <ul>
+                <li>Delivered hands-on OpenPages ORM and SOX/Financial Controls implementations for North American banks and insurers, configuring RCSAs, KRI libraries, and loss-event workflows used by hundreds of risk and compliance users.</li>
+                <li>Developed custom Java triggers, GRC workflows, and Cognos reports/dashboards, reducing clients' manual reporting effort by ~30%.</li>
+                <li>Streamlined bulk data onboarding with FastMap templates and validation rules, reducing legacy data-migration cycles from weeks to days.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card timeline__card--compact">
+              <div class="timeline__head">
+                <div>
+                  <h3>Software Programmer</h3>
+                  <p class="timeline__company">Haller Harlan &amp; Taylor (acquired by NRG &amp; Associates)</p>
+                </div>
+                <div class="timeline__meta"><span>Sep 2009 – Apr 2010 · Plano, TX, USA</span></div>
+              </div>
+              <ul>
+                <li>Developed GM+View, a debt-management application integrating GoldMine CRM with the Collector System.</li>
+                <li>Built Flex UI components with ActionScript and MXML, supporting rich interactive workflows in an MVC-style application backed by SQL Server via JDBC.</li>
+                <li>Integrated Flex Data Services for backend communication and supported PHP-based Collector System integration with SQL retrieval from the Pick database.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card timeline__card--compact">
+              <div class="timeline__head">
+                <div>
+                  <h3>Java Developer</h3>
+                  <p class="timeline__company">Accolite</p>
+                </div>
+                <div class="timeline__meta"><span>Mar 2009 – Sep 2009 · Richardson, TX, USA</span></div>
+              </div>
+              <ul>
+                <li>Developed SaferStore, a web-based rebate-management module that digitized billback and rebate tracking across vendor purchases and customer sales, replacing error-prone manual reconciliation.</li>
+                <li>Built the JSP/HTML/CSS front end with JavaScript client-side validations, catching invalid entries at the source and cutting data-entry rework for rebate teams.</li>
+                <li>Implemented the MySQL data-access layer used by rebate-calculation workflows, helping teams shorten monthly rebate-processing cycles.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__kicker reveal">03 · Selected Work</p>
+        <h2 class="section__title reveal">Featured <span class="gradient-text">Projects</span></h2>
+
+        <div class="projects__grid">
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">📋</span>
+              <span class="project__domain">RegTech · GenAI</span>
+            </div>
+            <h3>Compliance Assistant</h3>
+            <p>Regulatory document repository and conversational assistant using Watson Discovery, watsonx.ai &amp; fine-tuned LLMs (LLaMA, Granite) with PEFT/LoRA.</p>
+            <ul class="project__wins">
+              <li>30% reduction in manual compliance processing</li>
+              <li>40% faster user response via conversational search</li>
+              <li>35% accuracy boost in regulatory classification</li>
+            </ul>
+            <div class="project__tags"><span>Watsonx</span><span>LoRA</span><span>PEFT</span><span>Cognos</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🛡️</span>
+              <span class="project__domain">MLOps · Governance</span>
+            </div>
+            <h3>Cross-Cloud AI Governance</h3>
+            <p>MLOps pipeline for onboarding ML models from Azure &amp; GCP into IBM watsonx.governance — unified, cross-cloud model lifecycle management.</p>
+            <ul class="project__wins">
+              <li>25% faster model governance processes</li>
+              <li>Automated CI/CD with AI Factsheets, MLflow &amp; Databricks</li>
+              <li>Real-time monitoring, explainability &amp; bias mitigation</li>
+            </ul>
+            <div class="project__tags"><span>Watsonx.gov</span><span>MLflow</span><span>Azure DevOps</span><span>OpenScale</span></div>
+          </article>
+
+          <article class="project project--linked reveal">
+            <a href="https://github.com/nikhilkomakula/llm-rag-op-chatbot" target="_blank" rel="noopener" class="project__link-overlay" aria-label="OpenPages IntelliBot on GitHub"
+               data-goatcounter-click="project-intellibot" data-goatcounter-title="Project: OpenPages IntelliBot"></a>
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🤖</span>
+              <span class="project__domain">RAG · Chatbot
+                <svg class="project__ext" aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </span>
+            </div>
+            <h3>OpenPages IntelliBot <span class="project__gh">↗ GitHub</span></h3>
+            <p>Enterprise RAG chatbot integrating Watson Assistant with Watsonx GenAI (Granite, LLaMA, Mistral) — LangChain, Milvus vector DB, and automated evaluation via OpenScale.</p>
+            <ul class="project__wins">
+              <li>30% boost in user satisfaction</li>
+              <li>25% reduction in support tickets</li>
+              <li>Automated eval: relevancy, similarity &amp; faithfulness</li>
+            </ul>
+            <div class="project__tags"><span>LangChain</span><span>Milvus</span><span>Hugging Face</span><span>Rerankers</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🔐</span>
+              <span class="project__domain">NLP · Privacy</span>
+            </div>
+            <h3>PII Detector</h3>
+            <p>Scalable PII detection pipeline with transformer-based BERT token classification, deployed as Dockerized REST microservices on AWS ECS with full CI/CD.</p>
+            <ul class="project__wins">
+              <li>Granular sensitive-entity extraction from unstructured text</li>
+              <li>K-fold CV &amp; hyperparameter optimization for precision</li>
+              <li>Privacy-aware deployment aligned to GDPR, HIPAA &amp; SOC 2 controls</li>
+            </ul>
+            <div class="project__tags"><span>BERT</span><span>PyTorch</span><span>AWS ECS</span><span>Docker</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">📉</span>
+              <span class="project__domain">FinTech · ML</span>
+            </div>
+            <h3>Operational Risk Loss Estimator</h3>
+            <p>NLP-powered loss estimator for banking, with a serverless ETL pipeline (S3 + Lambda + DVC) and optimized ensemble models tracked in MLflow.</p>
+            <ul class="project__wins">
+              <li>20% improvement in incident-driven loss-estimation accuracy</li>
+              <li>Versioned, reproducible risk-modeling workflows</li>
+              <li>Interpretable ensembles: XGBoost &amp; LightGBM</li>
+            </ul>
+            <div class="project__tags"><span>XGBoost</span><span>LightGBM</span><span>AWS Lambda</span><span>DVC</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🔎</span>
+              <span class="project__domain">NLP · Semantic Search</span>
+            </div>
+            <h3>Semantic Search for OpenPages</h3>
+            <p>Embedding-based semantic search for IBM OpenPages, using Universal Sentence Encoder vectors to retrieve governance, risk, and compliance records beyond keyword matching.</p>
+            <ul class="project__wins">
+              <li>~30% higher precision and ~25% better recall in internal relevance benchmarks</li>
+              <li>~40% fewer duplicate-record false positives using embedding-similarity matching</li>
+              <li>~30% faster search responsiveness through optimized indexing and retrieval</li>
+            </ul>
+            <div class="project__tags"><span>Universal Sentence Encoder</span><span>Embeddings</span><span>Similarity Search</span><span>OpenPages</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🌐</span>
+              <span class="project__domain">Deep Learning · NMT</span>
+            </div>
+            <h3>Neural Machine Translation</h3>
+            <p>German-to-English translation project at UT Austin comparing RNN, LSTM, and GRU encoder-decoder models with attention.</p>
+            <ul class="project__wins">
+              <li>Reached ~45 BLEU on the course evaluation set, outperforming baseline seq2seq models</li>
+              <li>Used attention-based decoding to improve longer-sentence translation quality</li>
+              <li>Compared recurrent architectures across accuracy, training behavior, and error patterns</li>
+            </ul>
+            <div class="project__tags"><span>Seq2Seq</span><span>Attention</span><span>LSTM</span><span>GRU</span></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="project__icon" aria-hidden="true">🧩</span>
+              <span class="project__domain">NLP · Self-Service Tooling</span>
+            </div>
+            <h3>Watson NLU Model Manager</h3>
+            <p>Self-service OpenPages utility that put Watson NLU classification model management in business users' hands — create, update, delete, list, and test models without IT admins, cURL, or Watson Studio.</p>
+            <ul class="project__wins">
+              <li>Removed IT-admin dependency from routine NLU model lifecycle tasks</li>
+              <li>Surfaced model CRUD and testing workflows directly inside OpenPages</li>
+              <li>Returned predicted classifications with confidence scores for in-context text analysis</li>
+            </ul>
+            <div class="project__tags"><span>Watson NLU</span><span>OpenPages</span><span>Text Classification</span><span>Self-Service</span></div>
+          </article>
+
+          <article class="project project--cta reveal">
+            <h3>More on GitHub</h3>
+            <p>Explore accelerators, experiments, and open-source contributions.</p>
+            <a class="btn btn--ghost" href="https://github.com/nikhilkomakula" target="_blank" rel="noopener"
+               data-goatcounter-click="github-projects-cta" data-goatcounter-title="GitHub (projects CTA)">Visit GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__kicker reveal">04 · Toolbox</p>
+        <h2 class="section__title reveal">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+
+        <div class="skills__grid">
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">🧠</span> Generative AI &amp; Agents</h3>
+            <div class="chips">
+              <span>LLMs</span><span>AI Agents</span><span>RAG</span><span>PEFT / LoRA</span><span>Fine-Tuning</span><span>Prompt Engineering</span><span>Transformers</span><span>BERT</span><span>LangChain</span><span>Hugging Face</span><span>Vector Databases</span><span>Evaluation Frameworks</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">🧱</span> Databricks Ecosystem</h3>
+            <div class="chips">
+              <span>MLflow</span><span>Vector Search</span><span>Model Serving</span><span>Agent Bricks</span><span>Genie Spaces</span><span>Multi-Agent Supervisor</span><span>Unity AI Gateway</span><span>Unity Catalog</span><span>Lakebase</span><span>Spark</span><span>Delta Lake</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">⚙️</span> MLOps · LLMOps · CI/CD</h3>
+            <div class="chips">
+              <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>DVC</span><span>Model Monitoring</span><span>Explainability</span><span>AI Governance</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">☁️</span> Cloud Platforms</h3>
+            <div class="chips">
+              <span>AWS (SageMaker, Lambda, S3, ECS)</span><span>Azure (ML, Databricks)</span><span>GCP (Vertex AI)</span><span>IBM (watsonx, Watson Studio, Assistant, Discovery)</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">💻</span> Languages &amp; Frameworks</h3>
+            <div class="chips">
+              <span>Python</span><span>Java</span><span>SQL</span><span>ReactJS</span><span>PyTorch</span><span>Scikit-learn</span><span>FastAPI</span><span>Flask</span><span>Streamlit</span><span>Gradio</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3><span class="skill-group__icon" aria-hidden="true">🗄️</span> Data &amp; Databases</h3>
+            <div class="chips">
+              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Milvus</span><span>Oracle</span><span>DB2</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>IBM Cognos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CREDENTIALS ==================== -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <p class="section__kicker reveal">05 · Proof of Craft</p>
+        <h2 class="section__title reveal">Certifications, Awards &amp; <span class="gradient-text">Education</span></h2>
+
+        <div class="cred__grid">
+          <div class="cred__col reveal">
+            <h3 class="cred__heading"><span aria-hidden="true">🎓</span> Certifications</h3>
+            <ul class="cred__list">
+              <li><strong>Databricks</strong> Certified Generative AI Engineer Associate</li>
+              <li><strong>GCP</strong> Professional Machine Learning Engineer</li>
+              <li><strong>AWS</strong> Certified Machine Learning — Specialty</li>
+              <li><strong>Azure</strong> Data Scientist Associate</li>
+              <li><strong>IBM</strong> Certified Data Scientist — Machine Learning Specialist</li>
+            </ul>
+          </div>
+          <div class="cred__col reveal">
+            <h3 class="cred__heading"><span aria-hidden="true">🏆</span> Awards</h3>
+            <ul class="cred__list">
+              <li><strong>IBM Outstanding Innovation Award</strong> (OIA)</li>
+              <li><strong>IBM Outstanding Technical Achievement Award</strong> (OTAA) ×2</li>
+              <li><strong>IBM Lab Services Award</strong> — Restlessly Reinvent</li>
+              <li><strong>Manager's Choice Awards</strong> — Put the Client First · Restlessly Reinvent (×2)</li>
+            </ul>
+          </div>
+          <div class="cred__col reveal">
+            <h3 class="cred__heading"><span aria-hidden="true">📚</span> Education</h3>
+            <ul class="cred__list cred__list--edu">
+              <li>
+                <strong>The University of Texas at Austin</strong>
+                <span>Post Graduate Program, AI &amp; Machine Learning</span>
+              </li>
+              <li>
+                <strong>The University of Texas at Dallas</strong>
+                <span>M.S. in Computer Engineering</span>
+              </li>
+              <li>
+                <strong>Vasavi College of Engineering</strong>
+                <span>B.E. in Electrical &amp; Electronics Engineering</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact__inner">
+        <p class="section__kicker reveal">06 · Contact</p>
+        <h2 class="section__title reveal">Let's build something <span class="gradient-text">intelligent</span> together</h2>
+        <p class="contact__blurb reveal">
+          Whether it's enterprise GenAI, agentic systems, or getting your AI from prototype to production —
+          I'd love to hear about it.
+        </p>
+        <div class="contact__actions reveal">
+          <a class="btn btn--primary btn--lg" href="mailto:nikhil.komakula@outlook.com"
+             data-goatcounter-click="email-contact" data-goatcounter-title="Email (contact CTA)">
+            nikhil.komakula@outlook.com
+          </a>
+        </div>
+        <div class="contact__links reveal">
+          <a href="tel:+918985372727"><span aria-hidden="true">📞</span> +91 89853 72727</a>
+          <a href="https://wa.me/918985372727" target="_blank" rel="noopener"
+             data-goatcounter-click="whatsapp-contact" data-goatcounter-title="WhatsApp (contact)"><span aria-hidden="true">💬</span> WhatsApp</a>
+          <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank" rel="noopener"
+             data-goatcounter-click="linkedin-contact" data-goatcounter-title="LinkedIn (contact)"><span aria-hidden="true">💼</span> LinkedIn</a>
+          <a href="https://github.com/nikhilkomakula" target="_blank" rel="noopener"
+             data-goatcounter-click="github-contact" data-goatcounter-title="GitHub (contact)"><span aria-hidden="true">🐙</span> GitHub</a>
+          <span><span aria-hidden="true">📍</span> Hyderabad, India</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Nikhil Komakula · Designed &amp; built by me.</p>
+      <a href="#top" class="footer__top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- ntfy.sh visitor push notifications: genuine visitors only.
+       Filters: production host, once/session, owner opt-out, bot UA,
+       webdriver/headless, prerender — and requires real engagement
+       (interaction or 8s of visible dwell) before notifying. -->
+  <script>
+    (function () {
+      var NTFY_TOPIC = "nk_github_portfolio"; // subscribe at ntfy.sh/nk_github_portfolio
+      try {
+        // Owner opt-out: visit once with ?owner=1 to permanently mute your own visits
+        if (new URLSearchParams(location.search).get("owner") === "1")
+          localStorage.setItem("nk-owner", "1");
+        if (localStorage.getItem("nk-owner") === "1") return;
+        // Production only + once per tab session (best-effort; a failed
+        // send is intentionally retriable within the same tab)
+        if (location.host !== "nikhilkomakula.github.io") return;
+        if (sessionStorage.getItem("nk-notified")) return;
+
+        // --- Bot / automation filters ---
+        if (navigator.webdriver) return;                       // Selenium, Playwright, etc.
+        if (document.prerendering) return;                     // Chrome prerender fetches
+        var ua = navigator.userAgent || "";
+        if (/bot|crawl|spider|slurp|headless|lighthouse|pagespeed|pingdom|uptime|monitor|preview|scrape|node-fetch|undici|curl|wget|python|\bjava\b|httpclient|axios/i.test(ua)) return;
+        if (!screen.width || !screen.height) return;           // no real display
+
+        // --- Require genuine engagement: interaction OR 8s of *visible* dwell ---
+        var start = Date.now();
+        var sent = false;
+        var attempts = 0;
+
+        function scheduleRetry(signal) {
+          // Bounded retry: transient failures (offline, blocker flakiness)
+          if (attempts >= 3) return;
+          setTimeout(function () { sent = false; send(signal); }, 20000);
+        }
+        function refHost(r) {
+          if (!r) return "direct";
+          try { return new URL(r).hostname; } catch (e) { return "unknown"; }
+        }
+        function send(signal) {
+          if (sent || sessionStorage.getItem("nk-notified")) return;
+          sent = true;
+          attempts++;
+          pauseDwell();
+          // Minimal, non-fingerprinting payload
+          var info = [
+            "Page: " + location.pathname + location.hash,
+            "Referrer: " + refHost(document.referrer),
+            "Engaged: " + signal + " (" + Math.round((Date.now() - start) / 1000) + "s on page)",
+            "Device: " + (/Mobi|Android|iPhone|iPad/i.test(ua) ? "mobile" : "desktop"),
+            "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone
+          ].join("\n");
+          fetch("https://ntfy.sh/" + NTFY_TOPIC, {
+            method: "POST",
+            body: info,
+            keepalive: true,
+            headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
+          }).then(function (res) {
+            // Mark the session only on success; otherwise retry (bounded)
+            if (res && res.ok) sessionStorage.setItem("nk-notified", "1");
+            else scheduleRetry(signal);
+          }).catch(function () { scheduleRetry(signal); });
+        }
+
+        // Accumulate *visible* time only; pause while hidden
+        var DWELL_MS = 8000, dwellTimer = null, visStart = null, accrued = 0;
+        function startDwell() {
+          if (sent || visStart !== null) return;
+          visStart = Date.now();
+          dwellTimer = setTimeout(function () { send("dwell"); }, Math.max(DWELL_MS - accrued, 0));
+        }
+        function pauseDwell() {
+          if (visStart !== null) { accrued += Date.now() - visStart; visStart = null; }
+          clearTimeout(dwellTimer);
+        }
+        if (document.visibilityState === "visible") startDwell();
+        addEventListener("visibilitychange", function () {
+          if (document.visibilityState === "visible") startDwell();
+          else pauseDwell();
+        });
+
+        ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (ev) {
+          addEventListener(ev, function () { send(ev); }, { once: true, passive: true });
+        });
+      } catch (e) { /* never break the page for analytics */ }
+    })();
+  </script>
+
+  <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
+  <script>
+    // Only load & count on the live site; fully silent on local/preview
+    if (window.location.host === 'nikhilkomakula.github.io') {
+      var gc = document.createElement('script');
+      gc.async = true;
+      gc.src = 'https://gc.zgo.at/count.js';
+      gc.setAttribute('data-goatcounter', 'https://nikhilkomakula.goatcounter.com/count');
+      document.body.appendChild(gc);
+    }
+  </script>
+</body>
+</html>
