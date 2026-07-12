@@ -582,7 +582,8 @@
         if (new URLSearchParams(location.search).get("owner") === "1")
           localStorage.setItem("nk-owner", "1");
         if (localStorage.getItem("nk-owner") === "1") return;
-        // Production only + once per browser session
+        // Production only + once per tab session (best-effort; a failed
+        // send is intentionally retriable within the same tab)
         if (location.host !== "nikhilkomakula.github.io") return;
         if (sessionStorage.getItem("nk-notified")) return;
 
@@ -590,45 +591,61 @@
         if (navigator.webdriver) return;                       // Selenium, Playwright, etc.
         if (document.prerendering) return;                     // Chrome prerender fetches
         var ua = navigator.userAgent || "";
-        if (/bot|crawl|spider|slurp|headless|lighthouse|pagespeed|pingdom|uptime|monitor|preview|scrape|fetch|curl|wget|python|java|httpclient|axios|node\.js/i.test(ua)) return;
+        if (/bot|crawl|spider|slurp|headless|lighthouse|pagespeed|pingdom|uptime|monitor|preview|scrape|node-fetch|undici|curl|wget|python|\bjava\b|httpclient|axios/i.test(ua)) return;
         if (!screen.width || !screen.height) return;           // no real display
 
-        // --- Require genuine engagement: interaction OR 8s visible dwell ---
+        // --- Require genuine engagement: interaction OR 8s of *visible* dwell ---
         var start = Date.now();
         var sent = false;
+
+        function refHost(r) {
+          if (!r) return "direct";
+          try { return new URL(r).hostname; } catch (e) { return "unknown"; }
+        }
         function send(signal) {
           if (sent || sessionStorage.getItem("nk-notified")) return;
           sent = true;
-          sessionStorage.setItem("nk-notified", "1");
+          pauseDwell();
+          // Minimal, non-fingerprinting payload
           var info = [
             "Page: " + location.pathname + location.hash,
-            "Referrer: " + (document.referrer || "direct"),
-            "Engaged: " + signal + " (" + Math.round((Date.now() - start) / 1000) + "s)",
-            "Lang: " + navigator.language,
-            "Platform: " + (navigator.userAgentData ? navigator.userAgentData.platform : navigator.platform),
-            "Screen: " + screen.width + "x" + screen.height,
-            "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone,
-            "Time: " + new Date().toLocaleString()
+            "Referrer: " + refHost(document.referrer),
+            "Engaged: " + signal + " (" + Math.round((Date.now() - start) / 1000) + "s on page)",
+            "Device: " + (/Mobi|Android|iPhone|iPad/i.test(ua) ? "mobile" : "desktop"),
+            "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone
           ].join("\n");
           fetch("https://ntfy.sh/" + NTFY_TOPIC, {
             method: "POST",
             body: info,
             keepalive: true,
             headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
-          }).catch(function () {});
+          }).then(function (res) {
+            // Mark the session only on success so transient failures can retry
+            if (res && res.ok) sessionStorage.setItem("nk-notified", "1");
+            else sent = false;
+          }).catch(function () { sent = false; });
         }
+
+        // Accumulate *visible* time only; pause while hidden
+        var DWELL_MS = 8000, dwellTimer = null, visStart = null, accrued = 0;
+        function startDwell() {
+          if (sent || visStart !== null) return;
+          visStart = Date.now();
+          dwellTimer = setTimeout(function () { send("dwell"); }, Math.max(DWELL_MS - accrued, 0));
+        }
+        function pauseDwell() {
+          if (visStart !== null) { accrued += Date.now() - visStart; visStart = null; }
+          clearTimeout(dwellTimer);
+        }
+        if (document.visibilityState === "visible") startDwell();
+        addEventListener("visibilitychange", function () {
+          if (document.visibilityState === "visible") startDwell();
+          else pauseDwell();
+        });
+
         ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (ev) {
           addEventListener(ev, function () { send(ev); }, { once: true, passive: true });
         });
-        setTimeout(function () {
-          if (document.visibilityState === "visible") send("dwell");
-          else addEventListener("visibilitychange", function onVis() {
-            if (document.visibilityState === "visible") {
-              removeEventListener("visibilitychange", onVis);
-              send("dwell-after-return");
-            }
-          });
-        }, 8000);
       } catch (e) { /* never break the page for analytics */ }
     })();
   </script>
