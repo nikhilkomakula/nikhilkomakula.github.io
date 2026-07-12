@@ -1,5 +1,5 @@
 ---
-name: twin-context-builder
+name: nk-twin-context-builder
 description: Builds or updates digital-twin/twin-context.md (the grounding file for Nikhil's digital-twin chatbot) from source material in digital-twin/twin-source/. USE THIS SKILL whenever the user says anything like "update my twin", "rebuild the context from my docs", "refresh twin context", "rebuild twin-context.md", mentions twin-context.md, or asks to ingest resume/project docs into the digital twin. Also use it after new files are added to twin-source/.
 ---
 

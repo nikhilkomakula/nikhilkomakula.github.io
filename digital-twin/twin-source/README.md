@@ -2,7 +2,7 @@
 
 Put resumes, project write-ups, decks (.pptx — speaker notes are ingested
 too), notes, and exports here, then tell your agent **"update my twin"**.
-The `twin-context-builder` skill ingests everything in this folder into
+The `nk-twin-context-builder` skill ingests everything in this folder into
 `../twin-context.md`.
 
 **Everything in this folder except this README is gitignored** — your raw

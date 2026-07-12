@@ -8,7 +8,7 @@ main = "worker.js"
 compatibility_date = "2026-07-01"
 
 # Bundle twin-context.md (one level up) as a text module at deploy time.
-# The file is gitignored — run the twin-context-builder skill to create it.
+# The file is gitignored — run the nk-twin-context-builder skill to create it.
 [[rules]]
 type = "Text"
 globs = ["**/*.md"]

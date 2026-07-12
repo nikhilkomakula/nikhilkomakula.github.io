@@ -47,7 +47,7 @@ the grounding file never reach the public repo or the GitHub Pages site.
 1. Drop source material into `digital-twin/twin-source/` — resume PDFs,
    project write-ups, decks (`.pptx` speaker notes are ingested too), notes.
 2. In Pi or Claude Code, say: **"update my twin"**.
-   The `twin-context-builder` skill (`.claude/skills/twin-context-builder/`,
+   The `nk-twin-context-builder` skill (`.claude/skills/nk-twin-context-builder/`,
    symlinked into `.pi/skills/`) will:
    - ingest `twin-source/**`, applying a build-time confidentiality filter
      (public-resume level only; secrets excluded & flagged),
