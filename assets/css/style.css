@@ -518,9 +518,16 @@ body {
   .timeline__card:hover { transform: none; }
 }
 
-/* Mobile navigation — wider breakpoint so desktop links never cram */
+/* Mobile navigation — wider breakpoint so desktop links never cram.
+   The hidden dropdown pattern is JS-gated; without JS the nav falls
+   back to a static wrapping row so links stay reachable. */
 @media (max-width: 880px) {
-  .nav__links {
+  html:not(.js) .nav { position: absolute; height: auto; }
+  html:not(.js) .nav__inner { flex-wrap: wrap; height: auto; padding: 14px 24px; gap: 10px; }
+  html:not(.js) .nav__links { flex-wrap: wrap; gap: 6px 18px; }
+  html:not(.js) .nav__burger { display: none; }
+
+  .js .nav__links {
     position: fixed; inset: var(--nav-h) 0 auto 0;
     flex-direction: column; align-items: stretch; gap: 0;
     background: rgba(7, 11, 20, 0.97);
@@ -530,14 +537,14 @@ body {
     visibility: hidden;
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0.35s;
   }
-  .nav__links.is-open {
+  .js .nav__links.is-open {
     transform: translateY(0);
     visibility: visible;
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0s;
   }
-  .nav__links a { padding: 13px 4px; font-size: 1.02rem; }
-  .nav__cta { text-align: center; margin-top: 10px; }
-  .nav__burger { display: flex; }
+  .js .nav__links a { padding: 13px 4px; font-size: 1.02rem; }
+  .js .nav__cta { text-align: center; margin-top: 10px; }
+  .js .nav__burger { display: flex; }
   .nav__burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav__burger.is-open span:nth-child(2) { opacity: 0; }
   .nav__burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

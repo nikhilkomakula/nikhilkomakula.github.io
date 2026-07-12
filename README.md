@@ -3,7 +3,7 @@
 > 🌐 Live portfolio: **[nikhilkomakula.github.io](https://nikhilkomakula.github.io)** (rendered from `index.html`)
 
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+918985372727">+91 8985372727</a></span></div>
-<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="http://linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
+<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Portfolio:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
 
 ---
@@ -52,7 +52,8 @@
 - Serve as a trusted technical advisor to global customers, delivering professional-services engagements that build and productionize first-of-its-kind GenAI applications on Databricks.
 - Build end-to-end GenAI solutions — multi-agent systems, RAG pipelines, Text2SQL, and LLM fine-tuning — leveraging Agent Bricks, Genie Spaces, Multi-Agent Supervisor, MLflow, Vector Search, Model Serving, Lakebase, and evaluation frameworks.
 - Own production rollouts of customer-facing and internal GenAI applications, championing evaluation-driven quality — accuracy, groundedness, latency, scalability, observability, and governance.
-- Collaborate cross-functionally with product and engineering teams to influence priorities and shape the product roadmap, while developing reusable accelerators and CI/CD patterns that compress delivery timelines.
+- Develop reusable accelerators, deployment patterns, and CI/CD approaches that compress delivery timelines across engagements.
+- Collaborate cross-functionally with product and engineering teams to influence priorities and shape the product roadmap.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Nov’25</span></div>   	

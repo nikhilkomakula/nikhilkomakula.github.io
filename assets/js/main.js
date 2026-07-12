@@ -130,7 +130,7 @@
     };
     requestAnimationFrame(step);
   };
-  if ("IntersectionObserver" in window) {
+  if ("IntersectionObserver" in window && !prefersReducedMotion) {
     const cio = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -142,7 +142,11 @@
       },
       { threshold: 0.6 }
     );
-    counters.forEach((c) => cio.observe(c));
+    counters.forEach((c) => {
+      // HTML ships final values for no-JS; reset to 0 so the count-up shows
+      c.textContent = "0";
+      cio.observe(c);
+    });
   } else {
     counters.forEach(animateCounter);
   }

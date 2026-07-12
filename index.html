@@ -31,7 +31,7 @@
     "worksFor": { "@type": "Organization", "name": "Databricks" },
     "url": "https://nikhilkomakula.github.io/",
     "image": "https://github.com/nikhilkomakula.png",
-    "email": "mailto:nikhil.komakula@outlook.com",
+    "email": "nikhil.komakula@outlook.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressRegion": "Telangana", "addressCountry": "IN" },
     "alumniOf": [
       { "@type": "CollegeOrUniversity", "name": "The University of Texas at Austin" },
@@ -129,19 +129,19 @@
     <section class="stats" id="stats">
       <div class="container stats__grid">
         <div class="stat reveal">
-          <span class="stat__num" data-count="15" data-suffix="+">0</span>
+          <span class="stat__num" data-count="15" data-suffix="+">15+</span>
           <span class="stat__label">Years in Enterprise IT</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__num" data-count="5" data-suffix="">0</span>
+          <span class="stat__num" data-count="5" data-suffix="">5</span>
           <span class="stat__label">AI &amp; ML Certifications</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__num" data-count="4" data-suffix="">0</span>
+          <span class="stat__num" data-count="4" data-suffix="">4</span>
           <span class="stat__label">Cloud &amp; AI Platforms</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__num" data-count="6" data-suffix="">0</span>
+          <span class="stat__num" data-count="6" data-suffix="">6</span>
           <span class="stat__label">Industry Awards</span>
         </div>
       </div>
@@ -554,11 +554,14 @@
 
   <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
   <script>
-    // Only count on the live site; stay silent on local/preview
-    if (window.location.host !== 'nikhilkomakula.github.io')
-      window.goatcounter = { no_onload: true };
+    // Only load & count on the live site; fully silent on local/preview
+    if (window.location.host === 'nikhilkomakula.github.io') {
+      var gc = document.createElement('script');
+      gc.async = true;
+      gc.src = '//gc.zgo.at/count.js';
+      gc.setAttribute('data-goatcounter', 'https://nikhilkomakula.goatcounter.com/count');
+      document.body.appendChild(gc);
+    }
   </script>
-  <script data-goatcounter="https://nikhilkomakula.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
