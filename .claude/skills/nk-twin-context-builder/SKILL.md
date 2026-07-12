@@ -14,15 +14,34 @@ bundled scripts — this skill must behave identically in Pi and Claude Code.
 
 ## Paths (defaults — the user may override)
 
-- Source folder: `digital-twin/twin-source/`
+- **Gold standard (always available):** the live portfolio content —
+  `index.html` and `README.md` at the repository root
+- Supplementary source folder: `digital-twin/twin-source/`
 - Output file: `digital-twin/twin-context.md`
 - Review file: `digital-twin/twin-context.review.md`
 
 All paths are relative to the repository root.
 
+## Source hierarchy (critical)
+
+1. **The portfolio site content is the GOLD STANDARD.** Always read
+   `index.html` (experience timeline, projects, skills, credentials,
+   contact) and `README.md` (résumé) first — they are curated, reviewed,
+   and public by definition, so everything in them is safe to include.
+2. **`twin-source/` is supplementary.** Additional data sources will be
+   uploaded there when available — use them to ENRICH the portfolio
+   baseline (project "why" context, deck speaker notes, extra detail).
+3. **On conflict, the portfolio wins.** If a twin-source file contradicts
+   the portfolio (dates, titles, metrics, wording), use the portfolio
+   version and note the discrepancy in the run summary.
+4. **An empty or missing `twin-source/` is not an error.** Build the full
+   twin-context.md from the portfolio alone and note in the summary that
+   no supplementary sources were found.
+
 ## Step 1 — Inventory the sources
 
-Recursively list `digital-twin/twin-source/**`. Ignore:
+First confirm the gold-standard files (`index.html`, `README.md`) exist.
+Then recursively list `digital-twin/twin-source/**`. Ignore:
 `.git`, `node_modules`, `venv`, `.venv`, `dist`, `build`, `__pycache__`,
 lockfiles (`*.lock`, `package-lock.json`, `poetry.lock`, etc.), hidden files,
 and `twin-context.md` itself.
@@ -131,8 +150,11 @@ After writing the file, audit it with Cursor as an independent reviewer:
 
 End every run with:
 
-- **Files read** (count + list)
+- **Gold standard read:** index.html + README.md (always)
+- **Supplementary files read** (count + list; "none uploaded yet" is fine)
 - **Files skipped** (each with reason)
+- **Conflicts vs portfolio** (twin-source claims overridden by the gold
+  standard, if any)
 - **Content excluded/flagged** (confidentiality, secrets to rotate,
   "excluded pending confirmation" items)
 - **Sections written/updated**
