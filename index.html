@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikhil Komakula — Senior AI Engineer @ Databricks</title>
-  <meta name="description" content="Nikhil Komakula — Senior AI Engineer at Databricks (AI Forward Deployed Engineer). 15+ years building enterprise AI, GenAI, agentic systems, RAG, MLOps & AI governance solutions." />
+  <meta name="description" content="Nikhil Komakula — Senior AI Engineer at Databricks (AI Forward Deployed Engineer). 15+ years building enterprise AI, GenAI, agentic systems, RAG, MLOps &amp; AI governance solutions." />
   <meta name="author" content="Nikhil Komakula" />
   <meta name="theme-color" content="#070b14" />
 
@@ -49,7 +49,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -662,7 +662,13 @@
         // --- Require genuine engagement: interaction OR 8s of *visible* dwell ---
         var start = Date.now();
         var sent = false;
+        var attempts = 0;
 
+        function scheduleRetry(signal) {
+          // Bounded retry: transient failures (offline, blocker flakiness)
+          if (attempts >= 3) return;
+          setTimeout(function () { sent = false; send(signal); }, 20000);
+        }
         function refHost(r) {
           if (!r) return "direct";
           try { return new URL(r).hostname; } catch (e) { return "unknown"; }
@@ -670,6 +676,7 @@
         function send(signal) {
           if (sent || sessionStorage.getItem("nk-notified")) return;
           sent = true;
+          attempts++;
           pauseDwell();
           // Minimal, non-fingerprinting payload
           var info = [
@@ -685,10 +692,10 @@
             keepalive: true,
             headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
           }).then(function (res) {
-            // Mark the session only on success so transient failures can retry
+            // Mark the session only on success; otherwise retry (bounded)
             if (res && res.ok) sessionStorage.setItem("nk-notified", "1");
-            else sent = false;
-          }).catch(function () { sent = false; });
+            else scheduleRetry(signal);
+          }).catch(function () { scheduleRetry(signal); });
         }
 
         // Accumulate *visible* time only; pause while hidden
