@@ -17,7 +17,7 @@ fallthrough = true
 [vars]
 # Comma-separated allow-list. Add http://localhost:8000 while developing.
 ALLOWED_ORIGINS = "https://nikhilkomakula.github.io"
-GEMINI_MODEL = "gemini-3.5-flash"
+GEMINI_MODEL = "gemini-3.1-flash-lite"
 MAX_OUTPUT_TOKENS = "512"
 RATE_LIMIT_PER_MIN = "8"
 CACHE_TTL_SECONDS = "3600"

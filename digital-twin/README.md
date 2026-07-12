@@ -151,6 +151,10 @@ Embedding on **any other site** — paste before `</body>`:
 
 ## Model
 
-`GEMINI_MODEL` defaults to **`gemini-3.5-flash`** (current stable Flash, per
-Google's model docs as of July 2026). Override in `wrangler.toml` when Google
-ships a newer Flash.
+`GEMINI_MODEL` defaults to **`gemini-3.1-flash-lite`** (pinned; verified
+available July 2026). Flash-Lite is the right fit for this workload — simple
+grounded Q&A over a system context — at a fraction of Flash pricing and with
+lower latency. Upgrade path: set `GEMINI_MODEL` in `wrangler.toml` to
+`gemini-3.5-flash` (or newer) if answers ever feel too shallow; the worker
+sends `thinkingConfig: { thinkingBudget: 0 }` either way so replies use the
+full output-token budget.
