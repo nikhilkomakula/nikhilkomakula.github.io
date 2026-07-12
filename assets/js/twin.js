@@ -11,6 +11,11 @@
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Gemini-backed proxy endpoint (Cloudflare Worker). When set, questions go
+  // to the LLM grounded in twin-context.md; when empty or unreachable, the
+  // widget falls back to the built-in local retrieval knowledge base.
+  const ENDPOINT = (window.NK_TWIN_ENDPOINT || "").replace(/\/+$/, "");
+
   /* ============================================================
      KNOWLEDGE BASE
      ============================================================ */
@@ -423,15 +428,11 @@
     const tokens = tokenize(query);
     let best = null;
     let bestScore = 0;
-    let second = 0;
     for (const intent of KB) {
       const s = scoreIntent(query, tokens, intent);
       if (s > bestScore) {
-        second = bestScore;
         bestScore = s;
         best = intent;
-      } else if (s > second) {
-        second = s;
       }
     }
 
@@ -511,7 +512,11 @@
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="m3 11 18-8-8 18-2-8-8-2z"/></svg>
         </button>
       </form>
-      <p class="twin-panel__note">Runs in your browser — questions never leave this page.</p>
+      <p class="twin-panel__note">${
+        ENDPOINT
+          ? "Powered by Gemini Flash · answers only from Nikhil's documented background."
+          : "Runs in your browser — questions never leave this page."
+      }</p>
     `;
 
     document.body.append(launcher, panel);
@@ -524,6 +529,8 @@
 
     let open = false;
     let greeted = false;
+    let history = []; // [{role: 'user'|'model', content}] for the remote proxy
+    let pending = false;
 
     function addMessage(text, who) {
       const msg = el("div", `twin-msg twin-msg--${who}`);
@@ -543,30 +550,61 @@
       }
     }
 
-    function botReply(queryRaw) {
-      const { text, suggestions } = answer(queryRaw);
-      if (prefersReducedMotion) {
-        addMessage(text, "bot");
-        setSuggestions(suggestions);
-        return;
-      }
-      // Typing indicator for a natural feel
+    function showTyping() {
       const typing = el("div", "twin-msg twin-msg--bot twin-msg--typing");
       typing.innerHTML = "<span></span><span></span><span></span>";
       messagesEl.appendChild(typing);
       messagesEl.scrollTop = messagesEl.scrollHeight;
-      setSuggestions([]);
-      setTimeout(() => {
-        typing.remove();
+      return typing;
+    }
+
+    function localReply(queryRaw, typing) {
+      const { text, suggestions } = answer(queryRaw);
+      const deliver = () => {
+        if (typing) typing.remove();
         addMessage(text, "bot");
+        history.push({ role: "model", content: text });
         setSuggestions(suggestions);
-      }, 450 + Math.min(text.length, 600) * 0.6);
+        pending = false;
+      };
+      if (prefersReducedMotion || !typing) deliver();
+      else setTimeout(deliver, 450 + Math.min(text.length, 600) * 0.6);
+    }
+
+    async function remoteReply(queryRaw, typing) {
+      try {
+        const res = await fetch(`${ENDPOINT}/chat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: history.slice(-8) }),
+        });
+        if (!res.ok) throw new Error(`proxy ${res.status}`);
+        const data = await res.json();
+        if (!data.reply) throw new Error("empty reply");
+        typing.remove();
+        addMessage(data.reply, "bot");
+        history.push({ role: "model", content: data.reply });
+        setSuggestions([]);
+        pending = false;
+      } catch (e) {
+        // Graceful degradation: answer from the local knowledge base
+        localReply(queryRaw, typing);
+      }
+    }
+
+    function botReply(queryRaw) {
+      setSuggestions([]);
+      const typing = prefersReducedMotion && !ENDPOINT ? null : showTyping();
+      if (ENDPOINT) remoteReply(queryRaw, typing);
+      else localReply(queryRaw, typing);
     }
 
     function ask(q) {
       const query = q.trim();
-      if (!query) return;
+      if (!query || pending) return;
+      pending = true;
       addMessage(query, "user");
+      history.push({ role: "user", content: query.slice(0, 600) });
       inputEl.value = "";
       botReply(query);
     }

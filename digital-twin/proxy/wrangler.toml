@@ -1,0 +1,26 @@
+# Digital Twin proxy — Cloudflare Worker config
+# Deploy:  npx wrangler deploy          (from digital-twin/proxy/)
+# Secret:  npx wrangler secret put GEMINI_API_KEY
+# Local:   cp .dev.vars.example .dev.vars && npx wrangler dev
+
+name = "nk-digital-twin"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+# Bundle twin-context.md (one level up) as a text module at deploy time.
+# The file is gitignored — run the twin-context-builder skill to create it.
+[[rules]]
+type = "Text"
+globs = ["**/*.md"]
+fallthrough = true
+
+[vars]
+# Comma-separated allow-list. Add http://localhost:8000 while developing.
+ALLOWED_ORIGINS = "https://nikhilkomakula.github.io"
+GEMINI_MODEL = "gemini-3.5-flash"
+MAX_OUTPUT_TOKENS = "512"
+RATE_LIMIT_PER_MIN = "8"
+CACHE_TTL_SECONDS = "3600"
+
+# GEMINI_API_KEY is a secret — never put it here.
+# npx wrangler secret put GEMINI_API_KEY

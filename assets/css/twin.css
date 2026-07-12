@@ -42,7 +42,10 @@
 }
 .twin-launcher--open .twin-launcher__pulse { animation: none; }
 
-/* Hide launcher while the mobile menu is open (reserved convention) */
+/* Hide launcher while the mobile menu is open (reserved convention).
+   body.nav-open is toggled by main.js (works everywhere); :has() covers
+   any state drift in modern browsers. */
+body.nav-open .twin-launcher,
 body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none; }
 
 /* ---------- Panel ---------- */
@@ -52,6 +55,7 @@ body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none;
   bottom: 94px;
   z-index: 300;
   width: min(392px, calc(100vw - 32px));
+  height: min(560px, calc(100vh - 130px));
   height: min(560px, calc(100dvh - 130px));
   display: flex;
   flex-direction: column;
@@ -230,6 +234,7 @@ body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none;
     left: 12px;
     bottom: 88px;
     width: auto;
+    height: min(70vh, 560px);
     height: min(70dvh, 560px);
   }
   .twin-launcher { right: 16px; bottom: 16px; }
