@@ -302,7 +302,8 @@
         "• **Email:** nikhil.komakula@outlook.com\n" +
         "• **Phone / WhatsApp:** +91 89853 72727\n" +
         "• **LinkedIn:** linkedin.com/in/nikhilkomakula\n" +
-        "• **GitHub:** github.com/nikhilkomakula\n\n" +
+        "• **GitHub:** github.com/nikhilkomakula\n" +
+        "• **X:** x.com/nikhilkomakula\n\n" +
         "He's based in **Hyderabad, India** and happy to talk enterprise GenAI, agentic systems, and production AI.",
       suggestions: ["What's his current role?", "What are his top skills?", "Tell me about his experience"]
     },
@@ -553,6 +554,9 @@
         chip.addEventListener("click", () => ask(s));
         suggestionsEl.appendChild(chip);
       }
+      // Chips change the messages viewport height — keep the latest
+      // message fully visible instead of letting it clip at the divider
+      messagesEl.scrollTop = messagesEl.scrollHeight;
     }
 
     function showTyping() {
