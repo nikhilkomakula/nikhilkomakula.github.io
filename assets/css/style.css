@@ -379,6 +379,7 @@ body {
 .timeline__card ul li::before {
   content: "▸"; position: absolute; left: 0; color: var(--accent-1);
 }
+.timeline__card ul li strong { color: var(--text); font-weight: 600; }
 .timeline__card--compact ul { margin-bottom: 0; }
 
 .timeline__tags { display: flex; flex-wrap: wrap; gap: 8px; }
