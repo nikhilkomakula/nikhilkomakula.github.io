@@ -66,22 +66,23 @@
       id: "early-career",
       keywords: ["early career", "first job", "accolite", "haller", "hht", "java developer", "2009", "saferstore", "gm+view", "flex", "start career", "career start", "beginning"],
       answer:
-        "Nikhil's early career (2009–2010) was in **enterprise Java and web engineering in Texas**:\n\n" +
-        "**Haller Harlan & Taylor — Software Programmer (Plano, TX):** Developed GM+View, a debt-management application integrating GoldMine CRM with the Collector System, with Flex/ActionScript UI components and SQL Server via JDBC.\n\n" +
-        "**Accolite — Java Developer (Richardson, TX):** Developed SaferStore, a web-based rebate-management module that digitized billback and rebate tracking, replacing error-prone manual reconciliation.",
+        "Before his full-time career began, Nikhil completed **internships in enterprise Java and web engineering in Texas** (2009–2010):\n\n" +
+        "**Haller Harlan & Taylor — Software Programmer, Internship (Plano, TX):** Developed GM+View, a debt-management application integrating GoldMine CRM with the Collector System, with Flex/ActionScript UI components and SQL Server via JDBC.\n\n" +
+        "**Accolite — Java Developer, Internship (Richardson, TX):** Developed SaferStore, a web-based rebate-management module that digitized billback and rebate tracking, replacing error-prone manual reconciliation.\n\n" +
+        "His full-time career started with **OpenPages/IBM in April 2010**.",
       suggestions: ["How many years of experience does he have?", "Where did he study?", "What's his current role?"]
     },
     {
       id: "experience-summary",
       keywords: ["experience", "career", "background", "journey", "history", "worked", "companies", "employers", "how many years", "years of experience", "summary", "overview", "resume", "cv", "walk me through"],
       answer:
-        "Nikhil has **17+ years in enterprise IT**, with an arc from Java engineering → GRC solution architecture → enterprise AI:\n\n" +
+        "Nikhil has **16+ years of full-time experience in enterprise IT** (starting with OpenPages/IBM in 2010), with an arc from GRC solution architecture → enterprise AI:\n\n" +
         "• **Databricks** — Senior AI Engineer, AI FDE (Dec 2025 – present)\n" +
         "• **IBM India** — Delivery Consultant, AI/ML/GenAI (2021–2025)\n" +
         "• **SureStep** — Senior Solutions Architect (2020–2021)\n" +
         "• **IBM India** — Solutions Architect (2012–2020)\n" +
         "• **IBM Corp, USA** — Lead Consulting Engineer (2010–2012)\n" +
-        "• **Early career** — Java/web engineering in Texas (2009–2010)\n\n" +
+        "• **Internships** — Java/web engineering in Texas (2009–2010)\n\n" +
         "Ask me about any of these roles for details!",
       suggestions: ["What is he doing at Databricks?", "Tell me about his AI projects", "What are his top skills?"]
     },

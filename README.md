@@ -9,7 +9,7 @@
 ---
 
 ### PROFESSIONAL SUMMARY
-- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 17 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
+- **Senior AI Engineer at Databricks** (AI Forward Deployed Engineer) with over 16 years of experience designing and delivering enterprise software, AI/ML, and **Generative AI** solutions — helping organizations move from an AI idea to a governed, measurable, production-ready system.
 - Current focus: **Generative AI**, **agentic systems**, **Retrieval-Augmented Generation (RAG)**, **Agent Bricks**, **Genie Spaces**, **Multi-Agent Supervisor**, **MLflow**, **Vector Search**, **Model Serving**, **Lakebase**, evaluation frameworks, **AI governance**, **MLOps** and **LLMOps**.
 - Certified **Generative AI and Machine Learning Specialist** across leading cloud platforms (**GCP**, **AWS**, **Azure**, **IBM**), with expertise in building scalable, production-grade systems using deep learning frameworks.
 - Proven expertise delivering innovative AI/ML solutions for **risk management** and **regulatory compliance** in Finance, Banking, Insurance, Retail, and Investment, driving operational efficiency and compliance optimization.
@@ -72,9 +72,9 @@
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM CORPORATION</span><span>Littleton, MA, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Lead Consulting Engineer</span><span>Apr’10 – Apr’12</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>HALLER, HARLAN & TAYLOR</span><span>Plano, TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Software Programmer (Internship)</span><span>Sep’09 – Apr’10</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>ACCOLITE</span><span>Richardson, TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer</span><span>Mar’09 – Sep’09</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer (Internship)</span><span>Mar’09 – Sep’09</span></div>
 
 ---
 
