@@ -87,11 +87,15 @@
       <div class="hero__glow" aria-hidden="true"></div>
 
       <div class="hero__content">
-        <img class="hero__avatar reveal" src="assets/img/profile.jpg" alt="Portrait of Nikhil Komakula" width="168" height="168" fetchpriority="high" />
-        <p class="hero__eyebrow reveal"><span class="pulse-dot"></span>Senior AI Engineer @ Databricks</p>
-        <h1 class="hero__title reveal">
-          Nikhil <span class="gradient-text">Komakula</span>
-        </h1>
+        <div class="hero__intro reveal">
+          <img class="hero__avatar" src="assets/img/profile.jpg" alt="Portrait of Nikhil Komakula" width="124" height="124" fetchpriority="high" />
+          <div class="hero__intro-text">
+            <p class="hero__eyebrow"><span class="pulse-dot"></span>Senior AI Engineer @ Databricks</p>
+            <h1 class="hero__title">
+              Nikhil <span class="gradient-text">Komakula</span>
+            </h1>
+          </div>
+        </div>
         <p class="hero__role reveal">
           AI Forward Deployed Engineer building
           <span class="sr-only">Generative AI solutions, agentic AI systems, RAG pipelines, MLOps &amp; LLMOps platforms, and production-ready ML.</span>
@@ -566,7 +570,10 @@
 
   <script src="assets/js/main.js" defer></script>
 
-  <!-- ntfy.sh visitor push notifications (fire-and-forget, once per session) -->
+  <!-- ntfy.sh visitor push notifications: genuine visitors only.
+       Filters: production host, once/session, owner opt-out, bot UA,
+       webdriver/headless, prerender — and requires real engagement
+       (interaction or 8s of visible dwell) before notifying. -->
   <script>
     (function () {
       var NTFY_TOPIC = "nk_github_portfolio"; // subscribe at ntfy.sh/nk_github_portfolio
@@ -578,24 +585,50 @@
         // Production only + once per browser session
         if (location.host !== "nikhilkomakula.github.io") return;
         if (sessionStorage.getItem("nk-notified")) return;
-        sessionStorage.setItem("nk-notified", "1");
 
-        var info = [
-          "Page: " + location.pathname + location.hash,
-          "Referrer: " + (document.referrer || "direct"),
-          "Lang: " + navigator.language,
-          "Platform: " + (navigator.userAgentData ? navigator.userAgentData.platform : navigator.platform),
-          "Screen: " + screen.width + "x" + screen.height,
-          "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone,
-          "Time: " + new Date().toLocaleString()
-        ].join("\n");
+        // --- Bot / automation filters ---
+        if (navigator.webdriver) return;                       // Selenium, Playwright, etc.
+        if (document.prerendering) return;                     // Chrome prerender fetches
+        var ua = navigator.userAgent || "";
+        if (/bot|crawl|spider|slurp|headless|lighthouse|pagespeed|pingdom|uptime|monitor|preview|scrape|fetch|curl|wget|python|java|httpclient|axios|node\.js/i.test(ua)) return;
+        if (!screen.width || !screen.height) return;           // no real display
 
-        fetch("https://ntfy.sh/" + NTFY_TOPIC, {
-          method: "POST",
-          body: info,
-          keepalive: true,
-          headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
-        }).catch(function () {});
+        // --- Require genuine engagement: interaction OR 8s visible dwell ---
+        var start = Date.now();
+        var sent = false;
+        function send(signal) {
+          if (sent || sessionStorage.getItem("nk-notified")) return;
+          sent = true;
+          sessionStorage.setItem("nk-notified", "1");
+          var info = [
+            "Page: " + location.pathname + location.hash,
+            "Referrer: " + (document.referrer || "direct"),
+            "Engaged: " + signal + " (" + Math.round((Date.now() - start) / 1000) + "s)",
+            "Lang: " + navigator.language,
+            "Platform: " + (navigator.userAgentData ? navigator.userAgentData.platform : navigator.platform),
+            "Screen: " + screen.width + "x" + screen.height,
+            "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone,
+            "Time: " + new Date().toLocaleString()
+          ].join("\n");
+          fetch("https://ntfy.sh/" + NTFY_TOPIC, {
+            method: "POST",
+            body: info,
+            keepalive: true,
+            headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
+          }).catch(function () {});
+        }
+        ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (ev) {
+          addEventListener(ev, function () { send(ev); }, { once: true, passive: true });
+        });
+        setTimeout(function () {
+          if (document.visibilityState === "visible") send("dwell");
+          else addEventListener("visibilitychange", function onVis() {
+            if (document.visibilityState === "visible") {
+              removeEventListener("visibilitychange", onVis);
+              send("dwell-after-return");
+            }
+          });
+        }, 8000);
       } catch (e) { /* never break the page for analytics */ }
     })();
   </script>
