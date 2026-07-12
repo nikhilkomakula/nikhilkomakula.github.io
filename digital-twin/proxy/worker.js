@@ -110,6 +110,9 @@ async function callGemini(contents, env, useCache) {
     generationConfig: {
       maxOutputTokens: maxTokens,
       temperature: 0.6,
+      // Flash is a thinking model: without this, reasoning tokens are
+      // billed against maxOutputTokens and replies get truncated.
+      thinkingConfig: { thinkingBudget: 0 },
     },
   };
 
