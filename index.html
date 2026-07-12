@@ -642,10 +642,10 @@
   </footer>
 
   <script src="assets/js/main.js" defer></script>
-  <!-- Digital twin: set to your deployed Cloudflare Worker URL to enable
-       Gemini-backed answers (see digital-twin/README.md). Leave empty to
-       use the built-in local knowledge base. -->
-  <script>window.NK_TWIN_ENDPOINT = "";</script>
+  <!-- Digital twin: deployed Cloudflare Worker proxy (see
+       digital-twin/README.md). Set to "" to fall back to the built-in
+       local knowledge base. -->
+  <script>window.NK_TWIN_ENDPOINT = "https://nk-digital-twin.nikhilkomakula.workers.dev";</script>
   <script src="assets/js/twin.js" defer></script>
 
   <!-- ntfy.sh visitor push notifications: genuine visitors only.
