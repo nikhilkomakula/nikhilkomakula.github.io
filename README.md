@@ -60,8 +60,8 @@
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM INDIA PRIVATE LIMITED</span><span>Hyderabad, TG, India</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Delivery Consultant (AI/ML/GenAI)</span><span>Sep’21 – Nov’25</span></div>   	
 - Engineered innovative AI/ML/GenAI and RAG solutions with IBM Watsonx, building conversational assistants that improved customer experience, increased adoption by 30%, and reduced costs by 25% in financial services.
-- Fine-tuned BERT models and LLMs for advanced text classification and RAG-based knowledge retrieval, elevating domain-specific accuracy by 35% and overall model performance by 20%, driving superior business insights.
-- Implemented scalable ML pipelines using MLflow and Docker, streamlining data preprocessing, model training, and hyperparameter tuning, resulting in a 50% reduction in deployment time and improved system reliability.
+- Fine-tuned LLMs and BERT models for advanced text classification and RAG-based knowledge retrieval, elevating domain-specific accuracy by 35% and overall model performance by 20%, driving impactful business outcomes.
+- Implemented scalable ML pipelines using Docker and MLflow, streamlining data preprocessing, model training, and hyperparameter tuning, resulting in a 50% reduction in deployment time and improved system reliability.
 - Established robust AI governance practices with IBM watsonx.governance, ensuring responsible, transparent, and compliant AI, while mentoring teams and driving 20% client acquisition growth and 15% productivity gains.
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>SURESTEP</span><span>Markham, ON, Canada </span></div>
