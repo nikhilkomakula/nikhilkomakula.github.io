@@ -25,12 +25,14 @@
     const closeMenu = (refocus = false) => {
       navLinks.classList.remove("is-open");
       burger.classList.remove("is-open");
+      document.body.classList.remove("nav-open");
       burger.setAttribute("aria-expanded", "false");
       if (refocus) burger.focus();
     };
     burger.addEventListener("click", () => {
       const open = navLinks.classList.toggle("is-open");
       burger.classList.toggle("is-open", open);
+      document.body.classList.toggle("nav-open", open);
       burger.setAttribute("aria-expanded", String(open));
     });
     navLinks.querySelectorAll("a").forEach((a) =>

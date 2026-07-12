@@ -1,2 +1,18 @@
 .pi-subagents/
 .DS_Store
+
+# Digital twin: raw sources & generated grounding must never reach the
+# public repo / GitHub Pages. Only the README stays in twin-source/.
+digital-twin/twin-source/*
+!digital-twin/twin-source/README.md
+digital-twin/twin-context.md
+digital-twin/twin-context.review.md
+
+# Secrets & local env
+.dev.vars
+.env
+*.env.local
+
+# Tooling
+node_modules/
+.wrangler/

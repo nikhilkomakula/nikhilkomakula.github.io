@@ -3,7 +3,7 @@
 > 🌐 Live portfolio: **[nikhilkomakula.github.io](https://nikhilkomakula.github.io)** (rendered from `index.html`)
 
 <div style="display: flex; justify-content: space-between;"><span><b>Email:</b> <a href="mailto:nikhil.komakula@outlook.com">nikhil.komakula@outlook.com</a></span><span><b>Phone:</b> <a href="tel:+918985372727">+91 8985372727</a></span></div>
-<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span></div>
+<div style="display: flex; justify-content: space-between;"><span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/nikhilkomakula" target="_blank">linkedin.com/in/nikhilkomakula</a></span><span><b>GitHub:</b> <a href="https://github.com/nikhilkomakula" target="_blank">github.com/nikhilkomakula</a></span><span><b>X:</b> <a href="https://x.com/nikhilkomakula" target="_blank">x.com/nikhilkomakula</a></span></div>
 <div style="display: flex; justify-content: space-between;"><span><b>Location:</b> Hyderabad, Telangana, India</span><span><b>Portfolio:</b> <a href="https://nikhilkomakula.github.io" target="_blank">nikhilkomakula.github.io</a></span></div>
 
 ---
@@ -72,9 +72,9 @@
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>IBM CORPORATION</span><span>Littleton, MA, USA</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Lead Consulting Engineer</span><span>Apr’10 – Apr’12</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>HALLER, HARLAN & TAYLOR</span><span>Plano, TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Software Programmer</span><span>Sep’09 – Apr’10</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Software Programmer (Internship)</span><span>Sep’09 – Apr’10</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>ACCOLITE</span><span>Richardson, TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer</span><span>Mar’09 – Sep’09</span></div>
+<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Java Developer (Internship)</span><span>Mar’09 – Sep’09</span></div>
 
 ---
 
