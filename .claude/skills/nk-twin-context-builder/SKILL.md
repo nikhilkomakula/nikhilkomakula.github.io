@@ -77,9 +77,36 @@ that is in the file.
 - Restate client/employer work at **public-resume level** only: no internal
   system names, no customer names or data, no unreleased work, no internal
   metrics that are not already public in the portfolio/resume.
-- Exclude private PII (personal addresses, government IDs, DOB, family
-  details). Public professional contact info (email, LinkedIn, portfolio
-  phone) is fine.
+
+### Nikhil's PII — hard rules
+- EXCLUDE all private PII about Nikhil found in any source: home/postal
+  addresses, birth date, government IDs, financial data (receipts,
+  payments, subscriptions), account registration/verification data, IP
+  addresses, device identifiers, private phone numbers or email addresses
+  found in data exports, family details, health data, photos metadata.
+- Contact details in twin-context.md come ONLY from the portfolio gold
+  standard (index.html/README.md) — the curated public set. NEVER source
+  contact info from data exports (e.g. LinkedIn `PhoneNumbers.csv`,
+  `Email Addresses.csv`, `Whatsapp Phone Numbers.csv`), even if values
+  look identical to the public ones.
+
+### Third-party / connections PII — zero tolerance
+- EXCLUDE every trace of other people's data: connection lists, names of
+  endorsers/recommenders, message counterparts and message content,
+  invitation senders/recipients, colleagues named in award citations,
+  event attendees, recruiter names. No names, emails, employers, titles,
+  or aggregates that could identify a third party — even indirectly
+  (e.g. "my manager at X", "a director at <client>").
+- Never ingest these file types from social/data exports (LinkedIn,
+  Google Takeout, Facebook, etc.): messages, connections, invitations,
+  endorsements (given/received), recommendations (given/received),
+  contacts, followers, ad-targeting, browsing/learning history, job
+  applications, saved jobs, screening-question answers, receipts,
+  registration, verifications. If a genuinely public fact (e.g. a
+  recommendation's existence) seems valuable, list it under "excluded
+  pending confirmation" — do not include it.
+
+### Secrets
 - If you find API keys, tokens, or credentials in any source file: EXCLUDE
   them and FLAG the file in the run summary so the user can rotate them.
 - When unsure whether something is public, leave it out and list it under
@@ -137,7 +164,7 @@ After writing the file, audit it with Cursor as an independent reviewer:
 2. Run a READ-ONLY review (adjust flags to what `--help` showed):
 
    ```
-   cursor agent -p "Audit digital-twin/twin-context.md against its sources: the portfolio gold standard (index.html and README.md at the repo root) plus any files in digital-twin/twin-source/. Report: (a) any claim in twin-context.md NOT traceable to the portfolio or a source file (hallucination risk) — cite the claim; (b) any contradiction where twin-context.md deviates from the portfolio content; (c) any confidentiality leak: client/NDA details, internal system names, customer data, private PII, or secrets; (d) whether the persona & grounding rules section is intact and instructs the model to answer only from the file. Output a prioritized findings list. Do not modify any files." --mode ask --trust
+   cursor agent -p "Audit digital-twin/twin-context.md against its sources: the portfolio gold standard (index.html and README.md at the repo root) plus any files in digital-twin/twin-source/. Report: (a) any claim in twin-context.md NOT traceable to the portfolio or a source file (hallucination risk) — cite the claim; (b) any contradiction where twin-context.md deviates from the portfolio content; (c) any confidentiality leak — specifically: Nikhil's private PII (addresses, birth date, IDs, financial/account data, phone/email sourced from data exports rather than the portfolio), ANY third-party PII (connection names, endorsers, recommenders, message counterparts, recruiters, colleagues — even indirect identification), client/NDA details, internal system names, customer data, or secrets; (d) whether the persona & grounding rules section is intact and instructs the model to answer only from the file. Contact info is only legitimate if it matches the portfolio's public set. Output a prioritized findings list. Do not modify any files." --mode ask --trust
    ```
 
 3. Write Cursor's full output to `digital-twin/twin-context.review.md` and
@@ -155,6 +182,10 @@ End every run with:
 - **Files skipped** (each with reason)
 - **Conflicts vs portfolio** (twin-source claims overridden by the gold
   standard, if any)
+- **PII exclusion attestation** — explicitly confirm: (1) no private PII
+  about Nikhil was ingested (contact info traces to the portfolio only),
+  and (2) zero third-party/connections data was ingested (list the
+  private export files that were excluded by name)
 - **Content excluded/flagged** (confidentiality, secrets to rotate,
   "excluded pending confirmation" items)
 - **Sections written/updated**
