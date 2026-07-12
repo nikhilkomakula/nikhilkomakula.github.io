@@ -16,6 +16,13 @@ type = "Text"
 globs = ["**/*.md"]
 fallthrough = true
 
+# Native per-colo rate limiting (reliable across isolates)
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 8, period = 60 }
+
 [vars]
 # Comma-separated allow-list. Add http://localhost:8000 while developing.
 ALLOWED_ORIGINS = "https://nikhilkomakula.github.io"

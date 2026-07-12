@@ -189,6 +189,20 @@ export default {
     }
 
     const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+    // Native rate-limit binding (reliable across isolates), with the
+    // in-memory limiter as defense-in-depth / local-dev fallback
+    if (env.RATE_LIMITER) {
+      try {
+        const { success } = await env.RATE_LIMITER.limit({ key: ip });
+        if (!success) {
+          return json(
+            { error: "Too many messages — please slow down a little." },
+            429,
+            origin
+          );
+        }
+      } catch (e) { /* fall through to in-memory limiter */ }
+    }
     if (rateLimited(ip, env)) {
       return json(
         { error: "Too many messages — please slow down a little." },
