@@ -30,11 +30,11 @@
 ---
 
 ### AWARDS
-- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Innovation Award (OIA)</span><span>2019</span></div>
-- <div style="display: flex; justify-content: space-between;"><span>IBM Outstanding Technical Achievement Award (OTAA)</span><span>2018 & 2019</span></div>
-- <div style="display: flex; justify-content: space-between;"><span>IBM Lab Services Award – Restlessly Reinvent</span><span>2019</span></div>
-- <div style="display: flex; justify-content: space-between;"><span>MVP of 1H</span><span>2014</span></div>
-- <div style="display: flex; justify-content: space-between;"><span>IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)</span><span></span></div>
+- IBM Outstanding Innovation Award (OIA)
+- IBM Outstanding Technical Achievement Award (OTAA) ×2
+- IBM Lab Services Award – Restlessly Reinvent
+- MVP of the Half-Year
+- IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)
 
 ---
 
@@ -112,8 +112,8 @@
 ### EDUCATION
 
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT AUSTIN</span><span>TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span><span>2022 – 2023</span></div>
+<div style="font-weight: bold; margin-bottom: 1em"><span>Post Graduate Program in Artificial Intelligence & Machine Learning</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>THE UNIVERSITY OF TEXAS AT DALLAS</span><span>TX, USA</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 1em"><span>Master of Science in Computer Engineering</span><span>2006 – 2008</span></div>
+<div style="font-weight: bold; margin-bottom: 1em"><span>Master of Science in Computer Engineering</span></div>
 <div style="display: flex; justify-content: space-between; font-weight: bold;"><span>VASAVI COLLEGE OF ENGINEERING</span><span>TG, India</span></div>
-<div style="display: flex; justify-content: space-between; font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span><span>2002 – 2006</span></div>
+<div style="font-weight: bold;"><span>Bachelor of Engineering in Electrical & Electronics Engineering</span></div>
