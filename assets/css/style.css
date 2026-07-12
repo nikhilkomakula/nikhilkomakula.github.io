@@ -181,13 +181,26 @@ body {
 .hero__content { position: relative; z-index: 2; max-width: 860px; }
 
 .hero__avatar {
-  width: 150px; height: 150px;
+  width: 168px; height: 168px;
   border-radius: 50%;
   object-fit: cover;
   padding: 4px;
   background: var(--gradient);
   box-shadow: 0 12px 40px rgba(99, 102, 241, 0.35);
-  margin-bottom: 26px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 720px) {
+  .hero__avatar { width: 132px; height: 132px; margin-bottom: 22px; }
+}
+
+/* Short laptop viewports: tighten hero so CTAs stay above the fold */
+@media (max-height: 760px) {
+  .hero__avatar { width: 128px; height: 128px; margin-bottom: 18px; }
+  .hero__eyebrow { margin-bottom: 18px; }
+  .hero__title { margin-bottom: 14px; }
+  .hero__tagline { margin-bottom: 26px; }
+  .hero__actions { margin-bottom: 26px; }
 }
 
 .hero__eyebrow {
