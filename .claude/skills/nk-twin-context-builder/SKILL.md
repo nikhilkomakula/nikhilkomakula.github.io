@@ -118,7 +118,7 @@ After writing the file, audit it with Cursor as an independent reviewer:
 2. Run a READ-ONLY review (adjust flags to what `--help` showed):
 
    ```
-   cursor agent -p "Audit digital-twin/twin-context.md against the source files in digital-twin/twin-source/. Report: (a) any claim in twin-context.md NOT traceable to a source file (hallucination risk) — cite the claim; (b) any confidentiality leak: client/NDA details, internal system names, customer data, private PII, or secrets; (c) whether the persona & grounding rules section is intact and instructs the model to answer only from the file. Output a prioritized findings list. Do not modify any files." --mode ask --trust
+   cursor agent -p "Audit digital-twin/twin-context.md against its sources: the portfolio gold standard (index.html and README.md at the repo root) plus any files in digital-twin/twin-source/. Report: (a) any claim in twin-context.md NOT traceable to the portfolio or a source file (hallucination risk) — cite the claim; (b) any contradiction where twin-context.md deviates from the portfolio content; (c) any confidentiality leak: client/NDA details, internal system names, customer data, private PII, or secrets; (d) whether the persona & grounding rules section is intact and instructs the model to answer only from the file. Output a prioritized findings list. Do not modify any files." --mode ask --trust
    ```
 
 3. Write Cursor's full output to `digital-twin/twin-context.review.md` and
