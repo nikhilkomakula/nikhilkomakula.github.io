@@ -498,6 +498,9 @@
           <strong>Nikhil's Digital Twin</strong>
           <span><span class="twin-panel__dot" aria-hidden="true"></span>Online · answers instantly</span>
         </div>
+        <button type="button" class="twin-panel__new" aria-label="Clear chat and start a new session" title="New chat">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+        </button>
         <button type="button" class="twin-panel__close" aria-label="Close chat">
           <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
@@ -526,11 +529,13 @@
     const formEl = panel.querySelector(".twin-panel__form");
     const inputEl = panel.querySelector("#twinInput");
     const closeBtn = panel.querySelector(".twin-panel__close");
+    const newBtn = panel.querySelector(".twin-panel__new");
 
     let open = false;
     let greeted = false;
     let history = []; // [{role: 'user'|'model', content}] for the remote proxy
     let pending = false;
+    let session = 0; // bumped on "new chat" so in-flight replies are dropped
 
     function addMessage(text, who) {
       const msg = el("div", `twin-msg twin-msg--${who}`);
@@ -559,8 +564,10 @@
     }
 
     function localReply(queryRaw, typing) {
+      const s = session;
       const { text, suggestions } = answer(queryRaw);
       const deliver = () => {
+        if (s !== session) return; // chat was reset while "typing"
         if (typing) typing.remove();
         addMessage(text, "bot");
         history.push({ role: "model", content: text });
@@ -572,12 +579,14 @@
     }
 
     async function remoteReply(queryRaw, typing) {
+      const s = session;
       try {
         const res = await fetch(`${ENDPOINT}/chat`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ messages: history.slice(-8) }),
         });
+        if (s !== session) return; // chat was reset mid-flight
         if (!res.ok) throw new Error(`proxy ${res.status}`);
         const data = await res.json();
         if (!data.reply) throw new Error("empty reply");
@@ -587,6 +596,7 @@
         setSuggestions([]);
         pending = false;
       } catch (e) {
+        if (s !== session) return;
         // Graceful degradation: answer from the local knowledge base
         localReply(queryRaw, typing);
       }
@@ -631,8 +641,21 @@
       launcher.focus();
     }
 
+    function resetChat() {
+      session++;
+      pending = false;
+      history = [];
+      messagesEl.innerHTML = "";
+      addMessage(WELCOME, "bot");
+      setSuggestions(DEFAULT_SUGGESTIONS);
+      inputEl.value = "";
+      inputEl.focus();
+      trackEvent("twin-new-chat");
+    }
+
     launcher.addEventListener("click", () => (open ? closePanel() : openPanel()));
     closeBtn.addEventListener("click", closePanel);
+    newBtn.addEventListener("click", resetChat);
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && open) closePanel();
     });
