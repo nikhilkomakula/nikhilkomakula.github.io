@@ -26,8 +26,10 @@ All paths are relative to the repository root.
 
 1. **The portfolio site content is the GOLD STANDARD.** Always read
    `index.html` (experience timeline, projects, skills, credentials,
-   contact) and `README.md` (résumé) first — they are curated, reviewed,
-   and public by definition, so everything in them is safe to include.
+   contact) and `README.md` (résumé) first. They are curated and public by
+   definition, so they are eligible source material — but still apply the
+   confidentiality filter (Step 3), relevance filter (Step 3.5), and
+   lean-context rules before writing anything into twin-context.md.
 2. **`twin-source/` is supplementary.** Additional data sources will be
    uploaded there when available — use them to ENRICH the portfolio
    baseline (project "why" context, deck speaker notes, extra detail).
@@ -63,7 +65,11 @@ Handle these types:
   speaker notes (`ppt/notesSlides/notesSlide*.xml`). The speaker notes carry
   the reasoning behind projects — do not skip them.
 - Text-bearing images (`.png`, `.jpg`, etc.) — if you can read images, extract
-  visible text; otherwise skip and record why.
+  visible text; otherwise skip and record why. Treat screenshots/images as
+  HIGH-RISK: extract only professional artifact text that survives Step 3
+  and Step 3.5. Exclude screenshots of messages, social platforms,
+  dashboards containing people/customer data, profile analytics, event
+  attendee lists, receipts, IDs, or account screens.
 
 If a binary cannot be read with available tools, **skip it and record it in
 the run summary**. NEVER fabricate or guess file contents.
@@ -112,6 +118,42 @@ that is in the file.
 - When unsure whether something is public, leave it out and list it under
   "excluded pending confirmation" in the summary.
 
+## Step 3.5 — Relevance filter (audience-first)
+
+The twin exists for ONE audience: people interested in Nikhil's
+professional experience — recruiters, hiring managers, prospective
+clients, and collaborators. Before writing anything into twin-context.md,
+apply this test: **"Would that audience need this to evaluate or engage
+Nikhil professionally?"** If not, leave it out — even if it is public and
+harmless.
+
+INCLUDE (the whole list):
+- Roles, titles, dates, role locations, and impact bullets
+- Projects: what, stack, outcomes, and the "why"
+- Skills, certifications, awards, education
+- Public professional contact info (from the portfolio only)
+- Public professional location only: role locations and the broad current
+  location exactly as shown in the portfolio/resume — never home
+  addresses, precise personal location history, or location fields from
+  data exports
+- Spoken languages; a one-line personal-interests note at most
+
+EXCLUDE as noise, even when public:
+- Behavioral/activity data: courses browsed, learning history, company
+  follows, events attended, feed activity, group memberships
+- Platform mechanics: endorsement counts, connection counts, follower
+  numbers, profile-view stats
+- Anything career-adjacent but not evaluative: saved articles, comments,
+  reposts, hashtags
+- Redundant detail that bloats the context without adding signal — the
+  file must stay lean; Gemini re-reads it on every message.
+
+Curated exception: include only completed, named, professionally relevant
+coursework/certifications that support the professional narrative (e.g.
+GenAI/RAG/Databricks coursework). Do not include browsing history, partial
+courses, course recommendations, timestamps, progress logs, or platform
+activity.
+
 ## Step 4 — Generate or update twin-context.md (idempotent)
 
 The file uses HTML-comment fences:
@@ -150,7 +192,11 @@ Write lean, first-person content optimized as a Gemini Flash system context:
 6. **FAQ** — likely visitor questions with answers, INCLUDING 3-5 questions
    the file deliberately cannot answer (salary expectations, private life,
    opinions about specific employers) each mapped to a graceful decline, so
-   the model learns the declining pattern.
+   the model learns the declining pattern. FAQ answers must use only
+   included, relevant professional context that passed Steps 3 and 3.5;
+   for anything private, speculative, personal, salary-related,
+   employer-opinion-related, or undocumented, write a graceful decline
+   instead of an answer.
 
 Then the MANUAL block, then the SOURCES block.
 
