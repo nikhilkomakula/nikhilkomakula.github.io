@@ -566,6 +566,40 @@
 
   <script src="assets/js/main.js" defer></script>
 
+  <!-- ntfy.sh visitor push notifications (fire-and-forget, once per session) -->
+  <script>
+    (function () {
+      var NTFY_TOPIC = "nk-portfolio-visits-x7k2m9"; // keep obscure; subscribe at ntfy.sh/<topic>
+      try {
+        // Owner opt-out: visit once with ?owner=1 to permanently mute your own visits
+        if (new URLSearchParams(location.search).get("owner") === "1")
+          localStorage.setItem("nk-owner", "1");
+        if (localStorage.getItem("nk-owner") === "1") return;
+        // Production only + once per browser session
+        if (location.host !== "nikhilkomakula.github.io") return;
+        if (sessionStorage.getItem("nk-notified")) return;
+        sessionStorage.setItem("nk-notified", "1");
+
+        var info = [
+          "Page: " + location.pathname + location.hash,
+          "Referrer: " + (document.referrer || "direct"),
+          "Lang: " + navigator.language,
+          "Platform: " + (navigator.userAgentData ? navigator.userAgentData.platform : navigator.platform),
+          "Screen: " + screen.width + "x" + screen.height,
+          "TZ: " + Intl.DateTimeFormat().resolvedOptions().timeZone,
+          "Time: " + new Date().toLocaleString()
+        ].join("\n");
+
+        fetch("https://ntfy.sh/" + NTFY_TOPIC, {
+          method: "POST",
+          body: info,
+          keepalive: true,
+          headers: { "Title": "Portfolio visitor", "Tags": "eyes", "Priority": "low" }
+        }).catch(function () {});
+      } catch (e) { /* never break the page for analytics */ }
+    })();
+  </script>
+
   <!-- GoatCounter analytics (privacy-friendly, no cookies) -->
   <script>
     // Only load & count on the live site; fully silent on local/preview
