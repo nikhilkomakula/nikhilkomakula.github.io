@@ -39,13 +39,12 @@
 ---
 
 ### CERTIFICATIONS
+- Databricks Certified Generative AI Engineer Associate
 - GCP Certified Professional Machine Learning Engineer
 - GCP Certified Professional Data Engineer
 - AWS Certified Machine Learning Specialty
 - Microsoft Certified: Azure Data Scientist Associate
 - IBM Certified Data Scientist – Machine Learning Specialist
-- Microsoft Certified: Azure AI Fundamentals
-- IBM Certified Specialist – AI Enterprise Workflow V1
 
 ---
 
