@@ -541,15 +541,19 @@
     let history = []; // [{role: 'user'|'model', content}] for the remote proxy
     let pending = false;
     let session = 0; // bumped on "new chat" so in-flight replies are dropped
-    let summarySent = false; // one summary notification per conversation
+    // Cursor (not a boolean): tracks how many user turns were already
+    // summarized, so close -> reopen -> more chat -> close sends a fresh
+    // summary for the new turns, while close + pagehide can't double-fire.
+    let lastSummarizedUserTurns = 0;
 
     // End-of-conversation: beacon the transcript to the proxy, which
     // summarizes it and notifies Nikhil (remote mode only). sendBeacon
     // survives page unload; text/plain keeps it a simple CORS request.
     function sendSummary() {
-      if (!ENDPOINT || summarySent) return;
-      if (!history.some((m) => m.role === "user")) return;
-      summarySent = true;
+      if (!ENDPOINT) return;
+      const userTurns = history.filter((m) => m.role === "user").length;
+      if (!userTurns || userTurns === lastSummarizedUserTurns) return;
+      lastSummarizedUserTurns = userTurns;
       try {
         const payload = JSON.stringify({ messages: history.slice(-16) });
         const blob = new Blob([payload], { type: "text/plain" });
@@ -674,7 +678,7 @@
       session++;
       pending = false;
       history = [];
-      summarySent = false; // new conversation, new summary
+      lastSummarizedUserTurns = 0; // new conversation, fresh cursor
       messagesEl.innerHTML = "";
       addMessage(WELCOME, "bot");
       setSuggestions(DEFAULT_SUGGESTIONS);

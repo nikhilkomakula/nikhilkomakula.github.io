@@ -23,6 +23,13 @@ type = "ratelimit"
 namespace_id = "1001"
 simple = { limit = 8, period = 60 }
 
+# Much stricter limiter for chat-summary notifications (phone pings)
+[[unsafe.bindings]]
+name = "SUMMARY_LIMITER"
+type = "ratelimit"
+namespace_id = "1002"
+simple = { limit = 2, period = 60 }
+
 [vars]
 # Comma-separated allow-list. Add http://localhost:8000 while developing.
 ALLOWED_ORIGINS = "https://nikhilkomakula.github.io"
@@ -30,8 +37,10 @@ GEMINI_MODEL = "gemini-3.1-flash-lite"
 MAX_OUTPUT_TOKENS = "512"
 RATE_LIMIT_PER_MIN = "8"
 CACHE_TTL_SECONDS = "3600"
-# ntfy topic for end-of-conversation chat summaries
-NTFY_TOPIC = "nk_github_portfolio"
+
+# NTFY_TOPIC (chat-summary notifications) is a SECRET — the repo is
+# public, so the topic must never be committed here:
+#   npx wrangler secret put NTFY_TOPIC   (use a high-entropy topic name)
 
 # GEMINI_API_KEY is a secret — never put it here.
 # npx wrangler secret put GEMINI_API_KEY
