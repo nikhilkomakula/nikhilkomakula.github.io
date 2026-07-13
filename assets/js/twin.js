@@ -522,7 +522,7 @@
       </form>
       <p class="twin-panel__note">${
         ENDPOINT
-          ? "Powered by Google Gemini — messages are processed via a secure proxy and answered only from Nikhil's documented background."
+          ? "Powered by Google Gemini — messages are processed via a secure proxy and answered only from Nikhil's documented background. Chat summaries may be shared with Nikhil."
           : "Runs in your browser — questions never leave this page."
       }</p>
     `;
@@ -541,6 +541,25 @@
     let history = []; // [{role: 'user'|'model', content}] for the remote proxy
     let pending = false;
     let session = 0; // bumped on "new chat" so in-flight replies are dropped
+    let summarySent = false; // one summary notification per conversation
+
+    // End-of-conversation: beacon the transcript to the proxy, which
+    // summarizes it and notifies Nikhil (remote mode only). sendBeacon
+    // survives page unload; text/plain keeps it a simple CORS request.
+    function sendSummary() {
+      if (!ENDPOINT || summarySent) return;
+      if (!history.some((m) => m.role === "user")) return;
+      summarySent = true;
+      try {
+        const payload = JSON.stringify({ messages: history.slice(-16) });
+        const blob = new Blob([payload], { type: "text/plain" });
+        if (!(navigator.sendBeacon && navigator.sendBeacon(`${ENDPOINT}/summary`, blob))) {
+          fetch(`${ENDPOINT}/summary`, { method: "POST", body: payload, keepalive: true })
+            .catch(() => {});
+        }
+      } catch (e) { /* never break the page */ }
+    }
+    addEventListener("pagehide", sendSummary);
 
     function addMessage(text, who) {
       const msg = el("div", `twin-msg twin-msg--${who}`);
@@ -647,12 +666,15 @@
       launcher.setAttribute("aria-expanded", "false");
       launcher.classList.remove("twin-launcher--open");
       launcher.focus();
+      sendSummary();
     }
 
     function resetChat() {
+      sendSummary(); // summarize the conversation being discarded
       session++;
       pending = false;
       history = [];
+      summarySent = false; // new conversation, new summary
       messagesEl.innerHTML = "";
       addMessage(WELCOME, "bot");
       setSuggestions(DEFAULT_SUGGESTIONS);

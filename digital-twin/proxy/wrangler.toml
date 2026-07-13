@@ -30,6 +30,8 @@ GEMINI_MODEL = "gemini-3.1-flash-lite"
 MAX_OUTPUT_TOKENS = "512"
 RATE_LIMIT_PER_MIN = "8"
 CACHE_TTL_SECONDS = "3600"
+# ntfy topic for end-of-conversation chat summaries
+NTFY_TOPIC = "nk_github_portfolio"
 
 # GEMINI_API_KEY is a secret — never put it here.
 # npx wrangler secret put GEMINI_API_KEY
