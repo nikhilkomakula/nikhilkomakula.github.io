@@ -165,10 +165,14 @@ body {
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative; min-height: 100vh; min-height: 100svh;
+  position: relative;
+  /* Full-screen feel on laptops, but capped so tall monitors don't get
+     a large dead zone between the hero content and the stats bar */
+  min-height: min(100vh, 860px);
+  min-height: min(100svh, 860px);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; text-align: center;
-  padding: calc(var(--nav-h) + 40px) 24px 80px;
+  padding: calc(var(--nav-h) + 36px) 24px 72px;
 }
 #neuralCanvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55; }
 .hero__glow {
@@ -283,12 +287,12 @@ body {
 }
 
 /* ---------- Stats ---------- */
-.stats { padding: 30px 0 10px; }
+.stats { padding: 18px 0 6px; }
 .stats__grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
   border: 1px solid var(--border); border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
-  padding: 38px 30px;
+  padding: 30px 28px;
 }
 .stat { text-align: center; }
 .stat__num {
@@ -300,7 +304,7 @@ body {
 .stat__label { color: var(--text-dim); font-size: 0.92rem; }
 
 /* ---------- Sections ---------- */
-.section { padding: 110px 0; position: relative; }
+.section { padding: 80px 0; position: relative; }
 .section--alt {
   background:
     radial-gradient(1200px 500px at 80% 0%, rgba(129, 140, 248, 0.06), transparent 60%),
@@ -314,7 +318,7 @@ body {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.6vw, 3rem);
   font-weight: 700; letter-spacing: -0.015em; line-height: 1.15;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 
 /* ---------- About ---------- */
@@ -341,7 +345,7 @@ body {
   background: linear-gradient(180deg, var(--accent-1), var(--accent-2), transparent);
   opacity: 0.5;
 }
-.timeline__item { position: relative; margin-bottom: 34px; }
+.timeline__item { position: relative; margin-bottom: 26px; }
 .timeline__marker {
   position: absolute; left: -36px; top: 8px;
   width: 18px; height: 18px; border-radius: 50%;
@@ -537,7 +541,7 @@ body {
 }
 
 @media (max-width: 720px) {
-  .section { padding: 80px 0; }
+  .section { padding: 60px 0; }
   .projects__grid { grid-template-columns: 1fr; }
   .skills__grid { grid-template-columns: 1fr; }
   .timeline { padding-left: 30px; }

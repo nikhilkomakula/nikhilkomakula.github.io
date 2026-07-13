@@ -279,11 +279,11 @@
       id: "awards",
       keywords: ["award", "awards", "recognition", "honors", "achievement", "oia", "otaa"],
       answer:
-        "Nikhil has earned **6 industry awards**:\n\n" +
+        "Nikhil has earned **5 industry awards**:\n\n" +
         "• **IBM Outstanding Innovation Award** (OIA)\n" +
         "• **IBM Outstanding Technical Achievement Award** (OTAA) ×2\n" +
-        "• **IBM Lab Services Award** — Restlessly Reinvent\n" +
-        "• **Manager's Choice Awards** — Put the Client First · Restlessly Reinvent (×2)",
+        "• **IBM Eminence & Excellence Award**\n" +
+        "• **IBM Delivery Excellence Award**",
       suggestions: ["What certifications does he have?", "Tell me about his experience", "What projects has he built?"]
     },
     {

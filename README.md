@@ -32,8 +32,8 @@
 ### AWARDS
 - IBM Outstanding Innovation Award (OIA)
 - IBM Outstanding Technical Achievement Award (OTAA) ×2
-- IBM Lab Services Award – Restlessly Reinvent
-- IBM Manager's Choice Awards – Put the Client First · Restlessly Reinvent (×2)
+- IBM Eminence & Excellence Award
+- IBM Delivery Excellence Award
 
 ---
 
