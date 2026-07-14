@@ -44,8 +44,9 @@
 
 /* Hide launcher while the mobile menu is open (reserved convention).
    body.nav-open is toggled by main.js (works everywhere); :has() covers
-   any state drift in modern browsers. */
-body.nav-open .twin-launcher,
+   any state drift in modern browsers. Kept as separate rules so older
+   browsers that can't parse :has() don't drop the fallback. */
+body.nav-open .twin-launcher { opacity: 0; pointer-events: none; }
 body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none; }
 
 /* ---------- Panel ---------- */
@@ -226,7 +227,7 @@ body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none;
 
 .twin-panel__note {
   padding: 4px 16px 12px;
-  font-size: 0.68rem;
+  font-size: 0.73rem;
   color: var(--text-dim);
   font-family: var(--font-mono);
   text-align: center;
@@ -250,4 +251,7 @@ body:has(.nav__links.is-open) .twin-launcher { opacity: 0; pointer-events: none;
   .twin-launcher__pulse { animation: none; }
   .twin-msg--typing span { animation: none; opacity: 0.6; }
   .twin-launcher, .twin-chip, .twin-panel__form button { transition: none; }
+  .twin-launcher:hover,
+  .twin-chip:hover,
+  .twin-panel__form button:hover { transform: none; }
 }
