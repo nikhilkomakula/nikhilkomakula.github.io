@@ -479,6 +479,12 @@ body {
 .cred__list--edu span { font-size: 0.85rem; }
 
 /* ---------- Recommendations ---------- */
+.section--recs {
+  background:
+    radial-gradient(900px 420px at 15% 0%, rgba(232, 121, 249, 0.07), transparent 60%),
+    radial-gradient(900px 420px at 85% 100%, rgba(34, 211, 238, 0.06), transparent 60%),
+    var(--bg-alt);
+}
 .recs__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .rec-card {
   position: relative;
