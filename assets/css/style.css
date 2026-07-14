@@ -5,8 +5,8 @@
 
 /* ------------------------------------------------------------
    Design tokens
-   NOTE: A "digital twin" chat widget is planned for a future
-   iteration. Conventions reserved for it:
+   NOTE: The "digital twin" chat widget (twin.css/twin.js) follows
+   these conventions:
    - Fixed bottom-right viewport corner stays free of UI.
    - z-index scale: nav/mobile-menu 100, scroll-progress 200.
      Twin launcher: 90 (below nav). Expanded twin panel: 300,
@@ -170,7 +170,7 @@ body {
      any screen — padding alone sets the breathing room */
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; text-align: center;
-  padding: calc(var(--nav-h) + 64px) 24px 48px;
+  padding: calc(var(--nav-h) + 56px) 24px 36px;
 }
 #neuralCanvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55; }
 .hero__glow {
@@ -267,7 +267,7 @@ body {
 
 
 /* ---------- Stats ---------- */
-.stats { padding: 18px 0 6px; }
+.stats { padding: 12px 0 0; }
 .stats__grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
   border: 1px solid var(--border); border-radius: var(--radius);
@@ -284,7 +284,7 @@ body {
 .stat__label { color: var(--text-dim); font-size: 0.92rem; }
 
 /* ---------- Sections ---------- */
-.section { padding: 80px 0; position: relative; }
+.section { padding: 60px 0; position: relative; }
 .section--alt {
   background:
     radial-gradient(1200px 500px at 80% 0%, rgba(129, 140, 248, 0.06), transparent 60%),
@@ -292,18 +292,18 @@ body {
 }
 .section__kicker {
   font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.18em;
-  text-transform: uppercase; color: var(--accent-1); margin-bottom: 14px;
+  text-transform: uppercase; color: var(--accent-1); margin-bottom: 10px;
 }
 .section__title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.6vw, 3rem);
   font-weight: 700; letter-spacing: -0.015em; line-height: 1.15;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 /* ---------- About ---------- */
-.about__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: start; }
-.about__text p { margin-bottom: 20px; color: var(--text-dim); font-size: 1.04rem; }
+.about__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
+.about__text p { margin-bottom: 16px; color: var(--text-dim); font-size: 1.04rem; }
 .about__text strong { color: var(--text); }
 .about__text em { color: var(--accent-1); font-style: normal; }
 
@@ -317,6 +317,49 @@ body {
 .glass-card__icon { font-size: 1.6rem; margin-bottom: 10px; }
 .glass-card h3 { font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 6px; }
 .glass-card p { color: var(--text-dim); font-size: 0.93rem; }
+
+/* ---------- Recommendations ---------- */
+.section--recs {
+  background:
+    radial-gradient(900px 420px at 15% 0%, rgba(232, 121, 249, 0.07), transparent 60%),
+    radial-gradient(900px 420px at 85% 100%, rgba(34, 211, 238, 0.06), transparent 60%),
+    var(--bg);
+}
+.recs__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.rec-card {
+  position: relative;
+  display: flex; flex-direction: column;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); padding: 26px 24px 22px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.rec-card:hover { transform: translateY(-4px); border-color: rgba(232, 121, 249, 0.4); }
+.rec-card::before {
+  content: "“";
+  position: absolute; top: 6px; left: 20px;
+  font-family: var(--font-display); font-size: 3.4rem; line-height: 1;
+  background: var(--gradient);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  opacity: 0.9;
+}
+.rec-card blockquote {
+  margin: 22px 0 16px; flex: 1;
+  color: var(--text-dim); font-size: 0.93rem; line-height: 1.58;
+  font-style: italic;
+}
+.rec-card blockquote strong { color: var(--text); font-style: normal; }
+.rec-card figcaption {
+  display: grid; gap: 1px;
+  border-top: 1px solid var(--border); padding-top: 14px;
+}
+.rec-card figcaption strong { font-family: var(--font-display); font-size: 0.94rem; }
+.rec-card figcaption span { color: var(--text-dim); font-size: 0.8rem; font-family: var(--font-mono); }
+.recs__more {
+  margin-top: 20px; text-align: center;
+  color: var(--text-dim); font-size: 0.9rem;
+}
+.recs__more a { color: var(--accent-1); text-decoration: none; }
+.recs__more a:hover { text-decoration: underline; }
 
 /* ---------- Timeline ---------- */
 .timeline { position: relative; padding-left: 36px; }
@@ -462,49 +505,6 @@ body {
 .cred__list--edu li { display: grid; gap: 2px; }
 .cred__list--edu span { font-size: 0.85rem; }
 
-/* ---------- Recommendations ---------- */
-.section--recs {
-  background:
-    radial-gradient(900px 420px at 15% 0%, rgba(232, 121, 249, 0.07), transparent 60%),
-    radial-gradient(900px 420px at 85% 100%, rgba(34, 211, 238, 0.06), transparent 60%),
-    var(--bg-alt);
-}
-.recs__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.rec-card {
-  position: relative;
-  display: flex; flex-direction: column;
-  border: 1px solid var(--border); border-radius: var(--radius);
-  background: var(--surface); padding: 30px 28px 24px;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-.rec-card:hover { transform: translateY(-4px); border-color: rgba(232, 121, 249, 0.4); }
-.rec-card::before {
-  content: "“";
-  position: absolute; top: 6px; left: 20px;
-  font-family: var(--font-display); font-size: 3.4rem; line-height: 1;
-  background: var(--gradient);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-  opacity: 0.9;
-}
-.rec-card blockquote {
-  margin: 26px 0 18px; flex: 1;
-  color: var(--text-dim); font-size: 0.93rem; line-height: 1.65;
-  font-style: italic;
-}
-.rec-card blockquote strong { color: var(--text); font-style: normal; }
-.rec-card figcaption {
-  display: grid; gap: 1px;
-  border-top: 1px solid var(--border); padding-top: 14px;
-}
-.rec-card figcaption strong { font-family: var(--font-display); font-size: 0.94rem; }
-.rec-card figcaption span { color: var(--text-dim); font-size: 0.8rem; font-family: var(--font-mono); }
-.recs__more {
-  margin-top: 28px; text-align: center;
-  color: var(--text-dim); font-size: 0.9rem;
-}
-.recs__more a { color: var(--accent-1); text-decoration: none; }
-.recs__more a:hover { text-decoration: underline; }
-
 /* ---------- Contact ---------- */
 .section--contact {
   background:
@@ -513,8 +513,8 @@ body {
   text-align: center;
 }
 .contact__inner { max-width: 760px; }
-.contact__blurb { color: var(--text-dim); font-size: 1.08rem; max-width: 560px; margin: 0 auto 36px; }
-.contact__actions { margin-bottom: 34px; }
+.contact__blurb { color: var(--text-dim); font-size: 1.08rem; max-width: 560px; margin: 0 auto 28px; }
+.contact__actions { margin-bottom: 26px; }
 .contact__links {
   display: flex; justify-content: center; gap: 26px; flex-wrap: wrap;
   color: var(--text-dim); font-size: 0.95rem;
@@ -523,7 +523,7 @@ body {
 .contact__links a:hover { color: var(--accent-1); }
 
 /* ---------- Footer ---------- */
-.footer { border-top: 1px solid var(--border); padding: 28px 0; }
+.footer { border-top: 1px solid var(--border); padding: 22px 0; }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .footer p { color: var(--text-dim); font-size: 0.88rem; }
 .footer__top {
@@ -566,7 +566,7 @@ body {
 }
 
 @media (max-width: 720px) {
-  .section { padding: 60px 0; }
+  .section { padding: 44px 0; }
   .projects__grid { grid-template-columns: 1fr; }
   .recs__grid { grid-template-columns: 1fr; }
   .skills__grid { grid-template-columns: 1fr; }
@@ -578,7 +578,7 @@ body {
 /* Mobile navigation — wider breakpoint so desktop links never cram.
    The hidden dropdown pattern is JS-gated; without JS the nav falls
    back to a static wrapping row so links stay reachable. */
-@media (max-width: 880px) {
+@media (max-width: 960px) {
   html:not(.js) .nav { position: absolute; height: auto; }
   html:not(.js) .nav__inner { flex-wrap: wrap; height: auto; padding: 14px 24px; gap: 10px; }
   html:not(.js) .nav__links { flex-wrap: wrap; gap: 6px 18px; }
