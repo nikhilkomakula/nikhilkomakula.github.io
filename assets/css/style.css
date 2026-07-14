@@ -478,6 +478,43 @@ body {
 .cred__list--edu li { display: grid; gap: 2px; }
 .cred__list--edu span { font-size: 0.85rem; }
 
+/* ---------- Recommendations ---------- */
+.recs__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.rec-card {
+  position: relative;
+  display: flex; flex-direction: column;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); padding: 30px 28px 24px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.rec-card:hover { transform: translateY(-4px); border-color: rgba(232, 121, 249, 0.4); }
+.rec-card::before {
+  content: "“";
+  position: absolute; top: 6px; left: 20px;
+  font-family: var(--font-display); font-size: 3.4rem; line-height: 1;
+  background: var(--gradient);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  opacity: 0.9;
+}
+.rec-card blockquote {
+  margin: 26px 0 18px; flex: 1;
+  color: var(--text-dim); font-size: 0.93rem; line-height: 1.65;
+  font-style: italic;
+}
+.rec-card blockquote strong { color: var(--text); font-style: normal; }
+.rec-card figcaption {
+  display: grid; gap: 1px;
+  border-top: 1px solid var(--border); padding-top: 14px;
+}
+.rec-card figcaption strong { font-family: var(--font-display); font-size: 0.94rem; }
+.rec-card figcaption span { color: var(--text-dim); font-size: 0.8rem; font-family: var(--font-mono); }
+.recs__more {
+  margin-top: 28px; text-align: center;
+  color: var(--text-dim); font-size: 0.9rem;
+}
+.recs__more a { color: var(--accent-1); text-decoration: none; }
+.recs__more a:hover { text-decoration: underline; }
+
 /* ---------- Contact ---------- */
 .section--contact {
   background:
@@ -523,6 +560,7 @@ body {
   }
   .js .reveal { opacity: 1; transform: none; }
   .btn--primary:hover, .btn--ghost:hover, .glass-card:hover, .project:hover,
+  .rec-card:hover,
   .timeline__card:hover, .chips span:hover, .hero__socials a:hover, .footer__top:hover {
     transform: none;
   }
@@ -532,6 +570,7 @@ body {
 @media (max-width: 960px) {
   .about__grid { grid-template-columns: 1fr; }
   .projects__grid { grid-template-columns: repeat(2, 1fr); }
+  .recs__grid { grid-template-columns: repeat(2, 1fr); }
   .cred__grid { grid-template-columns: 1fr; }
   .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
 }
@@ -539,6 +578,7 @@ body {
 @media (max-width: 720px) {
   .section { padding: 80px 0; }
   .projects__grid { grid-template-columns: 1fr; }
+  .recs__grid { grid-template-columns: 1fr; }
   .skills__grid { grid-template-columns: 1fr; }
   .timeline { padding-left: 30px; }
   .timeline__marker { left: -30px; }
